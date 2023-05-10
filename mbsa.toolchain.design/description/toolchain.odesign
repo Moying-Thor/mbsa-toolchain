@@ -21,13 +21,13 @@
           </style>
         </edgeMappings>
         <toolSections name="ComponentDiagramSection">
-          <ownedTools xsi:type="tool:NodeCreationDescription" name="创建组件" nodeMappings="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@nodeMappings[name='Component']">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Component" nodeMappings="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@nodeMappings[name='Component']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext">
                 <subModelOperations xsi:type="tool_1:CreateInstance" typeName="component::Component" referenceName="components">
-                  <subModelOperations xsi:type="tool_1:SetValue" featureName="component_name" valueExpression="aql:'新组件'"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="component_name" valueExpression="New Component"/>
                   <subModelOperations xsi:type="tool_1:ChangeContext">
                     <subModelOperations xsi:type="tool_1:CreateInstance" typeName="base::LangString" referenceName="name">
                       <subModelOperations xsi:type="tool_1:ChangeContext">
@@ -83,7 +83,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:EdgeCreationDescription" name="创建组件关系" edgeMappings="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@edgeMappings[name='Relationship']">
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Component Relationship" edgeMappings="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@edgeMappings[name='Relationship']">
             <sourceVariable name="source"/>
             <targetVariable name="target"/>
             <sourceViewVariable name="sourceView"/>
@@ -93,7 +93,7 @@
                 <subModelOperations xsi:type="tool_1:CreateInstance" typeName="component::ComponentRelationship" referenceName="components">
                   <subModelOperations xsi:type="tool_1:SetValue" featureName="source" valueExpression="var:source"/>
                   <subModelOperations xsi:type="tool_1:SetValue" featureName="target" valueExpression="var:target"/>
-                  <subModelOperations xsi:type="tool_1:SetValue" featureName="label" valueExpression="组件关系"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="label" valueExpression="Component Relationship"/>
                 </subModelOperations>
               </firstModelOperations>
             </initialOperation>
@@ -103,7 +103,7 @@
             <elementView name="elementView"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext">
-                <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="查看属性">
+                <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="View Properties">
                   <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
                     <initialOperation>
                       <firstModelOperations xsi:type="tool_1:ChangeContext"/>
@@ -115,28 +115,28 @@
                     </initialOperation>
                   </buttons>
                   <page name="Default Page" labelExpression="feature:component_name" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='ViewPropertiesOfComponent']/@initialOperation/@firstModelOperations/@subModelOperations.0/@groups.0 //@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='ViewPropertiesOfComponent']/@initialOperation/@firstModelOperations/@subModelOperations.0/@groups.1 //@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='ViewPropertiesOfComponent']/@initialOperation/@firstModelOperations/@subModelOperations.0/@groups.2"/>
-                  <groups name="feature_group" labelExpression="基本属性" semanticCandidateExpression="var:self">
+                  <groups name="feature_group" labelExpression="Basic Attributes" semanticCandidateExpression="var:self">
                     <controls xsi:type="properties:ContainerDescription" name="container1">
-                      <controls xsi:type="properties:TextDescription" name="id_input" labelExpression="序号" valueExpression="feature:identity">
+                      <controls xsi:type="properties:TextDescription" name="id_input" labelExpression="ID" valueExpression="feature:identity">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
                             <subModelOperations xsi:type="tool_1:SetValue" featureName="identity" valueExpression="var:newValue"/>
                           </firstModelOperations>
                         </initialOperation>
                       </controls>
-                      <controls xsi:type="properties:TextDescription" name="name_input" labelExpression="组件名称" valueExpression="feature:component_name">
+                      <controls xsi:type="properties:TextDescription" name="name_input" labelExpression="Name" valueExpression="feature:component_name">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:SetValue" featureName="component_name" valueExpression="var:newValue"/>
                         </initialOperation>
                       </controls>
-                      <controls xsi:type="properties:TextDescription" name="fit_input" labelExpression="失效概率" valueExpression="feature:fit">
+                      <controls xsi:type="properties:TextDescription" name="fit_input" labelExpression="FIT" valueExpression="feature:fit">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
                             <subModelOperations xsi:type="tool_1:SetValue" featureName="fit" valueExpression="var:newValue"/>
                           </firstModelOperations>
                         </initialOperation>
                       </controls>
-                      <controls xsi:type="properties:TextDescription" name="sil_input" labelExpression="安全完整性等级" isEnabledExpression="aql:false" valueExpression="feature:sil">
+                      <controls xsi:type="properties:TextDescription" name="sil_input" labelExpression="SIL" isEnabledExpression="aql:false" valueExpression="feature:sil">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self"/>
                         </initialOperation>
@@ -144,19 +144,19 @@
                       <layout xsi:type="properties:GridLayoutDescription" makeColumnsWithEqualWidth="true"/>
                     </controls>
                   </groups>
-                  <groups name="reference_group" labelExpression="内部引用" semanticCandidateExpression="var:self">
+                  <groups name="reference_group" labelExpression="Internal Reference" semanticCandidateExpression="var:self">
                     <controls xsi:type="properties:ContainerDescription" name="container2">
-                      <controls xsi:type="properties:TextDescription" name="requirement_mapping" labelExpression="引用需求" valueExpression="aql:self.requirements->collect(r|r.name.content)">
+                      <controls xsi:type="properties:TextDescription" name="requirement_mapping" labelExpression="Referenced Requirement" valueExpression="aql:self.requirements->collect(r|r.name.content)">
                         <initialOperation/>
                       </controls>
-                      <controls xsi:type="properties:ButtonDescription" name="browse" buttonLabelExpression="浏览...">
+                      <controls xsi:type="properties:ButtonDescription" name="browse" buttonLabelExpression="Browse...">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext">
                             <subModelOperations xsi:type="tool_1:ExternalJavaAction" name="browse_action" id="mbsa.toolchain.design.browse.requirement.action"/>
                           </firstModelOperations>
                         </initialOperation>
                       </controls>
-                      <controls xsi:type="properties:ButtonDescription" name="goto" buttonLabelExpression="追溯">
+                      <controls xsi:type="properties:ButtonDescription" name="goto" buttonLabelExpression="Go to">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
                             <subModelOperations xsi:type="tool_1:ExternalJavaAction" name="mbsa.toolchain.design.goto.requirement" elementsToSelect="var:element" id="mbsa.toolchain.design.goto.requirement">
@@ -168,29 +168,29 @@
                       <layout xsi:type="properties:GridLayoutDescription" numberOfColumns="3"/>
                     </controls>
                   </groups>
-                  <groups name="external_reference" labelExpression="外部引用" semanticCandidateExpression="var:self">
+                  <groups name="external_reference" labelExpression="External Reference" semanticCandidateExpression="var:self">
                     <controls xsi:type="properties:ContainerDescription" name="container3">
-                      <controls xsi:type="properties:TextDescription" name="source_uri" labelExpression="外部文件" valueExpression="aql:element.implementationConstraint->at(1).content.value->at(1).content">
+                      <controls xsi:type="properties:TextDescription" name="source_uri" labelExpression="External File" valueExpression="aql:element.implementationConstraint->at(1).content.value->at(1).content">
                         <initialOperation/>
                       </controls>
-                      <controls xsi:type="properties:ButtonDescription" name="browse" buttonLabelExpression="浏览...">
+                      <controls xsi:type="properties:ButtonDescription" name="browse" buttonLabelExpression="Browse...">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext">
                             <subModelOperations xsi:type="tool_1:ExternalJavaAction" name="browse_action" id="mbsa.toolchain.design.browse.file.action"/>
                           </firstModelOperations>
                         </initialOperation>
                       </controls>
-                      <controls xsi:type="properties:TextDescription" name="metadata_uri" labelExpression="超数据   " valueExpression="aql:element.implementationConstraint->at(2).content.value->at(1).content">
+                      <controls xsi:type="properties:TextDescription" name="metadata_uri" labelExpression="Meta data" valueExpression="aql:element.implementationConstraint->at(2).content.value->at(1).content">
                         <initialOperation/>
                       </controls>
-                      <controls xsi:type="properties:ButtonDescription" name="browse" buttonLabelExpression="浏览...">
+                      <controls xsi:type="properties:ButtonDescription" name="browse" buttonLabelExpression="Browse...">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext">
                             <subModelOperations xsi:type="tool_1:ExternalJavaAction" name="browse_action" id="mbsa.toolchain.design.browse.metadata.action"/>
                           </firstModelOperations>
                         </initialOperation>
                       </controls>
-                      <controls xsi:type="properties:TextAreaDescription" labelExpression="验证程序" lineCount="3" valueExpression="aql:element.implementationConstraint->at(3).content.value->at(1).content">
+                      <controls xsi:type="properties:TextAreaDescription" labelExpression="Validation" lineCount="3" valueExpression="aql:element.implementationConstraint->at(3).content.value->at(1).content">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
                             <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:self.implementationConstraint->at(3).content.value->at(1)">
@@ -199,14 +199,14 @@
                           </firstModelOperations>
                         </initialOperation>
                       </controls>
-                      <controls xsi:type="properties:ButtonDescription" name="execute" buttonLabelExpression="执行">
+                      <controls xsi:type="properties:ButtonDescription" name="execute" buttonLabelExpression="Execute">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext">
                             <subModelOperations xsi:type="tool_1:ExternalJavaAction" name="perform_query" id="mbsa.toolchain.design.perform.query.action"/>
                           </firstModelOperations>
                         </initialOperation>
                       </controls>
-                      <controls xsi:type="properties:TextAreaDescription" labelExpression="执行结果" lineCount="3" valueExpression="aql:element.implementationConstraint->at(4).content.value->at(1).content">
+                      <controls xsi:type="properties:TextAreaDescription" labelExpression="Query Result" lineCount="3" valueExpression="aql:element.implementationConstraint->at(4).content.value->at(1).content">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self"/>
                         </initialOperation>
@@ -225,7 +225,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool_1:OperationAction" name="组件明细">
+          <ownedTools xsi:type="tool_1:OperationAction" name="Inspect Component">
             <view name="views"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
@@ -233,7 +233,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool_1:OperationAction" name="仿真1000000小时">
+          <ownedTools xsi:type="tool_1:OperationAction" name="Simulation: 1M hrs">
             <view name="views"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext">
@@ -241,7 +241,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool_1:OperationAction" name="计算安全完整性等级">
+          <ownedTools xsi:type="tool_1:OperationAction" name="Calculate SIL">
             <view name="views"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext">
@@ -288,7 +288,7 @@
           </style>
         </nodeMappings>
         <toolSections name="MBSACreationSection">
-          <ownedTools xsi:type="tool:NodeCreationDescription" name="创建MBSA包" nodeMappings="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='mbsa_package_diagram']/@defaultLayer/@nodeMappings[name='MBSAPackage']">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="MBSA Package" nodeMappings="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='mbsa_package_diagram']/@defaultLayer/@nodeMappings[name='MBSAPackage']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
@@ -296,14 +296,14 @@
                 <subModelOperations xsi:type="tool_1:CreateInstance" typeName="mbsa::MBSAPackage" referenceName="mbsaPackages">
                   <subModelOperations xsi:type="tool_1:ChangeContext">
                     <subModelOperations xsi:type="tool_1:CreateInstance" typeName="base::LangString" referenceName="name">
-                      <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="新MBSA包"/>
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="MBSA Package"/>
                     </subModelOperations>
                   </subModelOperations>
                 </subModelOperations>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:NodeCreationDescription" name="创建组件包" nodeMappings="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='mbsa_package_diagram']/@defaultLayer/@nodeMappings[name='ComponentPackage']">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Component Package" nodeMappings="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='mbsa_package_diagram']/@defaultLayer/@nodeMappings[name='ComponentPackage']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
@@ -311,14 +311,14 @@
                 <subModelOperations xsi:type="tool_1:CreateInstance" typeName="component::ComponentPackage" referenceName="componentPackage">
                   <subModelOperations xsi:type="tool_1:ChangeContext">
                     <subModelOperations xsi:type="tool_1:CreateInstance" typeName="base::LangString" referenceName="name">
-                      <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="新组件包"/>
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="Component Package"/>
                     </subModelOperations>
                   </subModelOperations>
                 </subModelOperations>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:NodeCreationDescription" name="创建安全要求包" nodeMappings="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='mbsa_package_diagram']/@defaultLayer/@nodeMappings[name='RequirementPackage']">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Requirement Package" nodeMappings="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='mbsa_package_diagram']/@defaultLayer/@nodeMappings[name='RequirementPackage']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
@@ -326,14 +326,14 @@
                 <subModelOperations xsi:type="tool_1:CreateInstance" typeName="requirement::RequirementPackage" referenceName="requirementPackage">
                   <subModelOperations xsi:type="tool_1:ChangeContext">
                     <subModelOperations xsi:type="tool_1:CreateInstance" typeName="base::LangString" referenceName="name">
-                      <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="新需求包"/>
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="Requirement Package"/>
                     </subModelOperations>
                   </subModelOperations>
                 </subModelOperations>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:NodeCreationDescription" name="创建危险分析包" nodeMappings="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='mbsa_package_diagram']/@defaultLayer/@nodeMappings[name='HazardPackage']">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Hazard Package" nodeMappings="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='mbsa_package_diagram']/@defaultLayer/@nodeMappings[name='HazardPackage']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
@@ -341,14 +341,14 @@
                 <subModelOperations xsi:type="tool_1:CreateInstance" typeName="hazard::HazardPackage" referenceName="hazardPackage">
                   <subModelOperations xsi:type="tool_1:ChangeContext">
                     <subModelOperations xsi:type="tool_1:CreateInstance" typeName="base::LangString" referenceName="name">
-                      <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="新危险分析包"/>
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="Hazard Package"/>
                     </subModelOperations>
                   </subModelOperations>
                 </subModelOperations>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool_1:OperationAction" name="查看组件包" precondition="aql:self.oclIsKindOf(component::ComponentPackage)">
+          <ownedTools xsi:type="tool_1:OperationAction" name="Go to Component Package" precondition="aql:self.oclIsKindOf(component::ComponentPackage)">
             <view name="views"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool:Navigation" createIfNotExistent="true" diagramDescription="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']"/>
@@ -359,7 +359,7 @@
             <elementView name="elementView"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext">
-                <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="查看属性">
+                <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Properties">
                   <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
                     <initialOperation>
                       <firstModelOperations xsi:type="tool_1:ChangeContext"/>
@@ -371,9 +371,9 @@
                     </initialOperation>
                   </buttons>
                   <page name="Default Page" labelExpression="aql:element.name.content" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='mbsa_package_diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='ViewElementProperty']/@initialOperation/@firstModelOperations/@subModelOperations.0/@groups.0"/>
-                  <groups name="feature_group" labelExpression="基本属性" semanticCandidateExpression="var:self">
+                  <groups name="feature_group" labelExpression="Basic Attributes" semanticCandidateExpression="var:self">
                     <controls xsi:type="properties:ContainerDescription">
-                      <controls xsi:type="properties:TextDescription" name="name_input" labelExpression="组件名称" valueExpression="aql:self.name.content">
+                      <controls xsi:type="properties:TextDescription" name="name_input" labelExpression="Name" valueExpression="aql:self.name.content">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="feature:name">
                             <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="var:newValue"/>
@@ -386,13 +386,13 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool_1:OperationAction" name="查看安全需求包" precondition="aql:self.oclIsKindOf(requirement::RequirementPackage)">
+          <ownedTools xsi:type="tool_1:OperationAction" name="View Requirement Package" precondition="aql:self.oclIsKindOf(requirement::RequirementPackage)">
             <view name="views"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool:Navigation" createIfNotExistent="true" diagramDescription="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='requirement_package_diagram']"/>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool_1:OperationAction" name="查看危险包" precondition="aql:self.oclIsKindOf(hazard::HazardPackage)">
+          <ownedTools xsi:type="tool_1:OperationAction" name="View Hazard Package" precondition="aql:self.oclIsKindOf(hazard::HazardPackage)">
             <view name="views"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool:Navigation" createIfNotExistent="true" diagramDescription="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='hazard_package_diagram']"/>
@@ -442,7 +442,7 @@
           </style>
         </edgeMappings>
         <toolSections name="Component_Section">
-          <ownedTools xsi:type="tool:NodeCreationDescription" name="创建组件" nodeMappings="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_diagram']/@defaultLayer/@nodeMappings[name='Component']">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Component" nodeMappings="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_diagram']/@defaultLayer/@nodeMappings[name='Component']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
@@ -453,7 +453,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:EdgeCreationDescription" name="创建组件关系" edgeMappings="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_diagram']/@defaultLayer/@edgeMappings[name='Relationship']">
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Component Relationship" edgeMappings="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_diagram']/@defaultLayer/@edgeMappings[name='Relationship']">
             <sourceVariable name="source"/>
             <targetVariable name="target"/>
             <sourceViewVariable name="sourceView"/>
@@ -468,7 +468,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:NodeCreationDescription" name="创建失效模式" nodeMappings="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_diagram']/@defaultLayer/@nodeMappings[name='FailureMode']">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Failure Mode" nodeMappings="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_diagram']/@defaultLayer/@nodeMappings[name='FailureMode']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
@@ -479,7 +479,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:NodeCreationDescription" name="创建安全措施" nodeMappings="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_diagram']/@defaultLayer/@nodeMappings[name='SafetyMechanism']">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Safety Mechanism" nodeMappings="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_diagram']/@defaultLayer/@nodeMappings[name='SafetyMechanism']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
@@ -490,7 +490,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:EdgeCreationDescription" name="诊断失效模式" edgeMappings="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_diagram']/@defaultLayer/@edgeMappings[name='DiagnosticTarget']">
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Diagnostic Coverage" edgeMappings="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_diagram']/@defaultLayer/@edgeMappings[name='DiagnosticTarget']">
             <sourceVariable name="source"/>
             <targetVariable name="target"/>
             <sourceViewVariable name="sourceView"/>
@@ -506,7 +506,7 @@
             <elementView name="elementView"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext">
-                <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="查看属性">
+                <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Properties">
                   <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
                     <initialOperation>
                       <firstModelOperations xsi:type="tool_1:ChangeContext"/>
@@ -518,28 +518,28 @@
                     </initialOperation>
                   </buttons>
                   <page name="component_property_page" labelExpression="feature:component_name" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='ViewPropertiesOfComponent']/@initialOperation/@firstModelOperations/@subModelOperations.0/@groups.0 //@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='ViewPropertiesOfComponent']/@initialOperation/@firstModelOperations/@subModelOperations.0/@groups.1 //@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='ViewPropertiesOfComponent']/@initialOperation/@firstModelOperations/@subModelOperations.0/@groups.2"/>
-                  <groups name="feature_group" labelExpression="基本属性" semanticCandidateExpression="var:self">
+                  <groups name="feature_group" labelExpression="Basic Attributes" semanticCandidateExpression="var:self">
                     <controls xsi:type="properties:ContainerDescription" name="container1">
-                      <controls xsi:type="properties:TextDescription" name="name_input" labelExpression="组件名称" valueExpression="feature:component_name">
+                      <controls xsi:type="properties:TextDescription" name="name_input" labelExpression="Name" valueExpression="feature:component_name">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:SetValue" featureName="component_name" valueExpression="var:newValue"/>
                         </initialOperation>
                       </controls>
-                      <controls xsi:type="properties:TextDescription" name="id_text" labelExpression="序号      " valueExpression="feature:identity">
+                      <controls xsi:type="properties:TextDescription" name="id_text" labelExpression="ID      " valueExpression="feature:identity">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
                             <subModelOperations xsi:type="tool_1:SetValue" featureName="identity" valueExpression="var:newValue"/>
                           </firstModelOperations>
                         </initialOperation>
                       </controls>
-                      <controls xsi:type="properties:TextDescription" name="fit_text" labelExpression="失效概率" valueExpression="feature:fit">
+                      <controls xsi:type="properties:TextDescription" name="fit_text" labelExpression="FIT" valueExpression="feature:fit">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
                             <subModelOperations xsi:type="tool_1:SetValue" featureName="fit" valueExpression="var:newValue"/>
                           </firstModelOperations>
                         </initialOperation>
                       </controls>
-                      <controls xsi:type="properties:TextDescription" name="sil_text" labelExpression="安全完整性等级" isEnabledExpression="aql:false" valueExpression="feature:sil">
+                      <controls xsi:type="properties:TextDescription" name="sil_text" labelExpression="SIL" isEnabledExpression="aql:false" valueExpression="feature:sil">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self"/>
                         </initialOperation>
@@ -547,19 +547,19 @@
                       <layout xsi:type="properties:GridLayoutDescription"/>
                     </controls>
                   </groups>
-                  <groups name="reference_group" labelExpression="引用属性" semanticCandidateExpression="var:self">
+                  <groups name="reference_group" labelExpression="Internal Reference" semanticCandidateExpression="var:self">
                     <controls xsi:type="properties:ContainerDescription" name="container2">
-                      <controls xsi:type="properties:TextDescription" name="requirement_mapping" labelExpression="引用需求" valueExpression="aql:self.requirements->collect(r|r.name.content)">
+                      <controls xsi:type="properties:TextDescription" name="requirement_mapping" labelExpression="Requirement" valueExpression="aql:self.requirements->collect(r|r.name.content)">
                         <initialOperation/>
                       </controls>
-                      <controls xsi:type="properties:ButtonDescription" name="browse" buttonLabelExpression="浏览...">
+                      <controls xsi:type="properties:ButtonDescription" name="browse" buttonLabelExpression="Browse...">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext">
                             <subModelOperations xsi:type="tool_1:ExternalJavaAction" name="browse_action" id="mbsa.toolchain.design.browse.requirement.action"/>
                           </firstModelOperations>
                         </initialOperation>
                       </controls>
-                      <controls xsi:type="properties:ButtonDescription" name="goto" buttonLabelExpression="追溯">
+                      <controls xsi:type="properties:ButtonDescription" name="goto" buttonLabelExpression="Go to">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
                             <subModelOperations xsi:type="tool_1:ExternalJavaAction" name="mbsa.toolchain.design.goto.requirement" elementsToSelect="var:element" id="mbsa.toolchain.design.goto.requirement">
@@ -571,19 +571,19 @@
                       <layout xsi:type="properties:GridLayoutDescription" numberOfColumns="3"/>
                     </controls>
                   </groups>
-                  <groups name="external_reference" labelExpression="外部引用" semanticCandidateExpression="var:self">
+                  <groups name="external_reference" labelExpression="External Reference" semanticCandidateExpression="var:self">
                     <controls xsi:type="properties:ContainerDescription" name="container3">
-                      <controls xsi:type="properties:TextDescription" name="source_uri" labelExpression="外部文件" valueExpression="aql:self.requirements->collect(r|r.name.content)">
+                      <controls xsi:type="properties:TextDescription" name="source_uri" labelExpression="File" valueExpression="aql:self.requirements->collect(r|r.name.content)">
                         <initialOperation/>
                       </controls>
-                      <controls xsi:type="properties:ButtonDescription" name="browse" buttonLabelExpression="浏览...">
+                      <controls xsi:type="properties:ButtonDescription" name="browse" buttonLabelExpression="Browse...">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext">
                             <subModelOperations xsi:type="tool_1:ExternalJavaAction" name="browse_action" id="mbsa.toolchain.design.browseAction"/>
                           </firstModelOperations>
                         </initialOperation>
                       </controls>
-                      <controls xsi:type="properties:ButtonDescription" name="goto" buttonLabelExpression="追溯">
+                      <controls xsi:type="properties:ButtonDescription" name="goto" buttonLabelExpression="Go to">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
                             <subModelOperations xsi:type="tool_1:ExternalJavaAction" name="mbsa.toolchain.design.goto.requirement" elementsToSelect="var:element" id="mbsa.toolchain.design.goto.requirement">
@@ -604,7 +604,7 @@
             <elementView name="elementView"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext">
-                <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="查看属性">
+                <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Properties">
                   <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
                     <initialOperation>
                       <firstModelOperations xsi:type="tool_1:ChangeContext"/>
@@ -616,30 +616,30 @@
                     </initialOperation>
                   </buttons>
                   <page name="Default Page" labelExpression="feature:component_name" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='ViewPropertiesOfFailureMode']/@initialOperation/@firstModelOperations/@subModelOperations.0/@groups.0 //@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='ViewPropertiesOfFailureMode']/@initialOperation/@firstModelOperations/@subModelOperations.0/@groups.1"/>
-                  <groups name="feature_group" labelExpression="基本属性" semanticCandidateExpression="var:self">
+                  <groups name="feature_group" labelExpression="Basic Attributes" semanticCandidateExpression="var:self">
                     <controls xsi:type="properties:ContainerDescription" name="container1">
-                      <controls xsi:type="properties:TextDescription" name="id_text" labelExpression="序号      " valueExpression="feature:identity">
+                      <controls xsi:type="properties:TextDescription" name="id_text" labelExpression="ID  " valueExpression="feature:identity">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
                             <subModelOperations xsi:type="tool_1:SetValue" featureName="identity" valueExpression="var:newValue"/>
                           </firstModelOperations>
                         </initialOperation>
                       </controls>
-                      <controls xsi:type="properties:TextDescription" name="mode_text" labelExpression="失效模式" valueExpression="feature:mode">
+                      <controls xsi:type="properties:TextDescription" name="mode_text" labelExpression="Failure Mode" valueExpression="feature:mode">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
                             <subModelOperations xsi:type="tool_1:SetValue" featureName="mode" valueExpression="var:newValue"/>
                           </firstModelOperations>
                         </initialOperation>
                       </controls>
-                      <controls xsi:type="properties:TextDescription" name="cause_text" labelExpression="失效原因" valueExpression="feature:cause">
+                      <controls xsi:type="properties:TextDescription" name="cause_text" labelExpression="Cause" valueExpression="feature:cause">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
                             <subModelOperations xsi:type="tool_1:SetValue" featureName="cause" valueExpression="var:newValue"/>
                           </firstModelOperations>
                         </initialOperation>
                       </controls>
-                      <controls xsi:type="properties:TextDescription" name="probability_text" labelExpression="发生概率" valueExpression="feature:probability">
+                      <controls xsi:type="properties:TextDescription" name="probability_text" labelExpression="Exposure" valueExpression="feature:probability">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
                             <subModelOperations xsi:type="tool_1:SetValue" featureName="probability" valueExpression="var:newValue"/>
@@ -649,19 +649,19 @@
                       <layout xsi:type="properties:GridLayoutDescription"/>
                     </controls>
                   </groups>
-                  <groups name="reference_group" labelExpression="引用属性" semanticCandidateExpression="var:self">
+                  <groups name="reference_group" labelExpression="References" semanticCandidateExpression="var:self">
                     <controls xsi:type="properties:ContainerDescription" name="container2">
-                      <controls xsi:type="properties:TextDescription" name="hazard_mapping" labelExpression="引用危险" valueExpression="aql:self.hazards->collect(r|r.name.content)">
+                      <controls xsi:type="properties:TextDescription" name="hazard_mapping" labelExpression="Hazard" valueExpression="aql:self.hazards->collect(r|r.name.content)">
                         <initialOperation/>
                       </controls>
-                      <controls xsi:type="properties:ButtonDescription" name="browse" buttonLabelExpression="浏览...">
+                      <controls xsi:type="properties:ButtonDescription" name="browse" buttonLabelExpression="Browse...">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext">
                             <subModelOperations xsi:type="tool_1:ExternalJavaAction" name="browse_action" id="mbsa.toolchain.design.browse.hazard"/>
                           </firstModelOperations>
                         </initialOperation>
                       </controls>
-                      <controls xsi:type="properties:ButtonDescription" name="goto" buttonLabelExpression="追溯">
+                      <controls xsi:type="properties:ButtonDescription" name="goto" buttonLabelExpression="Go to">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
                             <subModelOperations xsi:type="tool_1:ExternalJavaAction" name="mbsa.toolchain.design.goto.hazard" elementsToSelect="var:element" id="mbsa.toolchain.design.goto.hazard">
@@ -677,7 +677,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool_1:OperationAction" name="组件明细" precondition="aql:self.oclIsKindOf(component::Component)">
+          <ownedTools xsi:type="tool_1:OperationAction" name="View Component" precondition="aql:self.oclIsKindOf(component::Component)">
             <view name="views"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
@@ -690,7 +690,7 @@
             <elementView name="elementView"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext">
-                <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="查看属性">
+                <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Properties">
                   <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
                     <initialOperation>
                       <firstModelOperations xsi:type="tool_1:ChangeContext"/>
@@ -702,23 +702,23 @@
                     </initialOperation>
                   </buttons>
                   <page name="Default Page" labelExpression="feature:mechanism" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='ViewPropertiesOfSafetyMechanism']/@initialOperation/@firstModelOperations/@subModelOperations.0/@groups.0"/>
-                  <groups name="feature_group" labelExpression="基本属性" semanticCandidateExpression="var:self">
+                  <groups name="feature_group" labelExpression="Basic Attributes" semanticCandidateExpression="var:self">
                     <controls xsi:type="properties:ContainerDescription" name="container1">
-                      <controls xsi:type="properties:TextDescription" name="id_text" labelExpression="序号" valueExpression="feature:identity">
+                      <controls xsi:type="properties:TextDescription" name="id_text" labelExpression="ID" valueExpression="feature:identity">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
                             <subModelOperations xsi:type="tool_1:SetValue" featureName="identity" valueExpression="var:newValue"/>
                           </firstModelOperations>
                         </initialOperation>
                       </controls>
-                      <controls xsi:type="properties:TextDescription" name="mechanism_text" labelExpression="安全措施" valueExpression="feature:mechanism">
+                      <controls xsi:type="properties:TextDescription" name="mechanism_text" labelExpression="Safety Mechanism" valueExpression="feature:mechanism">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
                             <subModelOperations xsi:type="tool_1:SetValue" featureName="mechanism" valueExpression="var:newValue"/>
                           </firstModelOperations>
                         </initialOperation>
                       </controls>
-                      <controls xsi:type="properties:TextDescription" name="coverage_text" labelExpression="诊断覆盖率" valueExpression="feature:coverage">
+                      <controls xsi:type="properties:TextDescription" name="coverage_text" labelExpression="Diagnostic Coverage" valueExpression="feature:coverage">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
                             <subModelOperations xsi:type="tool_1:SetValue" featureName="coverage" valueExpression="var:newValue"/>
@@ -755,7 +755,7 @@
           </style>
         </edgeMappings>
         <toolSections>
-          <ownedTools xsi:type="tool:NodeCreationDescription" name="创建安全需求" nodeMappings="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='requirement_package_diagram']/@defaultLayer/@nodeMappings[name='RequirementNode']">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Safety Requirement" nodeMappings="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='requirement_package_diagram']/@defaultLayer/@nodeMappings[name='RequirementNode']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
@@ -771,7 +771,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:EdgeCreationDescription" name="创建安全需求关系" edgeMappings="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='requirement_package_diagram']/@defaultLayer/@edgeMappings[name='RequirementRelationship']">
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Relationship" edgeMappings="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='requirement_package_diagram']/@defaultLayer/@edgeMappings[name='RequirementRelationship']">
             <sourceVariable name="source"/>
             <targetVariable name="target"/>
             <sourceViewVariable name="sourceView"/>
@@ -791,7 +791,7 @@
             <elementView name="elementView"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext">
-                <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="查看属性">
+                <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Properties">
                   <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
                     <initialOperation>
                       <firstModelOperations xsi:type="tool_1:ChangeContext"/>
@@ -803,30 +803,30 @@
                     </initialOperation>
                   </buttons>
                   <page name="Default Page" labelExpression="aql:element.name.content" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='requirement_package_diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='ViewRequirementProperties']/@initialOperation/@firstModelOperations/@subModelOperations.0/@groups.0"/>
-                  <groups name="feature_group" labelExpression="基本属性" semanticCandidateExpression="var:self">
+                  <groups name="feature_group" labelExpression="Basic Attributes" semanticCandidateExpression="var:self">
                     <controls xsi:type="properties:ContainerDescription">
-                      <controls xsi:type="properties:TextDescription" name="identity" labelExpression="序号      " valueExpression="feature:identity">
+                      <controls xsi:type="properties:TextDescription" name="identity" labelExpression="ID" valueExpression="feature:identity">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
                             <subModelOperations xsi:type="tool_1:SetValue" featureName="identity" valueExpression="var:newValue"/>
                           </firstModelOperations>
                         </initialOperation>
                       </controls>
-                      <controls xsi:type="properties:TextDescription" name="name_input" labelExpression="需求名称" valueExpression="aql:self.name.content">
+                      <controls xsi:type="properties:TextDescription" name="name_input" labelExpression="Name" valueExpression="aql:self.name.content">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="feature:name">
                             <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="var:newValue"/>
                           </firstModelOperations>
                         </initialOperation>
                       </controls>
-                      <controls xsi:type="properties:TextDescription" name="description_input" labelExpression="需求描述" valueExpression="feature:desc">
+                      <controls xsi:type="properties:TextDescription" name="description_input" labelExpression="Description" valueExpression="feature:desc">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
                             <subModelOperations xsi:type="tool_1:SetValue" featureName="desc" valueExpression="var:newValue"/>
                           </firstModelOperations>
                         </initialOperation>
                       </controls>
-                      <controls xsi:type="properties:TextDescription" name="script_input" labelExpression="程序描述" valueExpression="feature:script">
+                      <controls xsi:type="properties:TextDescription" name="script_input" labelExpression="Script" valueExpression="feature:script">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
                             <subModelOperations xsi:type="tool_1:SetValue" featureName="script" valueExpression="var:newValue"/>
@@ -884,7 +884,7 @@
           </style>
         </edgeMappings>
         <toolSections>
-          <ownedTools xsi:type="tool:NodeCreationDescription" name="创建危险" nodeMappings="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='hazard_package_diagram']/@defaultLayer/@nodeMappings[name='HazardNode']">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Hazard" nodeMappings="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='hazard_package_diagram']/@defaultLayer/@nodeMappings[name='HazardNode']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
@@ -899,7 +899,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:NodeCreationDescription" name="创建危险原因" nodeMappings="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='hazard_package_diagram']/@defaultLayer/@nodeMappings[name='CauseNode']">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Cause" nodeMappings="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='hazard_package_diagram']/@defaultLayer/@nodeMappings[name='CauseNode']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
@@ -914,7 +914,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:NodeCreationDescription" name="创建控制措施" nodeMappings="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='hazard_package_diagram']/@defaultLayer/@nodeMappings[name='ControlMeasureNode']">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Control Measure" nodeMappings="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='hazard_package_diagram']/@defaultLayer/@nodeMappings[name='ControlMeasureNode']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
@@ -929,13 +929,13 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool_1:OperationAction" name="查看控制措施" precondition="aql:self.oclIsKindOf(hazard::ControlMeasure)">
+          <ownedTools xsi:type="tool_1:OperationAction" name="View Control Measure" precondition="aql:self.oclIsKindOf(hazard::ControlMeasure)">
             <view name="views"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool:Navigation" createIfNotExistent="true" diagramDescription="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='controlmeasure_diagram']"/>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:EdgeCreationDescription" name="选择危险原因" edgeMappings="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='hazard_package_diagram']/@defaultLayer/@edgeMappings[name='CauseEdge']">
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Select Cause" edgeMappings="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='hazard_package_diagram']/@defaultLayer/@edgeMappings[name='CauseEdge']">
             <sourceVariable name="source"/>
             <targetVariable name="target"/>
             <sourceViewVariable name="sourceView"/>
@@ -946,7 +946,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:EdgeCreationDescription" name="选择控制措施" edgeMappings="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='hazard_package_diagram']/@defaultLayer/@edgeMappings[name='ControlMeasureEdge']">
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Select Control Measure" edgeMappings="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='hazard_package_diagram']/@defaultLayer/@edgeMappings[name='ControlMeasureEdge']">
             <sourceVariable name="source"/>
             <targetVariable name="target"/>
             <sourceViewVariable name="sourceView"/>
@@ -962,7 +962,7 @@
             <elementView name="elementView"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext">
-                <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="查看属性">
+                <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Properties">
                   <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
                     <initialOperation>
                       <firstModelOperations xsi:type="tool_1:ChangeContext"/>
@@ -974,16 +974,16 @@
                     </initialOperation>
                   </buttons>
                   <page name="Default Page" labelExpression="aql:self.name.content" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='hazard_package_diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='ViewPropertiesOfHazard']/@initialOperation/@firstModelOperations/@subModelOperations.0/@groups.0"/>
-                  <groups name="feature_group" labelExpression="基本属性" semanticCandidateExpression="var:self">
+                  <groups name="feature_group" labelExpression="Basic Attributes" semanticCandidateExpression="var:self">
                     <controls xsi:type="properties:ContainerDescription" name="container1">
-                      <controls xsi:type="properties:TextDescription" name="id_text" labelExpression="序号      " valueExpression="feature:identity">
+                      <controls xsi:type="properties:TextDescription" name="id_text" labelExpression="ID" valueExpression="feature:identity">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
                             <subModelOperations xsi:type="tool_1:SetValue" featureName="identity" valueExpression="var:newValue"/>
                           </firstModelOperations>
                         </initialOperation>
                       </controls>
-                      <controls xsi:type="properties:TextDescription" name="name_input" labelExpression="危险情况" valueExpression="aql:self.name.content">
+                      <controls xsi:type="properties:TextDescription" name="name_input" labelExpression="Hazardous Situation" valueExpression="aql:self.name.content">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="feature:name">
                             <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="var:newValue"/>
@@ -1002,7 +1002,7 @@
             <elementView name="elementView"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext">
-                <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="查看属性">
+                <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Properties">
                   <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
                     <initialOperation>
                       <firstModelOperations xsi:type="tool_1:ChangeContext"/>
@@ -1014,16 +1014,16 @@
                     </initialOperation>
                   </buttons>
                   <page name="Default Page" labelExpression="aql:self.name.content" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='hazard_package_diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='ViewPropertiesOfCause']/@initialOperation/@firstModelOperations/@subModelOperations.0/@groups.0"/>
-                  <groups name="feature_group" labelExpression="基本属性" semanticCandidateExpression="var:self">
+                  <groups name="feature_group" labelExpression="Properties" semanticCandidateExpression="var:self">
                     <controls xsi:type="properties:ContainerDescription" name="container1">
-                      <controls xsi:type="properties:TextDescription" name="id_text" labelExpression="序号      " valueExpression="feature:identity">
+                      <controls xsi:type="properties:TextDescription" name="id_text" labelExpression="ID" valueExpression="feature:identity">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
                             <subModelOperations xsi:type="tool_1:SetValue" featureName="identity" valueExpression="var:newValue"/>
                           </firstModelOperations>
                         </initialOperation>
                       </controls>
-                      <controls xsi:type="properties:TextDescription" name="name_input" labelExpression="危险原因" valueExpression="aql:self.name.content">
+                      <controls xsi:type="properties:TextDescription" name="name_input" labelExpression="Cause" valueExpression="aql:self.name.content">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="feature:name">
                             <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="var:newValue"/>
@@ -1042,7 +1042,7 @@
             <elementView name="elementView"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext">
-                <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="查看属性">
+                <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Properties">
                   <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
                     <initialOperation>
                       <firstModelOperations xsi:type="tool_1:ChangeContext"/>
@@ -1054,16 +1054,16 @@
                     </initialOperation>
                   </buttons>
                   <page name="Default Page" labelExpression="aql:self.name.content" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='hazard_package_diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='ViewPropertiesOfControlMeasure']/@initialOperation/@firstModelOperations/@subModelOperations.0/@groups.0"/>
-                  <groups name="feature_group" labelExpression="基本属性" semanticCandidateExpression="var:self">
+                  <groups name="feature_group" labelExpression="Basic Attributes" semanticCandidateExpression="var:self">
                     <controls xsi:type="properties:ContainerDescription" name="container1">
-                      <controls xsi:type="properties:TextDescription" name="id_text" labelExpression="序号      " valueExpression="feature:identity">
+                      <controls xsi:type="properties:TextDescription" name="id_text" labelExpression="ID" valueExpression="feature:identity">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
                             <subModelOperations xsi:type="tool_1:SetValue" featureName="identity" valueExpression="var:newValue"/>
                           </firstModelOperations>
                         </initialOperation>
                       </controls>
-                      <controls xsi:type="properties:TextDescription" name="name_input" labelExpression="控制措施" valueExpression="aql:self.name.content">
+                      <controls xsi:type="properties:TextDescription" name="name_input" labelExpression="Control Measure" valueExpression="aql:self.name.content">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="feature:name">
                             <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="var:newValue"/>
@@ -1109,7 +1109,7 @@
           </style>
         </nodeMappings>
         <toolSections>
-          <ownedTools xsi:type="tool:NodeCreationDescription" name="创建校验有效性说明" nodeMappings="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='controlmeasure_diagram']/@defaultLayer/@nodeMappings[name='VerificationEffectiveness']">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Verification Effectiveness" nodeMappings="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='controlmeasure_diagram']/@defaultLayer/@nodeMappings[name='VerificationEffectiveness']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
@@ -1124,7 +1124,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:NodeCreationDescription" name="创建安全性决策说明" nodeMappings="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='controlmeasure_diagram']/@defaultLayer/@nodeMappings[name='SafetyDecisionRationale']">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Safety Decision" nodeMappings="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='controlmeasure_diagram']/@defaultLayer/@nodeMappings[name='SafetyDecisionRationale']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
@@ -1139,7 +1139,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:NodeCreationDescription" name="创建验证措施" nodeMappings="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='controlmeasure_diagram']/@defaultLayer/@nodeMappings[name='Validation']">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Validation" nodeMappings="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='controlmeasure_diagram']/@defaultLayer/@nodeMappings[name='Validation']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
@@ -1159,7 +1159,7 @@
             <elementView name="elementView"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext">
-                <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="查看属性">
+                <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Properties">
                   <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
                     <initialOperation>
                       <firstModelOperations xsi:type="tool_1:ChangeContext"/>
@@ -1171,23 +1171,23 @@
                     </initialOperation>
                   </buttons>
                   <page name="Default Page" labelExpression="aql:self.name.content" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='controlmeasure_diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='ViewPropertiesOfSafetyDecisionRationale']/@initialOperation/@firstModelOperations/@subModelOperations.0/@groups.0"/>
-                  <groups name="feature_group" labelExpression="基本属性" semanticCandidateExpression="var:self">
+                  <groups name="feature_group" labelExpression="Basic Attributes" semanticCandidateExpression="var:self">
                     <controls xsi:type="properties:ContainerDescription" name="container1">
-                      <controls xsi:type="properties:TextDescription" name="id_text" labelExpression="序号         " valueExpression="feature:identity">
+                      <controls xsi:type="properties:TextDescription" name="id_text" labelExpression="ID      " valueExpression="feature:identity">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
                             <subModelOperations xsi:type="tool_1:SetValue" featureName="identity" valueExpression="var:newValue"/>
                           </firstModelOperations>
                         </initialOperation>
                       </controls>
-                      <controls xsi:type="properties:TextDescription" name="name_input" labelExpression="安全性决策" valueExpression="aql:self.name.content">
+                      <controls xsi:type="properties:TextDescription" name="name_input" labelExpression="Safety Decision" valueExpression="aql:self.name.content">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="feature:name">
                             <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="var:newValue"/>
                           </firstModelOperations>
                         </initialOperation>
                       </controls>
-                      <controls xsi:type="properties:TextDescription" name="text_text" labelExpression="说明         " valueExpression="feature:text">
+                      <controls xsi:type="properties:TextDescription" name="text_text" labelExpression="Justification   " valueExpression="feature:text">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
                             <subModelOperations xsi:type="tool_1:SetValue" featureName="text" valueExpression="var:newValue"/>
@@ -1197,19 +1197,19 @@
                       <layout xsi:type="properties:GridLayoutDescription"/>
                     </controls>
                   </groups>
-                  <groups name="reference_group" labelExpression="引用属性" semanticCandidateExpression="var:self">
+                  <groups name="reference_group" labelExpression="References" semanticCandidateExpression="var:self">
                     <controls xsi:type="properties:ContainerDescription" name="container2">
-                      <controls xsi:type="properties:TextDescription" name="requirement_mapping" labelExpression="引用需求" valueExpression="aql:self.requirements->collect(r|r.name.content)">
+                      <controls xsi:type="properties:TextDescription" name="requirement_mapping" labelExpression="Requirement" valueExpression="aql:self.requirements->collect(r|r.name.content)">
                         <initialOperation/>
                       </controls>
-                      <controls xsi:type="properties:ButtonDescription" name="browse" buttonLabelExpression="浏览...">
+                      <controls xsi:type="properties:ButtonDescription" name="browse" buttonLabelExpression="Browse...">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext">
                             <subModelOperations xsi:type="tool_1:ExternalJavaAction" name="browse_action" id="mbsa.toolchain.design.browseAction"/>
                           </firstModelOperations>
                         </initialOperation>
                       </controls>
-                      <controls xsi:type="properties:ButtonDescription" name="goto" buttonLabelExpression="追溯">
+                      <controls xsi:type="properties:ButtonDescription" name="goto" buttonLabelExpression="Go to">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
                             <subModelOperations xsi:type="tool_1:ExternalJavaAction" name="mbsa.toolchain.design.goto.requirement" elementsToSelect="var:element" id="mbsa.toolchain.design.goto.requirement">
@@ -1230,7 +1230,7 @@
             <elementView name="elementView"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext">
-                <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="查看属性">
+                <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Properties">
                   <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
                     <initialOperation>
                       <firstModelOperations xsi:type="tool_1:ChangeContext"/>
@@ -1242,23 +1242,23 @@
                     </initialOperation>
                   </buttons>
                   <page name="Default Page" labelExpression="aql:self.name.content" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='controlmeasure_diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='ViewPropertiesOfVerificationEffectiveness']/@initialOperation/@firstModelOperations/@subModelOperations.0/@groups.0"/>
-                  <groups name="feature_group" labelExpression="基本属性" semanticCandidateExpression="var:self">
+                  <groups name="feature_group" labelExpression="Basic Attributes" semanticCandidateExpression="var:self">
                     <controls xsi:type="properties:ContainerDescription" name="container1">
-                      <controls xsi:type="properties:TextDescription" name="id_text" labelExpression="序号         " valueExpression="feature:identity">
+                      <controls xsi:type="properties:TextDescription" name="id_text" labelExpression="ID" valueExpression="feature:identity">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
                             <subModelOperations xsi:type="tool_1:SetValue" featureName="identity" valueExpression="var:newValue"/>
                           </firstModelOperations>
                         </initialOperation>
                       </controls>
-                      <controls xsi:type="properties:TextDescription" name="name_input" labelExpression="验证有效性" valueExpression="aql:self.name.content">
+                      <controls xsi:type="properties:TextDescription" name="name_input" labelExpression="Verification Effectiveness" valueExpression="aql:self.name.content">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="feature:name">
                             <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="var:newValue"/>
                           </firstModelOperations>
                         </initialOperation>
                       </controls>
-                      <controls xsi:type="properties:TextDescription" name="text_text" labelExpression="说明         " valueExpression="feature:text">
+                      <controls xsi:type="properties:TextDescription" name="text_text" labelExpression="Justification" valueExpression="feature:text">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
                             <subModelOperations xsi:type="tool_1:SetValue" featureName="text" valueExpression="var:newValue"/>
@@ -1268,19 +1268,19 @@
                       <layout xsi:type="properties:GridLayoutDescription"/>
                     </controls>
                   </groups>
-                  <groups name="reference_group" labelExpression="引用属性" semanticCandidateExpression="var:self">
+                  <groups name="reference_group" labelExpression="Reference" semanticCandidateExpression="var:self">
                     <controls xsi:type="properties:ContainerDescription" name="container2">
-                      <controls xsi:type="properties:TextDescription" name="requirement_mapping" labelExpression="引用需求" valueExpression="aql:self.requirements->collect(r|r.name.content)">
+                      <controls xsi:type="properties:TextDescription" name="requirement_mapping" labelExpression="Requirement" valueExpression="aql:self.requirements->collect(r|r.name.content)">
                         <initialOperation/>
                       </controls>
-                      <controls xsi:type="properties:ButtonDescription" name="browse" buttonLabelExpression="浏览...">
+                      <controls xsi:type="properties:ButtonDescription" name="browse" buttonLabelExpression="Browse...">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext">
                             <subModelOperations xsi:type="tool_1:ExternalJavaAction" name="browse_action" id="mbsa.toolchain.design.browseAction"/>
                           </firstModelOperations>
                         </initialOperation>
                       </controls>
-                      <controls xsi:type="properties:ButtonDescription" name="goto" buttonLabelExpression="追溯">
+                      <controls xsi:type="properties:ButtonDescription" name="goto" buttonLabelExpression="Go to">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
                             <subModelOperations xsi:type="tool_1:ExternalJavaAction" name="mbsa.toolchain.design.goto.requirement" elementsToSelect="var:element" id="mbsa.toolchain.design.goto.requirement">
@@ -1301,7 +1301,7 @@
             <elementView name="elementView"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext">
-                <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="查看属性">
+                <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Properties">
                   <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
                     <initialOperation>
                       <firstModelOperations xsi:type="tool_1:ChangeContext"/>
@@ -1313,23 +1313,23 @@
                     </initialOperation>
                   </buttons>
                   <page name="Default Page" labelExpression="aql:self.name.content" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='controlmeasure_diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='ViewPropertiesOfValidation']/@initialOperation/@firstModelOperations/@subModelOperations.0/@groups.0"/>
-                  <groups name="feature_group" labelExpression="基本属性" semanticCandidateExpression="var:self">
+                  <groups name="feature_group" labelExpression="Basic Attributes" semanticCandidateExpression="var:self">
                     <controls xsi:type="properties:ContainerDescription" name="container1">
-                      <controls xsi:type="properties:TextDescription" name="id_text" labelExpression="序号      " valueExpression="feature:identity">
+                      <controls xsi:type="properties:TextDescription" name="id_text" labelExpression="ID" valueExpression="feature:identity">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
                             <subModelOperations xsi:type="tool_1:SetValue" featureName="identity" valueExpression="var:newValue"/>
                           </firstModelOperations>
                         </initialOperation>
                       </controls>
-                      <controls xsi:type="properties:TextDescription" name="name_input" labelExpression="验证措施" valueExpression="aql:self.name.content">
+                      <controls xsi:type="properties:TextDescription" name="name_input" labelExpression="Validation" valueExpression="aql:self.name.content">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="feature:name">
                             <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="var:newValue"/>
                           </firstModelOperations>
                         </initialOperation>
                       </controls>
-                      <controls xsi:type="properties:TextDescription" name="text_text" labelExpression="说明      " valueExpression="feature:text">
+                      <controls xsi:type="properties:TextDescription" name="text_text" labelExpression="Description" valueExpression="feature:text">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
                             <subModelOperations xsi:type="tool_1:SetValue" featureName="text" valueExpression="var:newValue"/>
@@ -1339,19 +1339,19 @@
                       <layout xsi:type="properties:GridLayoutDescription"/>
                     </controls>
                   </groups>
-                  <groups name="reference_group" labelExpression="引用属性" semanticCandidateExpression="var:self">
+                  <groups name="reference_group" labelExpression="Reference" semanticCandidateExpression="var:self">
                     <controls xsi:type="properties:ContainerDescription" name="container2">
-                      <controls xsi:type="properties:TextDescription" name="requirement_mapping" labelExpression="引用需求" valueExpression="aql:self.requirements->collect(r|r.name.content)">
+                      <controls xsi:type="properties:TextDescription" name="requirement_mapping" labelExpression="Requirement" valueExpression="aql:self.requirements->collect(r|r.name.content)">
                         <initialOperation/>
                       </controls>
-                      <controls xsi:type="properties:ButtonDescription" name="browse" buttonLabelExpression="浏览...">
+                      <controls xsi:type="properties:ButtonDescription" name="browse" buttonLabelExpression="Browse...">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext">
                             <subModelOperations xsi:type="tool_1:ExternalJavaAction" name="browse_action" id="mbsa.toolchain.design.browseAction"/>
                           </firstModelOperations>
                         </initialOperation>
                       </controls>
-                      <controls xsi:type="properties:ButtonDescription" name="goto" buttonLabelExpression="追溯">
+                      <controls xsi:type="properties:ButtonDescription" name="goto" buttonLabelExpression="Go to">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
                             <subModelOperations xsi:type="tool_1:ExternalJavaAction" name="mbsa.toolchain.design.goto.requirement" elementsToSelect="var:element" id="mbsa.toolchain.design.goto.requirement">
