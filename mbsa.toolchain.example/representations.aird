@@ -62,7 +62,7 @@
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='hazard_diagram']"/>
         <target xmi:type="hazard_:HazardPackage" href="model/example.mbsa#//@hazardPackage.0"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_LyY1EkVAEe2OM8joB0GDQQ" name="component_package_diagram" repPath="#_LyY1EEVAEe2OM8joB0GDQQ" changeId="1684354177359">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_LyY1EkVAEe2OM8joB0GDQQ" name="component_package_diagram" repPath="#_LyY1EEVAEe2OM8joB0GDQQ" changeId="1684355288262">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']"/>
         <target xmi:type="component_:ComponentPackage" href="model/example.mbsa#//@componentPackage.0"/>
       </ownedRepresentationDescriptors>
@@ -2712,7 +2712,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@nodeMappings[name='Component']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_qEQasEb5Ee2RMfwZTejD9A" name="传递信号" sourceNode="_XqTA0Eb5Ee2RMfwZTejD9A" targetNode="_ZUIscEb5Ee2RMfwZTejD9A">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_qEQasEb5Ee2RMfwZTejD9A" name="signal" sourceNode="_XqTA0Eb5Ee2RMfwZTejD9A" targetNode="_ZUIscEb5Ee2RMfwZTejD9A">
       <target xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.0/@components.19"/>
       <semanticElements xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.0/@components.19"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_qERBwEb5Ee2RMfwZTejD9A" size="2" routingStyle="manhattan">
@@ -2721,7 +2721,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@edgeMappings[name='Relationship']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_s8J05Eb5Ee2RMfwZTejD9A" name="放大信号" sourceNode="_ZUIscEb5Ee2RMfwZTejD9A" targetNode="_dNVyoEb5Ee2RMfwZTejD9A">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_s8J05Eb5Ee2RMfwZTejD9A" name="amplify" sourceNode="_ZUIscEb5Ee2RMfwZTejD9A" targetNode="_dNVyoEb5Ee2RMfwZTejD9A">
       <target xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.0/@components.20"/>
       <semanticElements xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.0/@components.20"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_s8J05Ub5Ee2RMfwZTejD9A" size="2" routingStyle="manhattan">
@@ -2730,7 +2730,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@edgeMappings[name='Relationship']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_uqtoeEb5Ee2RMfwZTejD9A" name="中频信号" sourceNode="_dNVyoEb5Ee2RMfwZTejD9A" targetNode="_hdyUIEb5Ee2RMfwZTejD9A">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_uqtoeEb5Ee2RMfwZTejD9A" name="IF signal" sourceNode="_dNVyoEb5Ee2RMfwZTejD9A" targetNode="_hdyUIEb5Ee2RMfwZTejD9A">
       <target xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.0/@components.21"/>
       <semanticElements xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.0/@components.21"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_uqtoeUb5Ee2RMfwZTejD9A" size="2" routingStyle="manhattan">
@@ -2739,7 +2739,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@edgeMappings[name='Relationship']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_wPP9WEb5Ee2RMfwZTejD9A" name="稳定频率信号" sourceNode="_bCr48Eb5Ee2RMfwZTejD9A" targetNode="_ZUIscEb5Ee2RMfwZTejD9A">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_wPP9WEb5Ee2RMfwZTejD9A" name="stable frequency signal" sourceNode="_bCr48Eb5Ee2RMfwZTejD9A" targetNode="_ZUIscEb5Ee2RMfwZTejD9A">
       <target xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.0/@components.22"/>
       <semanticElements xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.0/@components.22"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_wPP9WUb5Ee2RMfwZTejD9A" size="2" routingStyle="manhattan">
@@ -2748,7 +2748,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@edgeMappings[name='Relationship']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_xNhjgEb5Ee2RMfwZTejD9A" name="稳定频率信号" sourceNode="_bCr48Eb5Ee2RMfwZTejD9A" targetNode="_dNVyoEb5Ee2RMfwZTejD9A">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_xNhjgEb5Ee2RMfwZTejD9A" name="stable frequency signal" sourceNode="_bCr48Eb5Ee2RMfwZTejD9A" targetNode="_dNVyoEb5Ee2RMfwZTejD9A">
       <target xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.0/@components.23"/>
       <semanticElements xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.0/@components.23"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_xNiKgEb5Ee2RMfwZTejD9A" size="2" routingStyle="manhattan">
@@ -2757,7 +2757,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@edgeMappings[name='Relationship']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_0WQ2Ckb5Ee2RMfwZTejD9A" name="放大中频信号" sourceNode="_hdyUIEb5Ee2RMfwZTejD9A" targetNode="_jxjtkEb5Ee2RMfwZTejD9A">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_0WQ2Ckb5Ee2RMfwZTejD9A" name="amplified IF signal" sourceNode="_hdyUIEb5Ee2RMfwZTejD9A" targetNode="_jxjtkEb5Ee2RMfwZTejD9A">
       <target xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.0/@components.24"/>
       <semanticElements xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.0/@components.24"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_0WQ2C0b5Ee2RMfwZTejD9A" size="2" routingStyle="manhattan">
@@ -2766,7 +2766,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@edgeMappings[name='Relationship']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_2yY6OEb5Ee2RMfwZTejD9A" name="有效信号" sourceNode="_jxjtkEb5Ee2RMfwZTejD9A" targetNode="_l01z8Eb5Ee2RMfwZTejD9A">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_2yY6OEb5Ee2RMfwZTejD9A" name="effective signal" sourceNode="_jxjtkEb5Ee2RMfwZTejD9A" targetNode="_l01z8Eb5Ee2RMfwZTejD9A">
       <target xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.0/@components.25"/>
       <semanticElements xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.0/@components.25"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_2yY6OUb5Ee2RMfwZTejD9A" size="2" routingStyle="manhattan">
@@ -2775,7 +2775,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@edgeMappings[name='Relationship']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_4jnASEb5Ee2RMfwZTejD9A" name="反馈信号" sourceNode="_jxjtkEb5Ee2RMfwZTejD9A" targetNode="_ZUIscEb5Ee2RMfwZTejD9A">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_4jnASEb5Ee2RMfwZTejD9A" name="feedback" sourceNode="_jxjtkEb5Ee2RMfwZTejD9A" targetNode="_ZUIscEb5Ee2RMfwZTejD9A">
       <target xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.0/@components.26"/>
       <semanticElements xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.0/@components.26"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_4jnASUb5Ee2RMfwZTejD9A" size="2" routingStyle="manhattan">
@@ -2784,7 +2784,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@edgeMappings[name='Relationship']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_6UyqEEb5Ee2RMfwZTejD9A" name="反馈信号" sourceNode="_jxjtkEb5Ee2RMfwZTejD9A" targetNode="_dNVyoEb5Ee2RMfwZTejD9A">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_6UyqEEb5Ee2RMfwZTejD9A" name="feedback" sourceNode="_jxjtkEb5Ee2RMfwZTejD9A" targetNode="_dNVyoEb5Ee2RMfwZTejD9A">
       <target xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.0/@components.27"/>
       <semanticElements xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.0/@components.27"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_6UyqEUb5Ee2RMfwZTejD9A" size="2" routingStyle="manhattan">
@@ -2793,7 +2793,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@edgeMappings[name='Relationship']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_8XBnlEb5Ee2RMfwZTejD9A" name="反馈信号" sourceNode="_jxjtkEb5Ee2RMfwZTejD9A" targetNode="_hdyUIEb5Ee2RMfwZTejD9A">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_8XBnlEb5Ee2RMfwZTejD9A" name="feedback" sourceNode="_jxjtkEb5Ee2RMfwZTejD9A" targetNode="_hdyUIEb5Ee2RMfwZTejD9A">
       <target xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.0/@components.28"/>
       <semanticElements xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.0/@components.28"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_8XCOgEb5Ee2RMfwZTejD9A" size="2" routingStyle="manhattan">
@@ -2802,7 +2802,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@edgeMappings[name='Relationship']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="__qJlOEb5Ee2RMfwZTejD9A" name="驱动信号" sourceNode="_l01z8Eb5Ee2RMfwZTejD9A" targetNode="_nqP2YEb5Ee2RMfwZTejD9A">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="__qJlOEb5Ee2RMfwZTejD9A" name="drive signal" sourceNode="_l01z8Eb5Ee2RMfwZTejD9A" targetNode="_nqP2YEb5Ee2RMfwZTejD9A">
       <target xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.0/@components.29"/>
       <semanticElements xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.0/@components.29"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="__qKMIEb5Ee2RMfwZTejD9A" size="2" routingStyle="manhattan">

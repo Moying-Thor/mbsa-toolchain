@@ -216,17 +216,17 @@
         </content>
       </implementationConstraint>
     </components>
-    <components xsi:type="component_:ComponentRelationship" label="传递信号" source="//@componentPackage.0/@components.11" target="//@componentPackage.0/@components.12"/>
-    <components xsi:type="component_:ComponentRelationship" label="放大信号" source="//@componentPackage.0/@components.12" target="//@componentPackage.0/@components.14"/>
-    <components xsi:type="component_:ComponentRelationship" label="中频信号" source="//@componentPackage.0/@components.14" target="//@componentPackage.0/@components.15"/>
-    <components xsi:type="component_:ComponentRelationship" label="稳定频率信号" source="//@componentPackage.0/@components.13" target="//@componentPackage.0/@components.12"/>
-    <components xsi:type="component_:ComponentRelationship" label="稳定频率信号" source="//@componentPackage.0/@components.13" target="//@componentPackage.0/@components.14"/>
-    <components xsi:type="component_:ComponentRelationship" label="放大中频信号" source="//@componentPackage.0/@components.15" target="//@componentPackage.0/@components.16"/>
-    <components xsi:type="component_:ComponentRelationship" label="有效信号" source="//@componentPackage.0/@components.16" target="//@componentPackage.0/@components.17"/>
-    <components xsi:type="component_:ComponentRelationship" label="反馈信号" source="//@componentPackage.0/@components.16" target="//@componentPackage.0/@components.12"/>
-    <components xsi:type="component_:ComponentRelationship" label="反馈信号" source="//@componentPackage.0/@components.16" target="//@componentPackage.0/@components.14"/>
-    <components xsi:type="component_:ComponentRelationship" label="反馈信号" source="//@componentPackage.0/@components.16" target="//@componentPackage.0/@components.15"/>
-    <components xsi:type="component_:ComponentRelationship" label="驱动信号" source="//@componentPackage.0/@components.17" target="//@componentPackage.0/@components.18"/>
+    <components xsi:type="component_:ComponentRelationship" label="signal" source="//@componentPackage.0/@components.11" target="//@componentPackage.0/@components.12"/>
+    <components xsi:type="component_:ComponentRelationship" label="amplify" source="//@componentPackage.0/@components.12" target="//@componentPackage.0/@components.14"/>
+    <components xsi:type="component_:ComponentRelationship" label="IF signal" source="//@componentPackage.0/@components.14" target="//@componentPackage.0/@components.15"/>
+    <components xsi:type="component_:ComponentRelationship" label="stable frequency signal" source="//@componentPackage.0/@components.13" target="//@componentPackage.0/@components.12"/>
+    <components xsi:type="component_:ComponentRelationship" label="stable frequency signal" source="//@componentPackage.0/@components.13" target="//@componentPackage.0/@components.14"/>
+    <components xsi:type="component_:ComponentRelationship" label="amplified IF signal" source="//@componentPackage.0/@components.15" target="//@componentPackage.0/@components.16"/>
+    <components xsi:type="component_:ComponentRelationship" label="effective signal" source="//@componentPackage.0/@components.16" target="//@componentPackage.0/@components.17"/>
+    <components xsi:type="component_:ComponentRelationship" label="feedback" source="//@componentPackage.0/@components.16" target="//@componentPackage.0/@components.12"/>
+    <components xsi:type="component_:ComponentRelationship" label="feedback" source="//@componentPackage.0/@components.16" target="//@componentPackage.0/@components.14"/>
+    <components xsi:type="component_:ComponentRelationship" label="feedback" source="//@componentPackage.0/@components.16" target="//@componentPackage.0/@components.15"/>
+    <components xsi:type="component_:ComponentRelationship" label="drive signal" source="//@componentPackage.0/@components.17" target="//@componentPackage.0/@components.18"/>
   </componentPackage>
   <componentPackage>
     <name content="新组件包"/>
