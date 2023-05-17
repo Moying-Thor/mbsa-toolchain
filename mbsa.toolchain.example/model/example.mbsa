@@ -13,7 +13,7 @@
     <components xsi:type="component_:ComponentRelationship" label="反馈信号"/>
     <components xsi:type="component_:ComponentRelationship" label=""/>
     <components xsi:type="component_:ComponentRelationship" label=""/>
-    <components xsi:type="component_:Component" identity="10" component_name="天线" fit="1.0" sil="1" requirements="//@requirementPackage.0/@requirementElement.0">
+    <components xsi:type="component_:Component" identity="10" component_name="Antenna" fit="1.0" sil="1" requirements="//@requirementPackage.0/@requirementElement.0">
       <name content="Name"/>
       <implementationConstraint>
         <content>
@@ -42,7 +42,7 @@
       <safety_mechanisms handle="//@componentPackage.0/@components.11/@failure_modes.1" mechanism="检测仪检测"/>
       <safety_mechanisms handle="//@componentPackage.0/@components.11/@failure_modes.2" mechanism="听觉检测" coverage="0.5"/>
     </components>
-    <components xsi:type="component_:Component" identity="20" component_name="RF放大器">
+    <components xsi:type="component_:Component" identity="20" component_name="RF Amplifier">
       <name content="Name"/>
       <implementationConstraint>
         <content>
@@ -71,7 +71,7 @@
       <safety_mechanisms identity="2022" handle="//@componentPackage.0/@components.12/@failure_modes.1" mechanism="高质量元器件" coverage="0.9"/>
       <safety_mechanisms identity="202" handle="//@componentPackage.0/@components.12/@failure_modes.2" mechanism="高质量元器件" coverage="0.99"/>
     </components>
-    <components xsi:type="component_:Component" identity="30" component_name="本振">
+    <components xsi:type="component_:Component" identity="30" component_name="Local Oscillator">
       <name content="Name"/>
       <implementationConstraint>
         <content>
@@ -101,7 +101,7 @@
       <safety_mechanisms handle="//@componentPackage.0/@components.13/@failure_modes.0" mechanism="元器件冗余设计" coverage="0.9"/>
       <safety_mechanisms handle="//@componentPackage.0/@components.13/@failure_modes.1" mechanism="看门狗" coverage="0.9"/>
     </components>
-    <components xsi:type="component_:Component" identity="40" component_name="混频器">
+    <components xsi:type="component_:Component" identity="40" component_name="Mixer">
       <name content="Name"/>
       <implementationConstraint>
         <content>
@@ -124,7 +124,7 @@
         </content>
       </implementationConstraint>
     </components>
-    <components xsi:type="component_:Component" identity="50" component_name="IF放大器">
+    <components xsi:type="component_:Component" identity="50" component_name="IF Amplifier">
       <name content="Name"/>
       <implementationConstraint>
         <content>
@@ -147,7 +147,7 @@
         </content>
       </implementationConstraint>
     </components>
-    <components xsi:type="component_:Component" identity="60" component_name="检波器">
+    <components xsi:type="component_:Component" identity="60" component_name="Geophone">
       <name content="Name"/>
       <implementationConstraint>
         <content>
@@ -170,7 +170,7 @@
         </content>
       </implementationConstraint>
     </components>
-    <components xsi:type="component_:Component" identity="70" component_name="音频放大器">
+    <components xsi:type="component_:Component" identity="70" component_name="Audio Amplifier">
       <name content="Name"/>
       <implementationConstraint>
         <content>
@@ -193,7 +193,7 @@
         </content>
       </implementationConstraint>
     </components>
-    <components xsi:type="component_:Component" identity="80" component_name="喇叭">
+    <components xsi:type="component_:Component" identity="80" component_name="Speaker">
       <name content="Name"/>
       <implementationConstraint>
         <content>

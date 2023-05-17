@@ -39,7 +39,7 @@
                         <subModelOperations xsi:type="tool_1:CreateInstance" typeName="base::MultiLangString" referenceName="content">
                           <subModelOperations xsi:type="tool_1:ChangeContext">
                             <subModelOperations xsi:type="tool_1:CreateInstance" typeName="base::LangString" referenceName="value">
-                              <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="外部文件"/>
+                              <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="File"/>
                             </subModelOperations>
                           </subModelOperations>
                         </subModelOperations>
@@ -50,7 +50,7 @@
                         <subModelOperations xsi:type="tool_1:CreateInstance" typeName="base::MultiLangString" referenceName="content">
                           <subModelOperations xsi:type="tool_1:ChangeContext">
                             <subModelOperations xsi:type="tool_1:CreateInstance" typeName="base::LangString" referenceName="value">
-                              <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="超数据"/>
+                              <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="Metadata"/>
                             </subModelOperations>
                           </subModelOperations>
                         </subModelOperations>
@@ -61,7 +61,7 @@
                         <subModelOperations xsi:type="tool_1:CreateInstance" typeName="base::MultiLangString" referenceName="content">
                           <subModelOperations xsi:type="tool_1:ChangeContext">
                             <subModelOperations xsi:type="tool_1:CreateInstance" typeName="base::LangString" referenceName="value">
-                              <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="验证规则"/>
+                              <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="Validation Rule"/>
                             </subModelOperations>
                           </subModelOperations>
                         </subModelOperations>
@@ -72,7 +72,7 @@
                         <subModelOperations xsi:type="tool_1:CreateInstance" typeName="base::MultiLangString" referenceName="content">
                           <subModelOperations xsi:type="tool_1:ChangeContext">
                             <subModelOperations xsi:type="tool_1:CreateInstance" typeName="base::LangString" referenceName="value">
-                              <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="验证结果"/>
+                              <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="Validation Result"/>
                             </subModelOperations>
                           </subModelOperations>
                         </subModelOperations>
@@ -348,7 +348,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool_1:OperationAction" name="Go to Component Package" precondition="aql:self.oclIsKindOf(component::ComponentPackage)">
+          <ownedTools xsi:type="tool_1:OperationAction" name="View Component Package" precondition="aql:self.oclIsKindOf(component::ComponentPackage)">
             <view name="views"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool:Navigation" createIfNotExistent="true" diagramDescription="//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']"/>
@@ -763,7 +763,7 @@
                 <subModelOperations xsi:type="tool_1:CreateInstance" typeName="requirement::Requirement" referenceName="requirementElement">
                   <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
                     <subModelOperations xsi:type="tool_1:CreateInstance" typeName="base::LangString" referenceName="name">
-                      <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="新安全需求"/>
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="Safety Requirement"/>
                     </subModelOperations>
                   </subModelOperations>
                   <subModelOperations xsi:type="tool_1:SetValue" featureName="identity" valueExpression="0"/>
@@ -892,7 +892,7 @@
                 <subModelOperations xsi:type="tool_1:CreateInstance" typeName="hazard::HazardousSituation" referenceName="hazardElement">
                   <subModelOperations xsi:type="tool_1:ChangeContext">
                     <subModelOperations xsi:type="tool_1:CreateInstance" typeName="base::LangString" referenceName="name">
-                      <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="新危险情况"/>
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="Hazard"/>
                     </subModelOperations>
                   </subModelOperations>
                 </subModelOperations>
@@ -907,7 +907,7 @@
                 <subModelOperations xsi:type="tool_1:CreateInstance" typeName="hazard::Cause" referenceName="hazardElement">
                   <subModelOperations xsi:type="tool_1:ChangeContext">
                     <subModelOperations xsi:type="tool_1:CreateInstance" typeName="base::LangString" referenceName="name">
-                      <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="新危险原因"/>
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="Cause"/>
                     </subModelOperations>
                   </subModelOperations>
                 </subModelOperations>
@@ -922,7 +922,7 @@
                 <subModelOperations xsi:type="tool_1:CreateInstance" typeName="hazard::ControlMeasure" referenceName="hazardElement">
                   <subModelOperations xsi:type="tool_1:ChangeContext">
                     <subModelOperations xsi:type="tool_1:CreateInstance" typeName="base::LangString" referenceName="name">
-                      <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="新控制措施"/>
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="Control Measure"/>
                     </subModelOperations>
                   </subModelOperations>
                 </subModelOperations>
@@ -1117,7 +1117,7 @@
                 <subModelOperations xsi:type="tool_1:CreateInstance" typeName="hazard::VerificationofEffectiveness" referenceName="verificationofEffectiveness">
                   <subModelOperations xsi:type="tool_1:ChangeContext">
                     <subModelOperations xsi:type="tool_1:CreateInstance" typeName="base::LangString" referenceName="name">
-                      <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="校验有效性说明"/>
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="Verification Effectiveness"/>
                     </subModelOperations>
                   </subModelOperations>
                 </subModelOperations>
@@ -1132,7 +1132,7 @@
                 <subModelOperations xsi:type="tool_1:CreateInstance" typeName="hazard::SafetyDecisionRationale" referenceName="safetyDecisionRationale">
                   <subModelOperations xsi:type="tool_1:ChangeContext">
                     <subModelOperations xsi:type="tool_1:CreateInstance" typeName="base::LangString" referenceName="name">
-                      <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="安全性决策说明"/>
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="Safety Decision"/>
                     </subModelOperations>
                   </subModelOperations>
                 </subModelOperations>
@@ -1147,7 +1147,7 @@
                 <subModelOperations xsi:type="tool_1:CreateInstance" typeName="hazard::Validation" referenceName="validation">
                   <subModelOperations xsi:type="tool_1:ChangeContext">
                     <subModelOperations xsi:type="tool_1:CreateInstance" typeName="base::LangString" referenceName="name">
-                      <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="验证措施"/>
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="content" valueExpression="Validation"/>
                     </subModelOperations>
                   </subModelOperations>
                 </subModelOperations>

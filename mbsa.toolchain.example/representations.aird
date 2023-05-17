@@ -1,103 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:component_="http://dlut.mbsa/component" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:hazard_="http://dlut.mbsa/hazard" xmlns:mbsa_="http://dlut.mbsa/mbsa" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:requirement_="http://dlut.mbsa/requirement" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
-  <viewpoint:DAnalysis uid="_DwK3ID8WEe2CW9XZpLS4Qg" selectedViews="_II2ikEVAEe2OM8joB0GDQQ" version="15.0.0.202209061200">
+  <viewpoint:DAnalysis uid="_DwK3ID8WEe2CW9XZpLS4Qg" selectedViews="_II2ikEVAEe2OM8joB0GDQQ" version="15.1.0.202211301600">
     <semanticResources>model/example.mbsa</semanticResources>
     <semanticResources>model/example_model.ecore</semanticResources>
     <semanticResources>model/untitled.model</semanticResources>
     <semanticResources>model/my.example</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_G0FUED8WEe2CW9XZpLS4Qg">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MyComponentViewpoint']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_JdOgkD8WEe2CW9XZpLS4Qg" name="new component_diagram" repPath="#_JdF9sD8WEe2CW9XZpLS4Qg" changeId="6651dfe6-4c43-47f0-b056-ad895fe56db9">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_JdOgkD8WEe2CW9XZpLS4Qg" name="new component_diagram" repPath="#_JdF9sD8WEe2CW9XZpLS4Qg" changeId="1684353827898">
         <description xmi:type="description_1:DiagramDescription" href="platform:/resource/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MyComponentViewpoint']/@ownedRepresentations[name='component_diagram']"/>
         <target xmi:type="component_:ComponentPackage" href="model/example_component2.component#_P9YSUD7_Ee21ecovm8Naww"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_rmkFgD-nEe2Y19F4uivTFg" name="new mbsa diagram" repPath="#_rmjecD-nEe2Y19F4uivTFg" changeId="b66a39cd-a840-4bf3-bbfd-f33dd3d125aa">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_rmkFgD-nEe2Y19F4uivTFg" name="new mbsa diagram" repPath="#_rmjecD-nEe2Y19F4uivTFg" changeId="1684353827898">
         <description xmi:type="description_1:DiagramDescription" href="platform:/resource/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MyComponentViewpoint']/@ownedRepresentations[name='mbsa%20diagram']"/>
         <target xmi:type="mbsa_:MBSAPackage" href="model/example.mbsa#/"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_5p9K8D-rEe2Y19F4uivTFg" name="component_diagram" repPath="#_5p8j4D-rEe2Y19F4uivTFg" changeId="8edd1644-05f3-4e03-bd91-dbc71476b24e">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_5p9K8D-rEe2Y19F4uivTFg" name="component_diagram" repPath="#_5p8j4D-rEe2Y19F4uivTFg" changeId="1684353827898">
         <description xmi:type="description_1:DiagramDescription" href="platform:/resource/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MyComponentViewpoint']/@ownedRepresentations[name='component_diagram']"/>
         <target xmi:type="component_:ComponentPackage" href="model/example.mbsa#//@componentPackage.0"/>
       </ownedRepresentationDescriptors>
     </ownedViews>
     <ownedViews xmi:type="viewpoint:DView" uid="_dh6JwEEtEe2FRIbZDBMjIQ">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_gmR5sEEtEe2FRIbZDBMjIQ" name="new mbsa diagram" repPath="#_gmMaIEEtEe2FRIbZDBMjIQ" changeId="d7f874cf-2896-40f9-a25e-56ba8d3b79f8">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_gmR5sEEtEe2FRIbZDBMjIQ" name="new mbsa diagram" repPath="#_gmMaIEEtEe2FRIbZDBMjIQ" changeId="1684353827898">
         <description xmi:type="description_1:DiagramDescription" href="platform:/resource/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='mbsa%20diagram']"/>
         <target xmi:type="mbsa_:MBSAPackage" href="model/example.mbsa#/"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_hB3pgkEtEe2FRIbZDBMjIQ" name="component_package_diagram" repPath="#_hB3pgEEtEe2FRIbZDBMjIQ" changeId="cd486b3b-d631-4cf3-afad-4fb3c10f141f">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_hB3pgkEtEe2FRIbZDBMjIQ" name="component_package_diagram" repPath="#_hB3pgEEtEe2FRIbZDBMjIQ" changeId="1684353827898">
         <description xmi:type="description_1:DiagramDescription" href="platform:/resource/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']"/>
         <target xmi:type="component_:ComponentPackage" href="model/example.mbsa#//@componentPackage.0"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_xXsockEtEe2FRIbZDBMjIQ" name="component_diagram" repPath="#_xXsocEEtEe2FRIbZDBMjIQ" changeId="dff7f563-1bc9-4844-bf7b-1822a0f843b1">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_xXsockEtEe2FRIbZDBMjIQ" name="component_diagram" repPath="#_xXsocEEtEe2FRIbZDBMjIQ" changeId="1684353827898">
         <description xmi:type="description_1:DiagramDescription" href="platform:/resource/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_diagram']"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_wQ0G0EFXEe2-p5GwbL-H_w" name="component_diagram" repPath="#_wQyRoEFXEe2-p5GwbL-H_w" changeId="9c27c3ab-8b1d-4a4b-88d5-d8752b1dc1f2">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_wQ0G0EFXEe2-p5GwbL-H_w" name="component_diagram" repPath="#_wQyRoEFXEe2-p5GwbL-H_w" changeId="1684353827898">
         <description xmi:type="description_1:DiagramDescription" href="platform:/resource/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_diagram']"/>
         <target xmi:type="component_:ComponentPackage" href="model/example.mbsa#//@componentPackage.0"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_y2xccUFXEe2-p5GwbL-H_w" name="component_diagram" repPath="#_y2w1YEFXEe2-p5GwbL-H_w" changeId="a5d0db37-1e31-4748-8081-fde8cbfe2c46">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_y2xccUFXEe2-p5GwbL-H_w" name="component_diagram" repPath="#_y2w1YEFXEe2-p5GwbL-H_w" changeId="1684353827898">
         <description xmi:type="description_1:DiagramDescription" href="platform:/resource/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_diagram']"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_d_DKYEF9Ee2VzcRhmHja4Q" name="component_diagram" repPath="#_d_BVMEF9Ee2VzcRhmHja4Q" changeId="a29d3d54-e295-4bad-8d32-a5c370f7d09a">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_d_DKYEF9Ee2VzcRhmHja4Q" name="component_diagram" repPath="#_d_BVMEF9Ee2VzcRhmHja4Q" changeId="1684353827898">
         <description xmi:type="description_1:DiagramDescription" href="platform:/resource/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_diagram']"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_N1ApoEIKEe25tssZhM_1IA" name="requirement diagram" repPath="#_N1ACkEIKEe25tssZhM_1IA" changeId="2f75c61d-8627-4f55-94ee-9d444327bd3a">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_N1ApoEIKEe25tssZhM_1IA" name="requirement diagram" repPath="#_N1ACkEIKEe25tssZhM_1IA" changeId="1684353827898">
         <description xmi:type="description_1:DiagramDescription" href="platform:/resource/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='requirement%20diagram']"/>
         <target xmi:type="requirement_:RequirementPackage" href="model/example.mbsa#//@requirementPackage.0"/>
       </ownedRepresentationDescriptors>
     </ownedViews>
     <ownedViews xmi:type="viewpoint:DView" uid="_II2ikEVAEe2OM8joB0GDQQ">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_IJQyQEVAEe2OM8joB0GDQQ" name="mbsa_diagram" repPath="#_II8CIEVAEe2OM8joB0GDQQ" changeId="8e4bf421-c70c-466b-8a44-469466671358">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_IJQyQEVAEe2OM8joB0GDQQ" name="mbsa_diagram" repPath="#_II8CIEVAEe2OM8joB0GDQQ" changeId="1684353827898">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='mbsa_diagram']"/>
         <target xmi:type="mbsa_:MBSAPackage" href="model/example.mbsa#/"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_IKs8skVAEe2OM8joB0GDQQ" name="requirement_diagram" repPath="#_IKs8sEVAEe2OM8joB0GDQQ" changeId="430ccd72-4b7d-40b1-b857-bf634cc7c557">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_IKs8skVAEe2OM8joB0GDQQ" name="requirement_diagram" repPath="#_IKs8sEVAEe2OM8joB0GDQQ" changeId="1684353827898">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='requirement_diagram']"/>
         <target xmi:type="requirement_:RequirementPackage" href="model/example.mbsa#//@requirementPackage.0"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_ILUnwkVAEe2OM8joB0GDQQ" name="hazard_diagram" repPath="#_ILUnwEVAEe2OM8joB0GDQQ" changeId="7ac3d35f-d26f-4ebf-b867-62798d9b5817">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_ILUnwkVAEe2OM8joB0GDQQ" name="hazard_diagram" repPath="#_ILUnwEVAEe2OM8joB0GDQQ" changeId="1684353827898">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='hazard_diagram']"/>
         <target xmi:type="hazard_:HazardPackage" href="model/example.mbsa#//@hazardPackage.0"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_LyY1EkVAEe2OM8joB0GDQQ" name="component_package_diagram" repPath="#_LyY1EEVAEe2OM8joB0GDQQ" changeId="5a7f2705-ee72-471e-a26d-8d5a079fe54a">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_LyY1EkVAEe2OM8joB0GDQQ" name="component_package_diagram" repPath="#_LyY1EEVAEe2OM8joB0GDQQ" changeId="1684354177359">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']"/>
         <target xmi:type="component_:ComponentPackage" href="model/example.mbsa#//@componentPackage.0"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_I3tg0Eb6Ee2RMfwZTejD9A" name="antenna_diagram" repPath="#_I3sSsEb6Ee2RMfwZTejD9A" changeId="4f0c1e04-1c39-41b2-b33c-7ea038530694">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_I3tg0Eb6Ee2RMfwZTejD9A" name="antenna_diagram" repPath="#_I3sSsEb6Ee2RMfwZTejD9A" changeId="1684353827898">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_diagram']"/>
         <target xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.0/@components.11"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_0C28YUb6Ee2RMfwZTejD9A" name="RF_amplifier" repPath="#_0C2VUEb6Ee2RMfwZTejD9A" changeId="cc3d76ef-1784-43d4-b0ee-c1db33c98a40">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_0C28YUb6Ee2RMfwZTejD9A" name="RF_amplifier" repPath="#_0C2VUEb6Ee2RMfwZTejD9A" changeId="1684353827898">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_diagram']"/>
         <target xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.0/@components.12"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_42f1EEb7Ee2vFq7VxJBPbw" name="component_diagram" repPath="#_42fOAEb7Ee2vFq7VxJBPbw" changeId="111bbe63-a406-45ae-bdaa-4e9fb98bc95e">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_42f1EEb7Ee2vFq7VxJBPbw" name="component_diagram" repPath="#_42fOAEb7Ee2vFq7VxJBPbw" changeId="1684353827898">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_diagram']"/>
         <target xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.0/@components.13"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_4jROsEcJEe2Z4_O2Igu_Sg" name="controlmeasure_diagram" repPath="#_4jQAkEcJEe2Z4_O2Igu_Sg" changeId="fd8a39d7-2451-4536-a5a7-16a6b68805af">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_4jROsEcJEe2Z4_O2Igu_Sg" name="controlmeasure_diagram" repPath="#_4jQAkEcJEe2Z4_O2Igu_Sg" changeId="1684353827898">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='controlmeasure_diagram']"/>
         <target xmi:type="hazard_:ControlMeasure" href="model/example.mbsa#//@hazardPackage.0/@hazardElement.2"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_DXL-cEdxEe2pUpmnxvCKfA" name="component_diagram" repPath="#_DXLXYEdxEe2pUpmnxvCKfA" changeId="7f1b271b-c374-4f5d-9ef5-f47a7934f2f9">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_DXL-cEdxEe2pUpmnxvCKfA" name="component_diagram" repPath="#_DXLXYEdxEe2pUpmnxvCKfA" changeId="1684353827898">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_diagram']"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_Z_V_sF8uEe28-58oFDpgLw" name="new mbsa_package_diagram" repPath="#_Z_PSAF8uEe28-58oFDpgLw" changeId="360b28e2-1e44-4eb2-ab60-bbb8bba73ca8">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_Z_V_sF8uEe28-58oFDpgLw" name="new mbsa_package_diagram" repPath="#_Z_PSAF8uEe28-58oFDpgLw" changeId="1684353827898">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='mbsa_package_diagram']"/>
         <target xmi:type="mbsa_:MBSAPackage" href="model/example.mbsa#/"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_FiDmsl8vEe28-58oFDpgLw" name="requirement_package_diagram" repPath="#_FiDmsF8vEe28-58oFDpgLw" changeId="4e3f9b4d-443f-483a-9dcc-948c76769681">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_FiDmsl8vEe28-58oFDpgLw" name="requirement_package_diagram" repPath="#_FiDmsF8vEe28-58oFDpgLw" changeId="1684353827898">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='requirement_package_diagram']"/>
         <target xmi:type="requirement_:RequirementPackage" href="model/example.mbsa#//@requirementPackage.0"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_HVcP4F8vEe28-58oFDpgLw" name="hazard_package_diagram" repPath="#_HVbo0F8vEe28-58oFDpgLw" changeId="a079889b-454f-402f-a255-7c3e29eaf441">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_HVcP4F8vEe28-58oFDpgLw" name="hazard_package_diagram" repPath="#_HVbo0F8vEe28-58oFDpgLw" changeId="1684353827898">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='hazard_package_diagram']"/>
         <target xmi:type="hazard_:HazardPackage" href="model/example.mbsa#//@hazardPackage.0"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_c7ATkV-yEe28-58oFDpgLw" name="component_package_diagram" repPath="#_c6_sgF-yEe28-58oFDpgLw" changeId="c925360e-f871-4a15-ba49-4c630852f188">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_c7ATkV-yEe28-58oFDpgLw" name="component_package_diagram" repPath="#_c6_sgF-yEe28-58oFDpgLw" changeId="1684353827898">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']"/>
         <target xmi:type="component_:ComponentPackage" href="model/example.mbsa#//@componentPackage.1"/>
       </ownedRepresentationDescriptors>
@@ -2622,7 +2622,7 @@
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_LymQq0VAEe2OM8joB0GDQQ" source="DANNOTATION_CUSTOMIZATION_KEY">
       <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_LymQrEVAEe2OM8joB0GDQQ"/>
     </ownedAnnotationEntries>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_XqTA0Eb5Ee2RMfwZTejD9A" name="10: 天线" outgoingEdges="_qEQasEb5Ee2RMfwZTejD9A" width="20" height="5" resizeKind="NSEW">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_XqTA0Eb5Ee2RMfwZTejD9A" name="10: Antenna" outgoingEdges="_qEQasEb5Ee2RMfwZTejD9A" width="20" height="5" resizeKind="NSEW">
       <target xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.0/@components.11"/>
       <semanticElements xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.0/@components.11"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -2634,7 +2634,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@nodeMappings[name='Component']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_ZUIscEb5Ee2RMfwZTejD9A" name="20: RF放大器" outgoingEdges="_s8J05Eb5Ee2RMfwZTejD9A" incomingEdges="_qEQasEb5Ee2RMfwZTejD9A _wPP9WEb5Ee2RMfwZTejD9A _4jnASEb5Ee2RMfwZTejD9A" width="20" height="5" resizeKind="NSEW">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_ZUIscEb5Ee2RMfwZTejD9A" name="20: RF Amplifier" outgoingEdges="_s8J05Eb5Ee2RMfwZTejD9A" incomingEdges="_qEQasEb5Ee2RMfwZTejD9A _wPP9WEb5Ee2RMfwZTejD9A _4jnASEb5Ee2RMfwZTejD9A" width="20" height="5" resizeKind="NSEW">
       <target xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.0/@components.12"/>
       <semanticElements xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.0/@components.12"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -2645,7 +2645,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@nodeMappings[name='Component']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_bCr48Eb5Ee2RMfwZTejD9A" name="30: 本振" outgoingEdges="_wPP9WEb5Ee2RMfwZTejD9A _xNhjgEb5Ee2RMfwZTejD9A" width="20" height="5" resizeKind="NSEW">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_bCr48Eb5Ee2RMfwZTejD9A" name="30: Local Oscillator" outgoingEdges="_wPP9WEb5Ee2RMfwZTejD9A _xNhjgEb5Ee2RMfwZTejD9A" width="20" height="5" resizeKind="NSEW">
       <target xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.0/@components.13"/>
       <semanticElements xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.0/@components.13"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -2656,7 +2656,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@nodeMappings[name='Component']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_dNVyoEb5Ee2RMfwZTejD9A" name="40: 混频器" outgoingEdges="_uqtoeEb5Ee2RMfwZTejD9A" incomingEdges="_s8J05Eb5Ee2RMfwZTejD9A _xNhjgEb5Ee2RMfwZTejD9A _6UyqEEb5Ee2RMfwZTejD9A" width="20" height="5" resizeKind="NSEW">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_dNVyoEb5Ee2RMfwZTejD9A" name="40: Mixer" outgoingEdges="_uqtoeEb5Ee2RMfwZTejD9A" incomingEdges="_s8J05Eb5Ee2RMfwZTejD9A _xNhjgEb5Ee2RMfwZTejD9A _6UyqEEb5Ee2RMfwZTejD9A" width="20" height="5" resizeKind="NSEW">
       <target xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.0/@components.14"/>
       <semanticElements xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.0/@components.14"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -2667,7 +2667,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@nodeMappings[name='Component']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_hdyUIEb5Ee2RMfwZTejD9A" name="50: IF放大器" outgoingEdges="_0WQ2Ckb5Ee2RMfwZTejD9A" incomingEdges="_uqtoeEb5Ee2RMfwZTejD9A _8XBnlEb5Ee2RMfwZTejD9A" width="20" height="5" resizeKind="NSEW">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_hdyUIEb5Ee2RMfwZTejD9A" name="50: IF Amplifier" outgoingEdges="_0WQ2Ckb5Ee2RMfwZTejD9A" incomingEdges="_uqtoeEb5Ee2RMfwZTejD9A _8XBnlEb5Ee2RMfwZTejD9A" width="20" height="5" resizeKind="NSEW">
       <target xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.0/@components.15"/>
       <semanticElements xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.0/@components.15"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -2678,7 +2678,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@nodeMappings[name='Component']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_jxjtkEb5Ee2RMfwZTejD9A" name="60: 检波器" outgoingEdges="_2yY6OEb5Ee2RMfwZTejD9A _4jnASEb5Ee2RMfwZTejD9A _6UyqEEb5Ee2RMfwZTejD9A _8XBnlEb5Ee2RMfwZTejD9A" incomingEdges="_0WQ2Ckb5Ee2RMfwZTejD9A" width="20" height="5" resizeKind="NSEW">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_jxjtkEb5Ee2RMfwZTejD9A" name="60: Geophone" outgoingEdges="_2yY6OEb5Ee2RMfwZTejD9A _4jnASEb5Ee2RMfwZTejD9A _6UyqEEb5Ee2RMfwZTejD9A _8XBnlEb5Ee2RMfwZTejD9A" incomingEdges="_0WQ2Ckb5Ee2RMfwZTejD9A" width="20" height="5" resizeKind="NSEW">
       <target xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.0/@components.16"/>
       <semanticElements xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.0/@components.16"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -2690,7 +2690,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@nodeMappings[name='Component']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_l01z8Eb5Ee2RMfwZTejD9A" name="70: 音频放大器" outgoingEdges="__qJlOEb5Ee2RMfwZTejD9A" incomingEdges="_2yY6OEb5Ee2RMfwZTejD9A" width="20" height="5" resizeKind="NSEW">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_l01z8Eb5Ee2RMfwZTejD9A" name="70: Audio Amplifier" outgoingEdges="__qJlOEb5Ee2RMfwZTejD9A" incomingEdges="_2yY6OEb5Ee2RMfwZTejD9A" width="20" height="5" resizeKind="NSEW">
       <target xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.0/@components.17"/>
       <semanticElements xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.0/@components.17"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -2701,7 +2701,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@nodeMappings[name='Component']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_nqP2YEb5Ee2RMfwZTejD9A" name="80: 喇叭" incomingEdges="__qJlOEb5Ee2RMfwZTejD9A" width="20" height="5" resizeKind="NSEW">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_nqP2YEb5Ee2RMfwZTejD9A" name="80: Speaker" incomingEdges="__qJlOEb5Ee2RMfwZTejD9A" width="20" height="5" resizeKind="NSEW">
       <target xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.0/@components.18"/>
       <semanticElements xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.0/@components.18"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
