@@ -49,5 +49,13 @@
            actionClass="mbsa.toolchain.design.GoToHazardAction"
            id="mbsa.toolchain.design.goto.hazard">
      </javaActions>
+     <javaActions
+           actionClass="mbsa.toolchain.design.BrowseComponentAction"
+           id="mbsa.toolchain.design.browse.component.action">
+     </javaActions>
+     <javaActions
+           actionClass="mbsa.toolchain.design.PerformQueryExcelAction"
+           id="mbsa.toolchain.design.perform.excel.action">
+     </javaActions>
   </extension>
 </plugin>

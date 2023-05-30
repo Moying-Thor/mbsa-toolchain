@@ -93,6 +93,14 @@ public class Component_AdapterFactory extends AdapterFactoryImpl {
 				return createComponentAdapter();
 			}
 			@Override
+			public Adapter caseFork(Fork object) {
+				return createForkAdapter();
+			}
+			@Override
+			public Adapter caseJoin(Join object) {
+				return createJoinAdapter();
+			}
+			@Override
 			public Adapter caseComponentRelationship(ComponentRelationship object) {
 				return createComponentRelationshipAdapter();
 			}
@@ -243,6 +251,34 @@ public class Component_AdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createComponentAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link component.Fork <em>Fork</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see component.Fork
+	 * @generated
+	 */
+	public Adapter createForkAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link component.Join <em>Join</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see component.Join
+	 * @generated
+	 */
+	public Adapter createJoinAdapter() {
 		return null;
 	}
 

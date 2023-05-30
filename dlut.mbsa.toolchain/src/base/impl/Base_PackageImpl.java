@@ -16,6 +16,8 @@ import base.Note;
 import base.TaggedValue;
 import base.UtilityElement;
 
+import component.Component_Package;
+import component.impl.Component_PackageImpl;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -154,11 +156,17 @@ public class Base_PackageImpl extends EPackageImpl implements Base_Package {
 
 		isInited = true;
 
+		// Obtain or create and register interdependencies
+		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(Component_Package.eNS_URI);
+		Component_PackageImpl theComponent_Package = (Component_PackageImpl)(registeredPackage instanceof Component_PackageImpl ? registeredPackage : Component_Package.eINSTANCE);
+
 		// Create package meta-data objects
 		theBase_Package.createPackageContents();
+		theComponent_Package.createPackageContents();
 
 		// Initialize created meta-data
 		theBase_Package.initializePackageContents();
+		theComponent_Package.initializePackageContents();
 
 		// Mark meta-data to indicate it can't be changed
 		theBase_Package.freeze();
@@ -173,6 +181,7 @@ public class Base_PackageImpl extends EPackageImpl implements Base_Package {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getElement() {
 		return elementEClass;
 	}
@@ -182,6 +191,7 @@ public class Base_PackageImpl extends EPackageImpl implements Base_Package {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getBaseElement() {
 		return baseElementEClass;
 	}
@@ -191,6 +201,7 @@ public class Base_PackageImpl extends EPackageImpl implements Base_Package {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getBaseElement_Gid() {
 		return (EAttribute)baseElementEClass.getEStructuralFeatures().get(0);
 	}
@@ -200,6 +211,7 @@ public class Base_PackageImpl extends EPackageImpl implements Base_Package {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getBaseElement_IsCitation() {
 		return (EAttribute)baseElementEClass.getEStructuralFeatures().get(1);
 	}
@@ -209,6 +221,7 @@ public class Base_PackageImpl extends EPackageImpl implements Base_Package {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getBaseElement_IsAbstract() {
 		return (EAttribute)baseElementEClass.getEStructuralFeatures().get(2);
 	}
@@ -218,6 +231,7 @@ public class Base_PackageImpl extends EPackageImpl implements Base_Package {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getBaseElement_CitedElement() {
 		return (EReference)baseElementEClass.getEStructuralFeatures().get(3);
 	}
@@ -227,6 +241,7 @@ public class Base_PackageImpl extends EPackageImpl implements Base_Package {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getBaseElement_AbstractForm() {
 		return (EReference)baseElementEClass.getEStructuralFeatures().get(4);
 	}
@@ -236,6 +251,7 @@ public class Base_PackageImpl extends EPackageImpl implements Base_Package {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getModelElement() {
 		return modelElementEClass;
 	}
@@ -245,6 +261,7 @@ public class Base_PackageImpl extends EPackageImpl implements Base_Package {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getModelElement_Name() {
 		return (EReference)modelElementEClass.getEStructuralFeatures().get(0);
 	}
@@ -254,6 +271,7 @@ public class Base_PackageImpl extends EPackageImpl implements Base_Package {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getModelElement_Description() {
 		return (EReference)modelElementEClass.getEStructuralFeatures().get(1);
 	}
@@ -263,6 +281,7 @@ public class Base_PackageImpl extends EPackageImpl implements Base_Package {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getModelElement_ImplementationConstraint() {
 		return (EReference)modelElementEClass.getEStructuralFeatures().get(2);
 	}
@@ -272,6 +291,7 @@ public class Base_PackageImpl extends EPackageImpl implements Base_Package {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getModelElement_Note() {
 		return (EReference)modelElementEClass.getEStructuralFeatures().get(3);
 	}
@@ -281,6 +301,7 @@ public class Base_PackageImpl extends EPackageImpl implements Base_Package {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getModelElement_TaggedValue() {
 		return (EReference)modelElementEClass.getEStructuralFeatures().get(4);
 	}
@@ -290,6 +311,7 @@ public class Base_PackageImpl extends EPackageImpl implements Base_Package {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getLangString() {
 		return langStringEClass;
 	}
@@ -299,6 +321,7 @@ public class Base_PackageImpl extends EPackageImpl implements Base_Package {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getLangString_Lang() {
 		return (EAttribute)langStringEClass.getEStructuralFeatures().get(0);
 	}
@@ -308,6 +331,7 @@ public class Base_PackageImpl extends EPackageImpl implements Base_Package {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getLangString_Content() {
 		return (EAttribute)langStringEClass.getEStructuralFeatures().get(1);
 	}
@@ -317,6 +341,7 @@ public class Base_PackageImpl extends EPackageImpl implements Base_Package {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getMultiLangString() {
 		return multiLangStringEClass;
 	}
@@ -326,6 +351,7 @@ public class Base_PackageImpl extends EPackageImpl implements Base_Package {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getMultiLangString_Value() {
 		return (EReference)multiLangStringEClass.getEStructuralFeatures().get(0);
 	}
@@ -335,6 +361,7 @@ public class Base_PackageImpl extends EPackageImpl implements Base_Package {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getUtilityElement() {
 		return utilityElementEClass;
 	}
@@ -344,6 +371,7 @@ public class Base_PackageImpl extends EPackageImpl implements Base_Package {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getUtilityElement_Content() {
 		return (EReference)utilityElementEClass.getEStructuralFeatures().get(0);
 	}
@@ -353,6 +381,7 @@ public class Base_PackageImpl extends EPackageImpl implements Base_Package {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getDescription() {
 		return descriptionEClass;
 	}
@@ -362,6 +391,7 @@ public class Base_PackageImpl extends EPackageImpl implements Base_Package {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getImplementationConstraint() {
 		return implementationConstraintEClass;
 	}
@@ -371,6 +401,7 @@ public class Base_PackageImpl extends EPackageImpl implements Base_Package {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getNote() {
 		return noteEClass;
 	}
@@ -380,6 +411,7 @@ public class Base_PackageImpl extends EPackageImpl implements Base_Package {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getTaggedValue() {
 		return taggedValueEClass;
 	}
@@ -389,6 +421,7 @@ public class Base_PackageImpl extends EPackageImpl implements Base_Package {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getTaggedValue_Key() {
 		return (EReference)taggedValueEClass.getEStructuralFeatures().get(0);
 	}
@@ -398,6 +431,7 @@ public class Base_PackageImpl extends EPackageImpl implements Base_Package {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getArtifactElement() {
 		return artifactElementEClass;
 	}
@@ -407,6 +441,7 @@ public class Base_PackageImpl extends EPackageImpl implements Base_Package {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Base_Factory getBase_Factory() {
 		return (Base_Factory)getEFactoryInstance();
 	}
@@ -507,7 +542,7 @@ public class Base_PackageImpl extends EPackageImpl implements Base_Package {
 		taggedValueEClass.getESuperTypes().add(this.getUtilityElement());
 		artifactElementEClass.getESuperTypes().add(this.getModelElement());
 
-		// Initialize classes, features, and operations; add parameters
+		// Initialize classes and features; add operations and parameters
 		initEClass(elementEClass, Element.class, "Element", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(baseElementEClass, BaseElement.class, "BaseElement", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

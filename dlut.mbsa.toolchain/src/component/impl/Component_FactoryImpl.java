@@ -61,6 +61,8 @@ public class Component_FactoryImpl extends EFactoryImpl implements Component_Fac
 			case Component_Package.COMPONENT_PACKAGE_INTERFACE: return createComponentPackageInterface();
 			case Component_Package.COMPONENT_PACKAGE_BINDING: return createComponentPackageBinding();
 			case Component_Package.COMPONENT: return createComponent();
+			case Component_Package.FORK: return createFork();
+			case Component_Package.JOIN: return createJoin();
 			case Component_Package.COMPONENT_RELATIONSHIP: return createComponentRelationship();
 			case Component_Package.FUNCTION: return createFunction();
 			case Component_Package.INPUT: return createInput();
@@ -155,6 +157,28 @@ public class Component_FactoryImpl extends EFactoryImpl implements Component_Fac
 	public Component createComponent() {
 		ComponentImpl component = new ComponentImpl();
 		return component;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Fork createFork() {
+		ForkImpl fork = new ForkImpl();
+		return fork;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Join createJoin() {
+		JoinImpl join = new JoinImpl();
+		return join;
 	}
 
 	/**

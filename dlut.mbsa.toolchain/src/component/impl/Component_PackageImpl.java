@@ -21,9 +21,11 @@ import component.FailureEffect;
 import component.FailureMode;
 import component.FailureSeverity;
 import component.FinalEffect;
+import component.Fork;
 import component.Function;
 import component.HigherLevelEffect;
 import component.Input;
+import component.Join;
 import component.Output;
 import component.RegionalEffect;
 import component.SafetyMechanism;
@@ -79,6 +81,20 @@ public class Component_PackageImpl extends EPackageImpl implements Component_Pac
 	 * @generated
 	 */
 	private EClass componentEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass forkEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass joinEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -490,6 +506,26 @@ public class Component_PackageImpl extends EPackageImpl implements Component_Pac
 	@Override
 	public EReference getComponent_Requirements() {
 		return (EReference)componentEClass.getEStructuralFeatures().get(14);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getFork() {
+		return forkEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getJoin() {
+		return joinEClass;
 	}
 
 	/**
@@ -920,6 +956,10 @@ public class Component_PackageImpl extends EPackageImpl implements Component_Pac
 		createEReference(componentEClass, COMPONENT__SAFETY_MECHANISMS);
 		createEReference(componentEClass, COMPONENT__REQUIREMENTS);
 
+		forkEClass = createEClass(FORK);
+
+		joinEClass = createEClass(JOIN);
+
 		componentRelationshipEClass = createEClass(COMPONENT_RELATIONSHIP);
 		createEAttribute(componentRelationshipEClass, COMPONENT_RELATIONSHIP__LABEL);
 		createEReference(componentRelationshipEClass, COMPONENT_RELATIONSHIP__SOURCE);
@@ -1008,6 +1048,8 @@ public class Component_PackageImpl extends EPackageImpl implements Component_Pac
 		componentPackageInterfaceEClass.getESuperTypes().add(this.getComponentElement());
 		componentPackageBindingEClass.getESuperTypes().add(this.getComponentElement());
 		componentEClass.getESuperTypes().add(this.getComponentElement());
+		forkEClass.getESuperTypes().add(this.getComponent());
+		joinEClass.getESuperTypes().add(this.getComponent());
 		componentRelationshipEClass.getESuperTypes().add(this.getComponentElement());
 		componentAssetEClass.getESuperTypes().add(this.getComponentElement());
 		functionEClass.getESuperTypes().add(this.getComponentAsset());
@@ -1050,6 +1092,10 @@ public class Component_PackageImpl extends EPackageImpl implements Component_Pac
 		initEReference(getComponent_Failure_modes(), this.getFailureMode(), null, "failure_modes", null, 0, -1, Component.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getComponent_Safety_mechanisms(), this.getSafetyMechanism(), null, "safety_mechanisms", null, 0, -1, Component.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getComponent_Requirements(), theBase_Package.getArtifactElement(), null, "requirements", null, 0, -1, Component.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(forkEClass, Fork.class, "Fork", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(joinEClass, Join.class, "Join", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(componentRelationshipEClass, ComponentRelationship.class, "ComponentRelationship", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getComponentRelationship_Label(), ecorePackage.getEString(), "label", null, 0, 1, ComponentRelationship.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

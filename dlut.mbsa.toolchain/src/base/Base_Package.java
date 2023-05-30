@@ -76,15 +76,6 @@ public interface Base_Package extends EPackage {
 	int ELEMENT_FEATURE_COUNT = 0;
 
 	/**
-	 * The number of operations of the '<em>Element</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ELEMENT_OPERATION_COUNT = 0;
-
-	/**
 	 * The meta object id for the '{@link base.impl.BaseElementImpl <em>Base Element</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -147,15 +138,6 @@ public interface Base_Package extends EPackage {
 	 * @ordered
 	 */
 	int BASE_ELEMENT_FEATURE_COUNT = ELEMENT_FEATURE_COUNT + 5;
-
-	/**
-	 * The number of operations of the '<em>Base Element</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BASE_ELEMENT_OPERATION_COUNT = ELEMENT_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link base.impl.ModelElementImpl <em>Model Element</em>}' class.
@@ -267,15 +249,6 @@ public interface Base_Package extends EPackage {
 	int MODEL_ELEMENT_FEATURE_COUNT = BASE_ELEMENT_FEATURE_COUNT + 5;
 
 	/**
-	 * The number of operations of the '<em>Model Element</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MODEL_ELEMENT_OPERATION_COUNT = BASE_ELEMENT_OPERATION_COUNT + 0;
-
-	/**
 	 * The meta object id for the '{@link base.impl.LangStringImpl <em>Lang String</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -313,15 +286,6 @@ public interface Base_Package extends EPackage {
 	int LANG_STRING_FEATURE_COUNT = ELEMENT_FEATURE_COUNT + 2;
 
 	/**
-	 * The number of operations of the '<em>Lang String</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LANG_STRING_OPERATION_COUNT = ELEMENT_OPERATION_COUNT + 0;
-
-	/**
 	 * The meta object id for the '{@link base.impl.MultiLangStringImpl <em>Multi Lang String</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -348,15 +312,6 @@ public interface Base_Package extends EPackage {
 	 * @ordered
 	 */
 	int MULTI_LANG_STRING_FEATURE_COUNT = ELEMENT_FEATURE_COUNT + 1;
-
-	/**
-	 * The number of operations of the '<em>Multi Lang String</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MULTI_LANG_STRING_OPERATION_COUNT = ELEMENT_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link base.impl.UtilityElementImpl <em>Utility Element</em>}' class.
@@ -432,15 +387,6 @@ public interface Base_Package extends EPackage {
 	int UTILITY_ELEMENT_FEATURE_COUNT = BASE_ELEMENT_FEATURE_COUNT + 1;
 
 	/**
-	 * The number of operations of the '<em>Utility Element</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UTILITY_ELEMENT_OPERATION_COUNT = BASE_ELEMENT_OPERATION_COUNT + 0;
-
-	/**
 	 * The meta object id for the '{@link base.impl.DescriptionImpl <em>Description</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -512,15 +458,6 @@ public interface Base_Package extends EPackage {
 	 * @ordered
 	 */
 	int DESCRIPTION_FEATURE_COUNT = UTILITY_ELEMENT_FEATURE_COUNT + 0;
-
-	/**
-	 * The number of operations of the '<em>Description</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DESCRIPTION_OPERATION_COUNT = UTILITY_ELEMENT_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link base.impl.ImplementationConstraintImpl <em>Implementation Constraint</em>}' class.
@@ -596,15 +533,6 @@ public interface Base_Package extends EPackage {
 	int IMPLEMENTATION_CONSTRAINT_FEATURE_COUNT = UTILITY_ELEMENT_FEATURE_COUNT + 0;
 
 	/**
-	 * The number of operations of the '<em>Implementation Constraint</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMPLEMENTATION_CONSTRAINT_OPERATION_COUNT = UTILITY_ELEMENT_OPERATION_COUNT + 0;
-
-	/**
 	 * The meta object id for the '{@link base.impl.NoteImpl <em>Note</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -676,15 +604,6 @@ public interface Base_Package extends EPackage {
 	 * @ordered
 	 */
 	int NOTE_FEATURE_COUNT = UTILITY_ELEMENT_FEATURE_COUNT + 0;
-
-	/**
-	 * The number of operations of the '<em>Note</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NOTE_OPERATION_COUNT = UTILITY_ELEMENT_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link base.impl.TaggedValueImpl <em>Tagged Value</em>}' class.
@@ -767,15 +686,6 @@ public interface Base_Package extends EPackage {
 	 * @ordered
 	 */
 	int TAGGED_VALUE_FEATURE_COUNT = UTILITY_ELEMENT_FEATURE_COUNT + 1;
-
-	/**
-	 * The number of operations of the '<em>Tagged Value</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TAGGED_VALUE_OPERATION_COUNT = UTILITY_ELEMENT_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link base.impl.ArtifactElementImpl <em>Artifact Element</em>}' class.
@@ -885,16 +795,6 @@ public interface Base_Package extends EPackage {
 	 * @ordered
 	 */
 	int ARTIFACT_ELEMENT_FEATURE_COUNT = MODEL_ELEMENT_FEATURE_COUNT + 0;
-
-	/**
-	 * The number of operations of the '<em>Artifact Element</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ARTIFACT_ELEMENT_OPERATION_COUNT = MODEL_ELEMENT_OPERATION_COUNT + 0;
-
 
 	/**
 	 * Returns the meta object for class '{@link base.Element <em>Element</em>}'.

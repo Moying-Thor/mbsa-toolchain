@@ -72,6 +72,7 @@ public class Base_FactoryImpl extends EFactoryImpl implements Base_Factory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public LangString createLangString() {
 		LangStringImpl langString = new LangStringImpl();
 		return langString;
@@ -82,6 +83,7 @@ public class Base_FactoryImpl extends EFactoryImpl implements Base_Factory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MultiLangString createMultiLangString() {
 		MultiLangStringImpl multiLangString = new MultiLangStringImpl();
 		return multiLangString;
@@ -92,6 +94,7 @@ public class Base_FactoryImpl extends EFactoryImpl implements Base_Factory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Description createDescription() {
 		DescriptionImpl description = new DescriptionImpl();
 		return description;
@@ -102,6 +105,7 @@ public class Base_FactoryImpl extends EFactoryImpl implements Base_Factory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ImplementationConstraint createImplementationConstraint() {
 		ImplementationConstraintImpl implementationConstraint = new ImplementationConstraintImpl();
 		return implementationConstraint;
@@ -112,6 +116,7 @@ public class Base_FactoryImpl extends EFactoryImpl implements Base_Factory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Note createNote() {
 		NoteImpl note = new NoteImpl();
 		return note;
@@ -122,6 +127,7 @@ public class Base_FactoryImpl extends EFactoryImpl implements Base_Factory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public TaggedValue createTaggedValue() {
 		TaggedValueImpl taggedValue = new TaggedValueImpl();
 		return taggedValue;
@@ -132,6 +138,7 @@ public class Base_FactoryImpl extends EFactoryImpl implements Base_Factory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Base_Package getBase_Package() {
 		return (Base_Package)getEPackage();
 	}

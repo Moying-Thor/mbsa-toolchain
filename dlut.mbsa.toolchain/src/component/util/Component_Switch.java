@@ -125,6 +125,30 @@ public class Component_Switch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case Component_Package.FORK: {
+				Fork fork = (Fork)theEObject;
+				T result = caseFork(fork);
+				if (result == null) result = caseComponent(fork);
+				if (result == null) result = caseComponentElement(fork);
+				if (result == null) result = caseArtifactElement(fork);
+				if (result == null) result = caseModelElement(fork);
+				if (result == null) result = caseBaseElement(fork);
+				if (result == null) result = caseElement(fork);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case Component_Package.JOIN: {
+				Join join = (Join)theEObject;
+				T result = caseJoin(join);
+				if (result == null) result = caseComponent(join);
+				if (result == null) result = caseComponentElement(join);
+				if (result == null) result = caseArtifactElement(join);
+				if (result == null) result = caseModelElement(join);
+				if (result == null) result = caseBaseElement(join);
+				if (result == null) result = caseElement(join);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case Component_Package.COMPONENT_RELATIONSHIP: {
 				ComponentRelationship componentRelationship = (ComponentRelationship)theEObject;
 				T result = caseComponentRelationship(componentRelationship);
@@ -352,6 +376,36 @@ public class Component_Switch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseComponent(Component object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Fork</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Fork</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseFork(Fork object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Join</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Join</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseJoin(Join object) {
 		return null;
 	}
 

@@ -28,7 +28,7 @@
             id="component.presentation.Component_EditorID"
             name="%_UI_Component_Editor_label"
             icon="icons/full/obj16/Component_ModelFile.gif"
-            extensions="component"
+            extensions="component_"
             class="component.presentation.Component_Editor"
             contributorClass="component.presentation.Component_ActionBarContributor">
       </editor>
@@ -140,7 +140,7 @@
             id="base.presentation.Base_EditorID"
             name="%_UI_Base_Editor_label"
             icon="icons/full/obj16/Base_ModelFile.gif"
-            extensions="base"
+            extensions="base_"
             class="base.presentation.Base_Editor"
             contributorClass="base.presentation.Base_ActionBarContributor">
       </editor>

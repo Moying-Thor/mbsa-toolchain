@@ -6,7 +6,7 @@ import java.util.Map;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.sirius.tools.api.ui.IExternalJavaAction;
 
-import component.Component;
+import base.ModelElement;
 
 public class ClearQueryResultAction implements IExternalJavaAction {
 
@@ -20,7 +20,7 @@ public class ClearQueryResultAction implements IExternalJavaAction {
 		for(EObject eobj: selections) {
 			focus = eobj;
 		}
-		Component cp = (Component) focus;
+		ModelElement cp = (ModelElement) focus;
 		
 		cp.getImplementationConstraint().get(3).getContent().getValue().get(0).setContent("");
 

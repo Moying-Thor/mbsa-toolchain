@@ -85,7 +85,7 @@
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_DXL-cEdxEe2pUpmnxvCKfA" name="component_diagram" repPath="#_DXLXYEdxEe2pUpmnxvCKfA" changeId="1684353827898">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_diagram']"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_Z_V_sF8uEe28-58oFDpgLw" name="new mbsa_package_diagram" repPath="#_Z_PSAF8uEe28-58oFDpgLw" changeId="1684353827898">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_Z_V_sF8uEe28-58oFDpgLw" name="new mbsa_package_diagram" repPath="#_Z_PSAF8uEe28-58oFDpgLw" changeId="1685466010285">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='mbsa_package_diagram']"/>
         <target xmi:type="mbsa_:MBSAPackage" href="model/example.mbsa#/"/>
       </ownedRepresentationDescriptors>
@@ -97,9 +97,25 @@
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='hazard_package_diagram']"/>
         <target xmi:type="hazard_:HazardPackage" href="model/example.mbsa#//@hazardPackage.0"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_c7ATkV-yEe28-58oFDpgLw" name="component_package_diagram" repPath="#_c6_sgF-yEe28-58oFDpgLw" changeId="1684353827898">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_c7ATkV-yEe28-58oFDpgLw" name="component_package_diagram" repPath="#_c6_sgF-yEe28-58oFDpgLw" changeId="1685454451297">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']"/>
         <target xmi:type="component_:ComponentPackage" href="model/example.mbsa#//@componentPackage.1"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_40RDkP7eEe2Beojy-59L7g" name="component_diagram" repPath="#_40QcgP7eEe2Beojy-59L7g" changeId="1685456363586">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_diagram']"/>
+        <target xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.1/@components.8"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_xKRrAP7sEe2l5epTHCDULg" name="component_diagram" repPath="#_xKRD8P7sEe2l5epTHCDULg" changeId="1685456460326">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_diagram']"/>
+        <target xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.1/@components.17"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_1ElvAv7tEe2l5epTHCDULg" name="hazard_package_diagram" repPath="#_1ElvAP7tEe2l5epTHCDULg" changeId="1685457106713">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='hazard_package_diagram']"/>
+        <target xmi:type="hazard_:HazardPackage" href="model/example.mbsa#//@hazardPackage.1"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_XUE3Iv7uEe2l5epTHCDULg" name="requirement_package_diagram" repPath="#_XUE3IP7uEe2l5epTHCDULg" changeId="1685459593674">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='requirement_package_diagram']"/>
+        <target xmi:type="requirement_:RequirementPackage" href="model/example.mbsa#//@requirementPackage.1"/>
       </ownedRepresentationDescriptors>
     </ownedViews>
   </viewpoint:DAnalysis>
@@ -1921,8 +1937,6 @@
       <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_N1IlcUIKEe25tssZhM_1IA"/>
     </ownedAnnotationEntries>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_bCqEwEIMEe28TLJiLBn2NQ" name="0: 新安全需求" outgoingEdges="_63xcMEIMEe28TLJiLBn2NQ" width="20" height="5" resizeKind="NSEW">
-      <target xmi:type="requirement_:Requirement" href="model/example.mbsa#//@requirementPackage.0/@requirementElement.0"/>
-      <semanticElements xmi:type="requirement_:Requirement" href="model/example.mbsa#//@requirementPackage.0/@requirementElement.0"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -1932,8 +1946,6 @@
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='requirement%20diagram']/@defaultLayer/@nodeMappings[name='RequirementNode']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_gD-CgEIMEe28TLJiLBn2NQ" name="0: 新安全需求" incomingEdges="_63xcMEIMEe28TLJiLBn2NQ" width="20" height="5" resizeKind="NSEW">
-      <target xmi:type="requirement_:Requirement" href="model/example.mbsa#//@requirementPackage.0/@requirementElement.1"/>
-      <semanticElements xmi:type="requirement_:Requirement" href="model/example.mbsa#//@requirementPackage.0/@requirementElement.1"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2170,8 +2182,6 @@
       <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_IK2GpkVAEe2OM8joB0GDQQ"/>
     </ownedAnnotationEntries>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_IKs8t0VAEe2OM8joB0GDQQ" name="1: 天线组件的需求" width="20" height="5" resizeKind="NSEW">
-      <target xmi:type="requirement_:Requirement" href="model/example.mbsa#//@requirementPackage.0/@requirementElement.0"/>
-      <semanticElements xmi:type="requirement_:Requirement" href="model/example.mbsa#//@requirementPackage.0/@requirementElement.0"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2181,8 +2191,6 @@
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='requirement_diagram']/@defaultLayer/@nodeMappings[name='RequirementNode']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_IKx1MkVAEe2OM8joB0GDQQ" name="2: RF放大器需求" width="20" height="5" resizeKind="NSEW">
-      <target xmi:type="requirement_:Requirement" href="model/example.mbsa#//@requirementPackage.0/@requirementElement.1"/>
-      <semanticElements xmi:type="requirement_:Requirement" href="model/example.mbsa#//@requirementPackage.0/@requirementElement.1"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2192,24 +2200,20 @@
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='requirement_diagram']/@defaultLayer/@nodeMappings[name='RequirementNode']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_PBgF8EdwEe2pUpmnxvCKfA" name="0: 新安全需求" outgoingEdges="_PgbdoEdwEe2pUpmnxvCKfA" width="20" height="5" resizeKind="NSEW">
-      <target xmi:type="requirement_:Requirement" href="model/example.mbsa#//@requirementPackage.0/@requirementElement.2"/>
-      <semanticElements xmi:type="requirement_:Requirement" href="model/example.mbsa#//@requirementPackage.0/@requirementElement.2"/>
       <ownedStyle xmi:type="diagram:Square" uid="_PBgF8UdwEe2pUpmnxvCKfA" labelSize="12" showIcon="false" labelPosition="node" width="20" height="5" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='requirement_diagram']/@defaultLayer/@nodeMappings[name='RequirementNode']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='requirement_diagram']/@defaultLayer/@nodeMappings[name='RequirementNode']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_PNc3QEdwEe2pUpmnxvCKfA" name="0: 新安全需求" incomingEdges="_PgbdoEdwEe2pUpmnxvCKfA" width="20" height="5" resizeKind="NSEW">
-      <target xmi:type="requirement_:Requirement" href="model/example.mbsa#//@requirementPackage.0/@requirementElement.3"/>
-      <semanticElements xmi:type="requirement_:Requirement" href="model/example.mbsa#//@requirementPackage.0/@requirementElement.3"/>
       <ownedStyle xmi:type="diagram:Square" uid="_PNc3QUdwEe2pUpmnxvCKfA" labelSize="12" showIcon="false" labelPosition="node" width="20" height="5" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='requirement_diagram']/@defaultLayer/@nodeMappings[name='RequirementNode']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='requirement_diagram']/@defaultLayer/@nodeMappings[name='RequirementNode']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_PgbdoEdwEe2pUpmnxvCKfA" name="支持" sourceNode="_PBgF8EdwEe2pUpmnxvCKfA" targetNode="_PNc3QEdwEe2pUpmnxvCKfA">
-      <target xmi:type="requirement_:RequirementRelationship" href="model/example.mbsa#//@requirementPackage.0/@requirementElement.4"/>
-      <semanticElements xmi:type="requirement_:RequirementRelationship" href="model/example.mbsa#//@requirementPackage.0/@requirementElement.4"/>
+      <target xmi:type="requirement_:RequirementRelationship" href="model/example.mbsa#//@requirementPackage.0/@requirementElement.0"/>
+      <semanticElements xmi:type="requirement_:RequirementRelationship" href="model/example.mbsa#//@requirementPackage.0/@requirementElement.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_PgbdoUdwEe2pUpmnxvCKfA" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='requirement_diagram']/@defaultLayer/@edgeMappings[name='RequirementRelationship']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_PgbdokdwEe2pUpmnxvCKfA" labelSize="12"/>
@@ -3567,7 +3571,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Z_voUl8uEe28-58oFDpgLw"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_Z_rW4V8uEe28-58oFDpgLw" fontName="Microsoft YaHei UI" fontHeight="12"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Z_rW4l8uEe28-58oFDpgLw" x="755" y="50" width="150" height="150"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Z_rW4l8uEe28-58oFDpgLw" x="380" y="1265" width="150" height="150"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_Z_tzIF8uEe28-58oFDpgLw" type="2001" element="_Z_oTkF8uEe28-58oFDpgLw">
           <children xmi:type="notation:Node" xmi:id="_Z_uaMF8uEe28-58oFDpgLw" type="5002">
@@ -3578,7 +3582,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Z_voVV8uEe28-58oFDpgLw"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_Z_tzIV8uEe28-58oFDpgLw" fontName="Microsoft YaHei UI" fontHeight="12"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Z_tzIl8uEe28-58oFDpgLw" x="1100" y="440" width="150" height="150"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Z_tzIl8uEe28-58oFDpgLw" x="970" y="210" width="251" height="66"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_Z_uaMl8uEe28-58oFDpgLw" type="2001" element="_Z_oTk18uEe28-58oFDpgLw">
           <children xmi:type="notation:Node" xmi:id="_Z_uaNV8uEe28-58oFDpgLw" type="5002">
@@ -3589,7 +3593,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Z_voWF8uEe28-58oFDpgLw"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_Z_uaM18uEe28-58oFDpgLw" fontName="Microsoft YaHei UI" fontHeight="12"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Z_uaNF8uEe28-58oFDpgLw" x="400" y="50" width="150" height="150"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Z_uaNF8uEe28-58oFDpgLw" x="25" y="1265" width="150" height="150"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_Z_uaN18uEe28-58oFDpgLw" type="2001" element="_Z_o6oV8uEe28-58oFDpgLw">
           <children xmi:type="notation:Node" xmi:id="_Z_vBQF8uEe28-58oFDpgLw" type="5002">
@@ -3600,7 +3604,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Z_voW18uEe28-58oFDpgLw"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_Z_uaOF8uEe28-58oFDpgLw" fontName="Microsoft YaHei UI" fontHeight="12"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Z_uaOV8uEe28-58oFDpgLw" x="724" y="440" width="150" height="150"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Z_uaOV8uEe28-58oFDpgLw" x="970" y="25" width="251" height="66"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_Z_vBQl8uEe28-58oFDpgLw" type="2001" element="_Z_o6pF8uEe28-58oFDpgLw">
           <children xmi:type="notation:Node" xmi:id="_Z_vBRV8uEe28-58oFDpgLw" type="5002">
@@ -3611,7 +3615,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Z_voXl8uEe28-58oFDpgLw"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_Z_vBQ18uEe28-58oFDpgLw" fontName="Microsoft YaHei UI" fontHeight="12"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Z_vBRF8uEe28-58oFDpgLw" x="575" y="50" width="150" height="150"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Z_vBRF8uEe28-58oFDpgLw" x="200" y="1265" width="150" height="150"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_Z_vBR18uEe28-58oFDpgLw" type="2001" element="_Z_phsV8uEe28-58oFDpgLw">
           <children xmi:type="notation:Node" xmi:id="_Z_vBSl8uEe28-58oFDpgLw" type="5002">
@@ -3622,7 +3626,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Z_wPYl8uEe28-58oFDpgLw"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_Z_vBSF8uEe28-58oFDpgLw" fontName="Microsoft YaHei UI" fontHeight="12"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Z_vBSV8uEe28-58oFDpgLw" x="925" y="440" width="150" height="150"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Z_vBSV8uEe28-58oFDpgLw" x="970" y="115" width="251" height="66"/>
         </children>
         <styles xmi:type="notation:DiagramStyle" xmi:id="_Z_ctYl8uEe28-58oFDpgLw"/>
       </data>
@@ -3641,7 +3645,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='mbsa_package_diagram']/@defaultLayer/@nodeMappings[name='ComponentPackage']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_Z_oTkF8uEe28-58oFDpgLw" name="新组件包" width="15" height="15" resizeKind="NSEW">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_Z_oTkF8uEe28-58oFDpgLw" name="ComponentPackage1" width="15" height="15" resizeKind="NSEW">
       <target xmi:type="component_:ComponentPackage" href="model/example.mbsa#//@componentPackage.1"/>
       <semanticElements xmi:type="component_:ComponentPackage" href="model/example.mbsa#//@componentPackage.1"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -3663,7 +3667,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='mbsa_package_diagram']/@defaultLayer/@nodeMappings[name='RequirementPackage']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_Z_o6oV8uEe28-58oFDpgLw" name="新需求包" width="15" height="15" resizeKind="NSEW">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_Z_o6oV8uEe28-58oFDpgLw" name="ReqPackage1" width="15" height="15" resizeKind="NSEW">
       <target xmi:type="requirement_:RequirementPackage" href="model/example.mbsa#//@requirementPackage.1"/>
       <semanticElements xmi:type="requirement_:RequirementPackage" href="model/example.mbsa#//@requirementPackage.1"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -3685,7 +3689,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='mbsa_package_diagram']/@defaultLayer/@nodeMappings[name='HazardPackage']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_Z_phsV8uEe28-58oFDpgLw" name="新危险分析包" width="15" height="15" resizeKind="NSEW">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_Z_phsV8uEe28-58oFDpgLw" name="HazardPackage1" width="15" height="15" resizeKind="NSEW">
       <target xmi:type="hazard_:HazardPackage" href="model/example.mbsa#//@hazardPackage.1"/>
       <semanticElements xmi:type="hazard_:HazardPackage" href="model/example.mbsa#//@hazardPackage.1"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -3771,8 +3775,6 @@
       <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_FiQbA18vEe28-58oFDpgLw"/>
     </ownedAnnotationEntries>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_FiLigF8vEe28-58oFDpgLw" name="1: 天线组件的需求" width="20" height="5" resizeKind="NSEW">
-      <target xmi:type="requirement_:Requirement" href="model/example.mbsa#//@requirementPackage.0/@requirementElement.0"/>
-      <semanticElements xmi:type="requirement_:Requirement" href="model/example.mbsa#//@requirementPackage.0/@requirementElement.0"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -3782,8 +3784,6 @@
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='requirement_package_diagram']/@defaultLayer/@nodeMappings[name='RequirementNode']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_FiMJkV8vEe28-58oFDpgLw" name="2: RF放大器需求" width="20" height="5" resizeKind="NSEW">
-      <target xmi:type="requirement_:Requirement" href="model/example.mbsa#//@requirementPackage.0/@requirementElement.1"/>
-      <semanticElements xmi:type="requirement_:Requirement" href="model/example.mbsa#//@requirementPackage.0/@requirementElement.1"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -3793,8 +3793,6 @@
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='requirement_package_diagram']/@defaultLayer/@nodeMappings[name='RequirementNode']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_FiMJlF8vEe28-58oFDpgLw" name="1: 安全性要求1" outgoingEdges="_FiPM4F8vEe28-58oFDpgLw" width="20" height="5" resizeKind="NSEW">
-      <target xmi:type="requirement_:Requirement" href="model/example.mbsa#//@requirementPackage.0/@requirementElement.2"/>
-      <semanticElements xmi:type="requirement_:Requirement" href="model/example.mbsa#//@requirementPackage.0/@requirementElement.2"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -3804,8 +3802,6 @@
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='requirement_package_diagram']/@defaultLayer/@nodeMappings[name='RequirementNode']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_FiMJl18vEe28-58oFDpgLw" name="2: 安全性要求2" incomingEdges="_FiPM4F8vEe28-58oFDpgLw" width="20" height="5" resizeKind="NSEW">
-      <target xmi:type="requirement_:Requirement" href="model/example.mbsa#//@requirementPackage.0/@requirementElement.3"/>
-      <semanticElements xmi:type="requirement_:Requirement" href="model/example.mbsa#//@requirementPackage.0/@requirementElement.3"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -3815,8 +3811,8 @@
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='requirement_package_diagram']/@defaultLayer/@nodeMappings[name='RequirementNode']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_FiPM4F8vEe28-58oFDpgLw" name="支持" sourceNode="_FiMJlF8vEe28-58oFDpgLw" targetNode="_FiMJl18vEe28-58oFDpgLw">
-      <target xmi:type="requirement_:RequirementRelationship" href="model/example.mbsa#//@requirementPackage.0/@requirementElement.4"/>
-      <semanticElements xmi:type="requirement_:RequirementRelationship" href="model/example.mbsa#//@requirementPackage.0/@requirementElement.4"/>
+      <target xmi:type="requirement_:RequirementRelationship" href="model/example.mbsa#//@requirementPackage.0/@requirementElement.0"/>
+      <semanticElements xmi:type="requirement_:RequirementRelationship" href="model/example.mbsa#//@requirementPackage.0/@requirementElement.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_FiPz8F8vEe28-58oFDpgLw" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='requirement_package_diagram']/@defaultLayer/@edgeMappings[name='RequirementRelationship']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_FiPz8V8vEe28-58oFDpgLw" labelSize="12"/>
@@ -4073,482 +4069,432 @@
   <diagram:DSemanticDiagram uid="_c6_sgF-yEe28-58oFDpgLw">
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_c7I2cF-yEe28-58oFDpgLw" source="GMF_DIAGRAMS">
       <data xmi:type="notation:Diagram" xmi:id="_c7I2cV-yEe28-58oFDpgLw" type="Sirius" element="_c6_sgF-yEe28-58oFDpgLw" measurementUnit="Pixel">
-        <children xmi:type="notation:Node" xmi:id="_lnSHMl-yEe28-58oFDpgLw" type="2001" element="_lnPq8F-yEe28-58oFDpgLw">
-          <children xmi:type="notation:Node" xmi:id="_lnSHNV-yEe28-58oFDpgLw" type="5002">
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_lnSHNl-yEe28-58oFDpgLw" y="5"/>
+        <children xmi:type="notation:Node" xmi:id="_KR_woP7dEe2Beojy-59L7g" type="2001" element="_KR7fMP7dEe2Beojy-59L7g">
+          <children xmi:type="notation:Node" xmi:id="_KSA-wP7dEe2Beojy-59L7g" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_KSA-wf7dEe2Beojy-59L7g" y="5"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_lnSHN1-yEe28-58oFDpgLw" type="3003" element="_lnPq8V-yEe28-58oFDpgLw">
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_lnSHOF-yEe28-58oFDpgLw" fontName="Microsoft YaHei UI"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lnSHOV-yEe28-58oFDpgLw"/>
+          <children xmi:type="notation:Node" xmi:id="_KSCz8P7dEe2Beojy-59L7g" type="3003" element="_KR7fMf7dEe2Beojy-59L7g">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_KSCz8f7dEe2Beojy-59L7g" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KSCz8v7dEe2Beojy-59L7g"/>
           </children>
-          <styles xmi:type="notation:ShapeStyle" xmi:id="_lnSHM1-yEe28-58oFDpgLw" fontName="Microsoft YaHei UI" fontHeight="12"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lnSHNF-yEe28-58oFDpgLw" x="400" y="20" width="140" height="50"/>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_KR_wof7dEe2Beojy-59L7g" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KR_wov7dEe2Beojy-59L7g" x="45" y="331" width="200" height="50"/>
         </children>
-        <children xmi:type="notation:Node" xmi:id="_oNetbF-yEe28-58oFDpgLw" type="2001" element="_oNcRIF-yEe28-58oFDpgLw">
-          <children xmi:type="notation:Node" xmi:id="_oNfUcF-yEe28-58oFDpgLw" type="5002">
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_oNfUcV-yEe28-58oFDpgLw" y="5"/>
+        <children xmi:type="notation:Node" xmi:id="_MTrUg_7dEe2Beojy-59L7g" type="2001" element="_MTo4QP7dEe2Beojy-59L7g">
+          <children xmi:type="notation:Node" xmi:id="_MTrUhv7dEe2Beojy-59L7g" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_MTrUh_7dEe2Beojy-59L7g" y="5"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_oNfUcl-yEe28-58oFDpgLw" type="3003" element="_oNcRIV-yEe28-58oFDpgLw">
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_oNfUc1-yEe28-58oFDpgLw" fontName="Microsoft YaHei UI"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oNfUdF-yEe28-58oFDpgLw"/>
+          <children xmi:type="notation:Node" xmi:id="_MTrUiP7dEe2Beojy-59L7g" type="3003" element="_MTo4Qf7dEe2Beojy-59L7g">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_MTrUif7dEe2Beojy-59L7g" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MTrUiv7dEe2Beojy-59L7g"/>
           </children>
-          <styles xmi:type="notation:ShapeStyle" xmi:id="_oNetbV-yEe28-58oFDpgLw" fontName="Microsoft YaHei UI" fontHeight="12"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oNetbl-yEe28-58oFDpgLw" x="400" y="115" width="140" height="50"/>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_MTrUhP7dEe2Beojy-59L7g" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MTrUhf7dEe2Beojy-59L7g" x="45" y="175" width="200" height="50"/>
         </children>
-        <children xmi:type="notation:Node" xmi:id="_qH_STF-yEe28-58oFDpgLw" type="2001" element="_qH82AF-yEe28-58oFDpgLw">
-          <children xmi:type="notation:Node" xmi:id="_qH_ST1-yEe28-58oFDpgLw" type="5002">
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_qH_SUF-yEe28-58oFDpgLw" y="5"/>
+        <children xmi:type="notation:Node" xmi:id="_QRhqKP7dEe2Beojy-59L7g" type="2001" element="_QRf08P7dEe2Beojy-59L7g">
+          <children xmi:type="notation:Node" xmi:id="_QRiRMP7dEe2Beojy-59L7g" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_QRiRMf7dEe2Beojy-59L7g" y="5"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_qH_SUV-yEe28-58oFDpgLw" type="3003" element="_qH82AV-yEe28-58oFDpgLw">
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_qH_SUl-yEe28-58oFDpgLw" fontName="Microsoft YaHei UI"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qH_SU1-yEe28-58oFDpgLw"/>
+          <children xmi:type="notation:Node" xmi:id="_QRiRMv7dEe2Beojy-59L7g" type="3003" element="_QRgcAP7dEe2Beojy-59L7g">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_QRiRM_7dEe2Beojy-59L7g" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QRiRNP7dEe2Beojy-59L7g"/>
           </children>
-          <styles xmi:type="notation:ShapeStyle" xmi:id="_qH_STV-yEe28-58oFDpgLw" fontName="Microsoft YaHei UI" fontHeight="12"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qH_STl-yEe28-58oFDpgLw" x="615" y="115" width="106" height="50"/>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_QRhqKf7dEe2Beojy-59L7g" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QRhqKv7dEe2Beojy-59L7g" x="305" y="266" width="200" height="50"/>
         </children>
-        <children xmi:type="notation:Node" xmi:id="_0CDusF-yEe28-58oFDpgLw" type="2001" element="_0CArYF-yEe28-58oFDpgLw">
-          <children xmi:type="notation:Node" xmi:id="_0CDus1-yEe28-58oFDpgLw" type="5002">
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_0CDutF-yEe28-58oFDpgLw" y="5"/>
+        <children xmi:type="notation:Node" xmi:id="_Slnzuv7dEe2Beojy-59L7g" type="2001" element="_Sll-gP7dEe2Beojy-59L7g">
+          <children xmi:type="notation:Node" xmi:id="_Slnzvf7dEe2Beojy-59L7g" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Slnzvv7dEe2Beojy-59L7g" y="5"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_0CDutV-yEe28-58oFDpgLw" type="3003" element="_0CArYV-yEe28-58oFDpgLw">
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_0CDutl-yEe28-58oFDpgLw" fontName="Microsoft YaHei UI"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0CDut1-yEe28-58oFDpgLw"/>
+          <children xmi:type="notation:Node" xmi:id="_Slnzv_7dEe2Beojy-59L7g" type="3003" element="_Sll-gf7dEe2Beojy-59L7g">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_SlnzwP7dEe2Beojy-59L7g" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Slnzwf7dEe2Beojy-59L7g"/>
           </children>
-          <styles xmi:type="notation:ShapeStyle" xmi:id="_0CDusV-yEe28-58oFDpgLw" fontName="Microsoft YaHei UI" fontHeight="12"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0CDusl-yEe28-58oFDpgLw" x="735" y="50" width="130" height="50"/>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_Slnzu_7dEe2Beojy-59L7g" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SlnzvP7dEe2Beojy-59L7g" x="305" y="356" width="200" height="50"/>
         </children>
-        <children xmi:type="notation:Node" xmi:id="_3r90rF-yEe28-58oFDpgLw" type="2001" element="_3r6xUF-yEe28-58oFDpgLw">
-          <children xmi:type="notation:Node" xmi:id="_3r90r1-yEe28-58oFDpgLw" type="5002">
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_3r90sF-yEe28-58oFDpgLw" y="5"/>
+        <children xmi:type="notation:Node" xmi:id="_TvkeUP7dEe2Beojy-59L7g" type="2001" element="_TvipIP7dEe2Beojy-59L7g">
+          <children xmi:type="notation:Node" xmi:id="_TvkeU_7dEe2Beojy-59L7g" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_TvkeVP7dEe2Beojy-59L7g" y="5"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_3r90sV-yEe28-58oFDpgLw" type="3003" element="_3r7YYF-yEe28-58oFDpgLw">
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_3r90sl-yEe28-58oFDpgLw" fontName="Microsoft YaHei UI"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3r90s1-yEe28-58oFDpgLw"/>
+          <children xmi:type="notation:Node" xmi:id="_TvkeVf7dEe2Beojy-59L7g" type="3003" element="_TvipIf7dEe2Beojy-59L7g">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_TvkeVv7dEe2Beojy-59L7g" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TvkeV_7dEe2Beojy-59L7g"/>
           </children>
-          <styles xmi:type="notation:ShapeStyle" xmi:id="_3r90rV-yEe28-58oFDpgLw" fontName="Microsoft YaHei UI" fontHeight="12"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3r90rl-yEe28-58oFDpgLw" x="735" y="181" width="166" height="50"/>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_TvkeUf7dEe2Beojy-59L7g" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TvkeUv7dEe2Beojy-59L7g" x="305" y="441" width="200" height="50"/>
         </children>
-        <children xmi:type="notation:Node" xmi:id="_9m1QnF-yEe28-58oFDpgLw" type="2001" element="_9myNQF-yEe28-58oFDpgLw">
-          <children xmi:type="notation:Node" xmi:id="_9m1Qn1-yEe28-58oFDpgLw" type="5002">
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_9m1QoF-yEe28-58oFDpgLw" y="5"/>
+        <children xmi:type="notation:Node" xmi:id="_LaOunP7eEe2Beojy-59L7g" type="2001" element="_LaMSUP7eEe2Beojy-59L7g">
+          <children xmi:type="notation:Node" xmi:id="_LaOun_7eEe2Beojy-59L7g" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_LaOuoP7eEe2Beojy-59L7g" y="5"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_9m1QoV-yEe28-58oFDpgLw" type="3003" element="_9myNQV-yEe28-58oFDpgLw">
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_9m1Qol-yEe28-58oFDpgLw" fontName="Microsoft YaHei UI"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9m1Qo1-yEe28-58oFDpgLw"/>
+          <children xmi:type="notation:Node" xmi:id="_LaOuof7eEe2Beojy-59L7g" type="3003" element="_LaM5YP7eEe2Beojy-59L7g">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_LaOuov7eEe2Beojy-59L7g" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LaOuo_7eEe2Beojy-59L7g"/>
           </children>
-          <styles xmi:type="notation:ShapeStyle" xmi:id="_9m1QnV-yEe28-58oFDpgLw" fontName="Microsoft YaHei UI" fontHeight="12"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9m1Qnl-yEe28-58oFDpgLw" x="940" y="49" width="120" height="50"/>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_LaOunf7eEe2Beojy-59L7g" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LaOunv7eEe2Beojy-59L7g" x="580" y="175" width="200" height="50"/>
         </children>
-        <children xmi:type="notation:Node" xmi:id="_EAJjHF-zEe28-58oFDpgLw" type="2001" element="_EAHG0F-zEe28-58oFDpgLw">
-          <children xmi:type="notation:Node" xmi:id="_EAJjH1-zEe28-58oFDpgLw" type="5002">
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_EAJjIF-zEe28-58oFDpgLw" y="5"/>
+        <children xmi:type="notation:Node" xmi:id="_WinYaP7eEe2Beojy-59L7g" type="2001" element="_WiljEP7eEe2Beojy-59L7g">
+          <children xmi:type="notation:Node" xmi:id="_Win_UP7eEe2Beojy-59L7g" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Win_Uf7eEe2Beojy-59L7g" y="5"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_EAJjIV-zEe28-58oFDpgLw" type="3003" element="_EAHG0V-zEe28-58oFDpgLw">
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_EAJjIl-zEe28-58oFDpgLw" fontName="Microsoft YaHei UI"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EAJjI1-zEe28-58oFDpgLw"/>
+          <children xmi:type="notation:Node" xmi:id="_Win_Uv7eEe2Beojy-59L7g" type="3003" element="_WiljEf7eEe2Beojy-59L7g">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_Win_U_7eEe2Beojy-59L7g" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Win_VP7eEe2Beojy-59L7g"/>
           </children>
-          <styles xmi:type="notation:ShapeStyle" xmi:id="_EAJjHV-zEe28-58oFDpgLw" fontName="Microsoft YaHei UI" fontHeight="12"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EAJjHl-zEe28-58oFDpgLw" x="940" y="181" width="136" height="50"/>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_WinYaf7eEe2Beojy-59L7g" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WinYav7eEe2Beojy-59L7g" x="580" y="266" width="200" height="50"/>
         </children>
-        <children xmi:type="notation:Node" xmi:id="_NqJjPF-zEe28-58oFDpgLw" type="2001" element="_NqGf4F-zEe28-58oFDpgLw">
-          <children xmi:type="notation:Node" xmi:id="_NqJjP1-zEe28-58oFDpgLw" type="5002">
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_NqJjQF-zEe28-58oFDpgLw" y="5"/>
+        <children xmi:type="notation:Node" xmi:id="_YX9waP7eEe2Beojy-59L7g" type="2001" element="_YX77IP7eEe2Beojy-59L7g">
+          <children xmi:type="notation:Node" xmi:id="_YX9wa_7eEe2Beojy-59L7g" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_YX9wbP7eEe2Beojy-59L7g" y="5"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_NqJjQV-zEe28-58oFDpgLw" type="3003" element="_NqGf4V-zEe28-58oFDpgLw">
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_NqJjQl-zEe28-58oFDpgLw" fontName="Microsoft YaHei UI"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NqJjQ1-zEe28-58oFDpgLw"/>
+          <children xmi:type="notation:Node" xmi:id="_YX9wbf7eEe2Beojy-59L7g" type="3003" element="_YX77If7eEe2Beojy-59L7g">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_YX9wbv7eEe2Beojy-59L7g" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YX9wb_7eEe2Beojy-59L7g"/>
           </children>
-          <styles xmi:type="notation:ShapeStyle" xmi:id="_NqJjPV-zEe28-58oFDpgLw" fontName="Microsoft YaHei UI" fontHeight="12"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NqJjPl-zEe28-58oFDpgLw" x="1150" y="181" width="166" height="50"/>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_YX9waf7eEe2Beojy-59L7g" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YX9wav7eEe2Beojy-59L7g" x="580" y="405" width="200" height="50"/>
         </children>
-        <children xmi:type="notation:Node" xmi:id="_dJaGjF-zEe28-58oFDpgLw" type="2001" element="_dJXqQF-zEe28-58oFDpgLw">
-          <children xmi:type="notation:Node" xmi:id="_dJaGj1-zEe28-58oFDpgLw" type="5002">
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_dJaGkF-zEe28-58oFDpgLw" y="5"/>
+        <children xmi:type="notation:Node" xmi:id="_8hV4zf7mEe2ksdXLWYTswg" type="2001" element="_8hV4oP7mEe2ksdXLWYTswg">
+          <children xmi:type="notation:Node" xmi:id="_8hV40P7mEe2ksdXLWYTswg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_8hV40f7mEe2ksdXLWYTswg" y="5"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_dJaGkV-zEe28-58oFDpgLw" type="3003" element="_dJXqQV-zEe28-58oFDpgLw">
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_dJaGkl-zEe28-58oFDpgLw" fontName="Microsoft YaHei UI"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dJaGk1-zEe28-58oFDpgLw"/>
+          <children xmi:type="notation:Node" xmi:id="_8hV40v7mEe2ksdXLWYTswg" type="3002" element="_8hV4of7mEe2ksdXLWYTswg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_8hV40_7mEe2ksdXLWYTswg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8hV41P7mEe2ksdXLWYTswg"/>
           </children>
-          <styles xmi:type="notation:ShapeStyle" xmi:id="_dJaGjV-zEe28-58oFDpgLw" fontName="Microsoft YaHei UI" fontHeight="12"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dJaGjl-zEe28-58oFDpgLw" x="1150" y="105" width="166" height="50"/>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_8hV4zv7mEe2ksdXLWYTswg" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8hV4z_7mEe2ksdXLWYTswg" x="380" y="175" width="50" height="50"/>
         </children>
         <styles xmi:type="notation:DiagramStyle" xmi:id="_c7I2cl-yEe28-58oFDpgLw"/>
-        <edges xmi:type="notation:Edge" xmi:id="_r8iZHF-yEe28-58oFDpgLw" type="4001" element="_r8fVwF-yEe28-58oFDpgLw" source="_lnSHMl-yEe28-58oFDpgLw" target="_oNetbF-yEe28-58oFDpgLw">
-          <children xmi:type="notation:Node" xmi:id="_r8iZIF-yEe28-58oFDpgLw" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_r8iZIV-yEe28-58oFDpgLw" x="2" y="-52"/>
+        <edges xmi:type="notation:Edge" xmi:id="_WR1mwP7dEe2Beojy-59L7g" type="4001" element="_WRyjcP7dEe2Beojy-59L7g" source="_KR_woP7dEe2Beojy-59L7g" target="_MTrUg_7dEe2Beojy-59L7g">
+          <children xmi:type="notation:Node" xmi:id="_WR1mxP7dEe2Beojy-59L7g" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WR1mxf7dEe2Beojy-59L7g" x="22" y="116"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_r8iZIl-yEe28-58oFDpgLw" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_r8iZI1-yEe28-58oFDpgLw" y="10"/>
+          <children xmi:type="notation:Node" xmi:id="_WR2N0P7dEe2Beojy-59L7g" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WR2N0f7dEe2Beojy-59L7g" x="6" y="10"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_r8iZJF-yEe28-58oFDpgLw" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_r8iZJV-yEe28-58oFDpgLw" y="10"/>
+          <children xmi:type="notation:Node" xmi:id="_WR204P7dEe2Beojy-59L7g" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WR204f7dEe2Beojy-59L7g" y="10"/>
           </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_r8iZHV-yEe28-58oFDpgLw" routing="Rectilinear"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="_r8iZHl-yEe28-58oFDpgLw" fontName="Microsoft YaHei UI" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_r8iZH1-yEe28-58oFDpgLw" points="[-25, 0, -26, -45]$[-25, 45, -26, 0]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_r8iZJl-yEe28-58oFDpgLw" id="(0.7109004739336493,1.0)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_r8iZJ1-yEe28-58oFDpgLw" id="(0.7142857142857143,0.0)"/>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_WR1mwf7dEe2Beojy-59L7g" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_WR1mwv7dEe2Beojy-59L7g" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_WR1mw_7dEe2Beojy-59L7g" points="[0, 0, 0, 106]$[0, -106, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_WR4DAP7dEe2Beojy-59L7g" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_WR4DAf7dEe2Beojy-59L7g" id="(0.5,1.0)"/>
         </edges>
-        <edges xmi:type="notation:Edge" xmi:id="_vBG9XF-yEe28-58oFDpgLw" type="4001" element="_vBEhFF-yEe28-58oFDpgLw" source="_oNetbF-yEe28-58oFDpgLw" target="_qH_STF-yEe28-58oFDpgLw">
-          <children xmi:type="notation:Node" xmi:id="_vBG9YF-yEe28-58oFDpgLw" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vBG9YV-yEe28-58oFDpgLw" y="14"/>
+        <edges xmi:type="notation:Edge" xmi:id="_3hzLoP7dEe2Beojy-59L7g" type="4001" element="_3htsAP7dEe2Beojy-59L7g" source="_QRhqKP7dEe2Beojy-59L7g" target="_Slnzuv7dEe2Beojy-59L7g">
+          <children xmi:type="notation:Node" xmi:id="_3hzLpP7dEe2Beojy-59L7g" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3hzLpf7dEe2Beojy-59L7g" x="5" y="-10"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_vBHkYF-yEe28-58oFDpgLw" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vBHkYV-yEe28-58oFDpgLw" x="-8" y="10"/>
+          <children xmi:type="notation:Node" xmi:id="_3hzLpv7dEe2Beojy-59L7g" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3hzLp_7dEe2Beojy-59L7g" x="8" y="10"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_vBHkYl-yEe28-58oFDpgLw" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vBHkY1-yEe28-58oFDpgLw" x="-50" y="10"/>
+          <children xmi:type="notation:Node" xmi:id="_3hzLqP7dEe2Beojy-59L7g" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3hzLqf7dEe2Beojy-59L7g" x="1" y="10"/>
           </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_vBG9XV-yEe28-58oFDpgLw" routing="Rectilinear"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="_vBG9Xl-yEe28-58oFDpgLw" fontName="Microsoft YaHei UI" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_vBG9X1-yEe28-58oFDpgLw" points="[-60, 0, -75, 0]$[15, 0, 0, 0]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vBHkZF-yEe28-58oFDpgLw" id="(1.4285714285714286,0.5)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vBHkZV-yEe28-58oFDpgLw" id="(0.0,0.5)"/>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_3hzLof7dEe2Beojy-59L7g" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_3hzLov7dEe2Beojy-59L7g" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_3hzLo_7dEe2Beojy-59L7g" points="[0, 0, 0, -40]$[0, 40, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_3hzLqv7dEe2Beojy-59L7g" id="(0.5,1.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_3hzLq_7dEe2Beojy-59L7g" id="(0.5,0.0)"/>
         </edges>
-        <edges xmi:type="notation:Edge" xmi:id="_5ds4AF-yEe28-58oFDpgLw" type="4001" element="_5dqbyF-yEe28-58oFDpgLw" source="_qH_STF-yEe28-58oFDpgLw" target="_0CDusF-yEe28-58oFDpgLw">
-          <children xmi:type="notation:Node" xmi:id="_5ds4BF-yEe28-58oFDpgLw" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ds4BV-yEe28-58oFDpgLw" x="37" y="-10"/>
+        <edges xmi:type="notation:Edge" xmi:id="_3-_d4P7dEe2Beojy-59L7g" type="4001" element="_3-9BsP7dEe2Beojy-59L7g" source="_Slnzuv7dEe2Beojy-59L7g" target="_TvkeUP7dEe2Beojy-59L7g">
+          <children xmi:type="notation:Node" xmi:id="_3-_d5P7dEe2Beojy-59L7g" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3-_d5f7dEe2Beojy-59L7g" y="-10"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_5ds4Bl-yEe28-58oFDpgLw" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ds4B1-yEe28-58oFDpgLw" x="14" y="10"/>
+          <children xmi:type="notation:Node" xmi:id="_3-_d5v7dEe2Beojy-59L7g" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3-_d5_7dEe2Beojy-59L7g" y="10"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_5ds4CF-yEe28-58oFDpgLw" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5ds4CV-yEe28-58oFDpgLw" x="9" y="10"/>
+          <children xmi:type="notation:Node" xmi:id="_3-_d6P7dEe2Beojy-59L7g" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3-_d6f7dEe2Beojy-59L7g" y="10"/>
           </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_5ds4AV-yEe28-58oFDpgLw" routing="Rectilinear"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="_5ds4Al-yEe28-58oFDpgLw" fontName="Microsoft YaHei UI" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_5ds4A1-yEe28-58oFDpgLw" points="[-110, 0, -65, 40]$[-110, -40, -65, 0]$[-45, -40, 0, 0]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5ds4Cl-yEe28-58oFDpgLw" id="(1.5566037735849056,0.0)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5ds4C1-yEe28-58oFDpgLw" id="(0.0,0.5)"/>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_3-_d4f7dEe2Beojy-59L7g" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_3-_d4v7dEe2Beojy-59L7g" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_3-_d4_7dEe2Beojy-59L7g" points="[0, 0, 0, -35]$[0, 35, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_3-_d6v7dEe2Beojy-59L7g" id="(0.5,1.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_3-_d6_7dEe2Beojy-59L7g" id="(0.5,0.0)"/>
         </edges>
-        <edges xmi:type="notation:Edge" xmi:id="_6DN_7F-yEe28-58oFDpgLw" type="4001" element="_6DK8nF-yEe28-58oFDpgLw" source="_qH_STF-yEe28-58oFDpgLw" target="_3r90rF-yEe28-58oFDpgLw">
-          <children xmi:type="notation:Node" xmi:id="_6DN_8F-yEe28-58oFDpgLw" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6DN_8V-yEe28-58oFDpgLw" x="-12" y="-10"/>
+        <edges xmi:type="notation:Edge" xmi:id="_bZBGgP7eEe2Beojy-59L7g" type="4001" element="_bY9cIP7eEe2Beojy-59L7g" source="_LaOunP7eEe2Beojy-59L7g" target="_WinYaP7eEe2Beojy-59L7g">
+          <children xmi:type="notation:Node" xmi:id="_bZBGhP7eEe2Beojy-59L7g" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bZBGhf7eEe2Beojy-59L7g" y="-10"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_6DN_8l-yEe28-58oFDpgLw" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6DN_81-yEe28-58oFDpgLw" x="36" y="-59"/>
+          <children xmi:type="notation:Node" xmi:id="_bZBGhv7eEe2Beojy-59L7g" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bZBGh_7eEe2Beojy-59L7g" y="10"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_6DN_9F-yEe28-58oFDpgLw" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6DN_9V-yEe28-58oFDpgLw" x="9" y="10"/>
+          <children xmi:type="notation:Node" xmi:id="_bZBGiP7eEe2Beojy-59L7g" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bZBGif7eEe2Beojy-59L7g" y="10"/>
           </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_6DN_7V-yEe28-58oFDpgLw" routing="Rectilinear"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="_6DN_7l-yEe28-58oFDpgLw" fontName="Microsoft YaHei UI" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_6DN_71-yEe28-58oFDpgLw" points="[-145, 15, -65, -56]$[-145, 56, -65, -15]$[-80, 56, 0, -15]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_6DN_9l-yEe28-58oFDpgLw" id="(1.8867924528301887,0.7)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_6DN_91-yEe28-58oFDpgLw" id="(0.0,0.8)"/>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_bZBGgf7eEe2Beojy-59L7g" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_bZBGgv7eEe2Beojy-59L7g" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_bZBGg_7eEe2Beojy-59L7g" points="[0, 0, 5, -41]$[0, 20, 5, -21]$[-5, 20, 0, -21]$[-5, 41, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_bZBGiv7eEe2Beojy-59L7g" id="(0.35,1.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_bZBGi_7eEe2Beojy-59L7g" id="(0.325,0.0)"/>
         </edges>
-        <edges xmi:type="notation:Edge" xmi:id="_B0arWV-zEe28-58oFDpgLw" type="4001" element="_B0YPIF-zEe28-58oFDpgLw" source="_0CDusF-yEe28-58oFDpgLw" target="_9m1QnF-yEe28-58oFDpgLw">
-          <children xmi:type="notation:Node" xmi:id="_B0arXV-zEe28-58oFDpgLw" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_B0arXl-zEe28-58oFDpgLw" x="7" y="14"/>
+        <edges xmi:type="notation:Edge" xmi:id="_bv8_0P7eEe2Beojy-59L7g" type="4001" element="_bv7KvP7eEe2Beojy-59L7g" source="_WinYaP7eEe2Beojy-59L7g" target="_YX9waP7eEe2Beojy-59L7g">
+          <children xmi:type="notation:Node" xmi:id="_bv8_1P7eEe2Beojy-59L7g" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bv8_1f7eEe2Beojy-59L7g" y="-10"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_B0arX1-zEe28-58oFDpgLw" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_B0arYF-zEe28-58oFDpgLw" x="16" y="10"/>
+          <children xmi:type="notation:Node" xmi:id="_bv8_1v7eEe2Beojy-59L7g" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bv8_1_7eEe2Beojy-59L7g" y="10"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_B0arYV-zEe28-58oFDpgLw" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_B0arYl-zEe28-58oFDpgLw" x="-22" y="10"/>
+          <children xmi:type="notation:Node" xmi:id="_bv8_2P7eEe2Beojy-59L7g" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bv8_2f7eEe2Beojy-59L7g" y="10"/>
           </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_B0arWl-zEe28-58oFDpgLw" routing="Rectilinear"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="_B0arW1-zEe28-58oFDpgLw" fontName="Microsoft YaHei UI" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_B0arXF-zEe28-58oFDpgLw" points="[-68, -1, -75, 0]$[7, -1, 0, 0]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_B0arY1-zEe28-58oFDpgLw" id="(1.5306122448979593,0.5)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_B0arZF-zEe28-58oFDpgLw" id="(0.0,0.5)"/>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_bv8_0f7eEe2Beojy-59L7g" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_bv8_0v7eEe2Beojy-59L7g" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_bv8_0_7eEe2Beojy-59L7g" points="[0, 0, 15, -89]$[0, 44, 15, -45]$[-15, 44, 0, -45]$[-15, 89, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_bv8_2v7eEe2Beojy-59L7g" id="(0.525,1.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_bv8_2_7eEe2Beojy-59L7g" id="(0.45,0.0)"/>
         </edges>
-        <edges xmi:type="notation:Edge" xmi:id="_EbcX_F-zEe28-58oFDpgLw" type="4001" element="_EbZUtF-zEe28-58oFDpgLw" source="_3r90rF-yEe28-58oFDpgLw" target="_EAJjHF-zEe28-58oFDpgLw">
-          <children xmi:type="notation:Node" xmi:id="_EbcYAF-zEe28-58oFDpgLw" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EbcYAV-zEe28-58oFDpgLw" x="8" y="-10"/>
+        <edges xmi:type="notation:Edge" xmi:id="_ceKwsP7eEe2Beojy-59L7g" type="4001" element="_ceIUkP7eEe2Beojy-59L7g" source="_YX9waP7eEe2Beojy-59L7g" target="_KR_woP7dEe2Beojy-59L7g">
+          <children xmi:type="notation:Node" xmi:id="_ceKwtP7eEe2Beojy-59L7g" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ceKwtf7eEe2Beojy-59L7g" y="10"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_EbcYAl-zEe28-58oFDpgLw" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EbcYA1-zEe28-58oFDpgLw" x="18" y="10"/>
+          <children xmi:type="notation:Node" xmi:id="_ceKwtv7eEe2Beojy-59L7g" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ceKwt_7eEe2Beojy-59L7g" x="146" y="10"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_EbcYBF-zEe28-58oFDpgLw" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EbcYBV-zEe28-58oFDpgLw" y="10"/>
+          <children xmi:type="notation:Node" xmi:id="_ceKwuP7eEe2Beojy-59L7g" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ceKwuf7eEe2Beojy-59L7g" x="-46" y="163"/>
           </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_EbcX_V-zEe28-58oFDpgLw" routing="Rectilinear"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="_EbcX_l-zEe28-58oFDpgLw" fontName="Microsoft YaHei UI" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_EbcX_1-zEe28-58oFDpgLw" points="[-33, -9, -39, 0]$[6, -9, 0, 0]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_EbcYBl-zEe28-58oFDpgLw" id="(1.200373449517628,0.58)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_EbcYB1-zEe28-58oFDpgLw" id="(0.0,0.4)"/>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_ceKwsf7eEe2Beojy-59L7g" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_ceKwsv7eEe2Beojy-59L7g" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ceKws_7eEe2Beojy-59L7g" points="[100, 25, 435, 110]$[100, 130, 435, 215]$[-435, 130, -100, 215]$[-435, -49, -100, 36]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ceKwuv7eEe2Beojy-59L7g" id="(0.0,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ceKwu_7eEe2Beojy-59L7g" id="(1.0,0.28)"/>
         </edges>
-        <edges xmi:type="notation:Edge" xmi:id="_P9QOQF-zEe28-58oFDpgLw" type="4001" element="_P9NLCF-zEe28-58oFDpgLw" source="_EAJjHF-zEe28-58oFDpgLw" target="_NqJjPF-zEe28-58oFDpgLw">
-          <children xmi:type="notation:Node" xmi:id="_P9QORF-zEe28-58oFDpgLw" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_P9QORV-zEe28-58oFDpgLw" x="-3" y="-12"/>
+        <edges xmi:type="notation:Edge" xmi:id="_83NbO_7mEe2ksdXLWYTswg" type="4001" element="_83NbCP7mEe2ksdXLWYTswg" source="_MTrUg_7dEe2Beojy-59L7g" target="_8hV4zf7mEe2ksdXLWYTswg">
+          <children xmi:type="notation:Node" xmi:id="_83NbP_7mEe2ksdXLWYTswg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_83NbQP7mEe2ksdXLWYTswg" x="-17" y="2"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_P9QORl-zEe28-58oFDpgLw" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_P9QOR1-zEe28-58oFDpgLw" x="21" y="10"/>
+          <children xmi:type="notation:Node" xmi:id="_83NbQf7mEe2ksdXLWYTswg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_83NbQv7mEe2ksdXLWYTswg" x="1" y="10"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_P9QOSF-zEe28-58oFDpgLw" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_P9QOSV-zEe28-58oFDpgLw" x="-9" y="10"/>
+          <children xmi:type="notation:Node" xmi:id="_83NbQ_7mEe2ksdXLWYTswg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_83NbRP7mEe2ksdXLWYTswg" x="-16" y="10"/>
           </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_P9QOQV-zEe28-58oFDpgLw" routing="Rectilinear"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="_P9QOQl-zEe28-58oFDpgLw" fontName="Microsoft YaHei UI" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_P9QOQ1-zEe28-58oFDpgLw" points="[-63, 0, -74, -4]$[11, 0, 0, -4]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_P9QOSl-zEe28-58oFDpgLw" id="(1.4640812077043206,0.36)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_P9QOS1-zEe28-58oFDpgLw" id="(0.0,0.44)"/>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_83NbPP7mEe2ksdXLWYTswg" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_83NbPf7mEe2ksdXLWYTswg" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_83NbPv7mEe2ksdXLWYTswg" points="[0, 5, -135, 0]$[135, 5, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_83NbRf7mEe2ksdXLWYTswg" id="(1.0,0.3)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_83NbRv7mEe2ksdXLWYTswg" id="(0.0,0.4)"/>
         </edges>
-        <edges xmi:type="notation:Edge" xmi:id="_SnSLlV-zEe28-58oFDpgLw" type="4001" element="_SnPIXF-zEe28-58oFDpgLw" source="_3r90rF-yEe28-58oFDpgLw" target="_NqJjPF-zEe28-58oFDpgLw">
-          <children xmi:type="notation:Node" xmi:id="_SnSLmV-zEe28-58oFDpgLw" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SnSLml-zEe28-58oFDpgLw" x="68" y="-10"/>
+        <edges xmi:type="notation:Edge" xmi:id="_9QMi4v7mEe2ksdXLWYTswg" type="4001" element="_9QCxzP7mEe2ksdXLWYTswg" source="_8hV4zf7mEe2ksdXLWYTswg" target="_LaOunP7eEe2Beojy-59L7g">
+          <children xmi:type="notation:Node" xmi:id="_9QMi5v7mEe2ksdXLWYTswg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9QMi5_7mEe2ksdXLWYTswg" x="2" y="2"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_SnSLm1-zEe28-58oFDpgLw" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SnSLnF-zEe28-58oFDpgLw" x="115" y="10"/>
+          <children xmi:type="notation:Node" xmi:id="_9QMi6P7mEe2ksdXLWYTswg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9QMi6f7mEe2ksdXLWYTswg" x="-9" y="10"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_SnSLnV-zEe28-58oFDpgLw" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SnSLnl-zEe28-58oFDpgLw" x="-62" y="10"/>
+          <children xmi:type="notation:Node" xmi:id="_9QMi6v7mEe2ksdXLWYTswg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9QMi6_7mEe2ksdXLWYTswg" x="-6" y="10"/>
           </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_SnSLll-zEe28-58oFDpgLw" routing="Rectilinear"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="_SnSLl1-zEe28-58oFDpgLw" fontName="Microsoft YaHei UI" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_SnSLmF-zEe28-58oFDpgLw" points="[-100, 16, -316, 20]$[-100, 50, -316, 54]$[315, 50, 99, 54]$[315, 16, 99, 20]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_SnSLn1-zEe28-58oFDpgLw" id="(1.200373449517628,0.68)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_SnSLoF-zEe28-58oFDpgLw" id="(0.0,0.6)"/>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_9QMi4_7mEe2ksdXLWYTswg" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_9QMi5P7mEe2ksdXLWYTswg" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_9QMi5f7mEe2ksdXLWYTswg" points="[0, 0, -150, 5]$[150, 0, 0, 5]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_9QMi7P7mEe2ksdXLWYTswg" id="(1.0,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_9QMi7f7mEe2ksdXLWYTswg" id="(0.0,0.4)"/>
         </edges>
-        <edges xmi:type="notation:Edge" xmi:id="_XuGUYF-zEe28-58oFDpgLw" type="4001" element="_XuDRMF-zEe28-58oFDpgLw" source="_3r90rF-yEe28-58oFDpgLw" target="_9m1QnF-yEe28-58oFDpgLw">
-          <children xmi:type="notation:Node" xmi:id="_XuGUZF-zEe28-58oFDpgLw" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XuGUZV-zEe28-58oFDpgLw" x="-2" y="-10"/>
+        <edges xmi:type="notation:Edge" xmi:id="_9mLZwP7mEe2ksdXLWYTswg" type="4001" element="_9mJklP7mEe2ksdXLWYTswg" source="_8hV4zf7mEe2ksdXLWYTswg" target="_QRhqKP7dEe2Beojy-59L7g">
+          <children xmi:type="notation:Node" xmi:id="_9mLZxP7mEe2ksdXLWYTswg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9mLZxf7mEe2ksdXLWYTswg" x="-10"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_XuG7cF-zEe28-58oFDpgLw" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XuG7cV-zEe28-58oFDpgLw" x="3" y="6"/>
+          <children xmi:type="notation:Node" xmi:id="_9mLZxv7mEe2ksdXLWYTswg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9mLZx_7mEe2ksdXLWYTswg" x="10"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_XuG7cl-zEe28-58oFDpgLw" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XuG7c1-zEe28-58oFDpgLw" x="-35" y="-42"/>
+          <children xmi:type="notation:Node" xmi:id="_9mLZyP7mEe2ksdXLWYTswg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9mLZyf7mEe2ksdXLWYTswg" x="-6" y="10"/>
           </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_XuGUYV-zEe28-58oFDpgLw" routing="Rectilinear"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="_XuGUYl-zEe28-58oFDpgLw" fontName="Microsoft YaHei UI" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_XuGUY1-zEe28-58oFDpgLw" points="[0, 0, -175, 82]$[0, -26, -175, 56]$[120, -26, -55, 56]$[120, -82, -55, 0]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_XuG7dF-zEe28-58oFDpgLw" id="(0.9002800871382208,0.0)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_XuG7dV-zEe28-58oFDpgLw" id="(0.994475138121547,1.0)"/>
-        </edges>
-        <edges xmi:type="notation:Edge" xmi:id="_doTpDF-zEe28-58oFDpgLw" type="4001" element="_doRM5F-zEe28-58oFDpgLw" source="_9m1QnF-yEe28-58oFDpgLw" target="_dJaGjF-zEe28-58oFDpgLw">
-          <children xmi:type="notation:Node" xmi:id="_doUQEF-zEe28-58oFDpgLw" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_doUQEV-zEe28-58oFDpgLw" x="25" y="-10"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_doUQEl-zEe28-58oFDpgLw" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_doUQE1-zEe28-58oFDpgLw" x="115" y="10"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_doUQFF-zEe28-58oFDpgLw" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_doUQFV-zEe28-58oFDpgLw" x="2" y="13"/>
-          </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_doTpDV-zEe28-58oFDpgLw" routing="Rectilinear"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="_doTpDl-zEe28-58oFDpgLw" fontName="Microsoft YaHei UI" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_doTpD1-zEe28-58oFDpgLw" points="[-78, 0, -90, -46]$[91, 0, 79, -46]$[91, 26, 79, -20]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_doUQFl-zEe28-58oFDpgLw" id="(1.6574585635359116,0.6)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_doUQF1-zEe28-58oFDpgLw" id="(0.0,0.4)"/>
-        </edges>
-        <edges xmi:type="notation:Edge" xmi:id="_d7Xu_F-zEe28-58oFDpgLw" type="4001" element="_d7VS2F-zEe28-58oFDpgLw" source="_NqJjPF-zEe28-58oFDpgLw" target="_dJaGjF-zEe28-58oFDpgLw">
-          <children xmi:type="notation:Node" xmi:id="_d7YWAF-zEe28-58oFDpgLw" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_d7YWAV-zEe28-58oFDpgLw" x="4" y="60"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_d7YWAl-zEe28-58oFDpgLw" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_d7YWA1-zEe28-58oFDpgLw" x="-7"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_d7YWBF-zEe28-58oFDpgLw" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_d7YWBV-zEe28-58oFDpgLw" x="-19"/>
-          </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_d7Xu_V-zEe28-58oFDpgLw" routing="Rectilinear"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="_d7Xu_l-zEe28-58oFDpgLw" fontName="Microsoft YaHei UI" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_d7Xu_1-zEe28-58oFDpgLw" points="[-120, -30, 0, 26]$[-120, -56, 0, 0]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_d7YWBl-zEe28-58oFDpgLw" id="(1.2048192771084338,0.6)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_d7YWB1-zEe28-58oFDpgLw" id="(0.4819277108433735,1.0)"/>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_9mLZwf7mEe2ksdXLWYTswg" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_9mLZwv7mEe2ksdXLWYTswg" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_9mLZw_7mEe2ksdXLWYTswg" points="[5, 0, 5, -41]$[5, 41, 5, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_9mLZyv7mEe2ksdXLWYTswg" id="(0.4,1.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_9mLZy_7mEe2ksdXLWYTswg" id="(0.475,0.0)"/>
         </edges>
       </data>
     </ownedAnnotationEntries>
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_c7I2c1-yEe28-58oFDpgLw" source="DANNOTATION_CUSTOMIZATION_KEY">
       <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_c7I2dF-yEe28-58oFDpgLw"/>
     </ownedAnnotationEntries>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_lnPq8F-yEe28-58oFDpgLw" name="1: 天线" outgoingEdges="_r8fVwF-yEe28-58oFDpgLw" width="20" height="5" resizeKind="NSEW">
-      <target xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.1/@components.0"/>
-      <semanticElements xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.1/@components.0"/>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_KR7fMP7dEe2Beojy-59L7g" name="1: DC1" outgoingEdges="_WRyjcP7dEe2Beojy-59L7g" incomingEdges="_ceIUkP7eEe2Beojy-59L7g" width="20" height="5" resizeKind="NSEW">
+      <target xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.1/@components.7"/>
+      <semanticElements xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.1/@components.7"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-      <ownedStyle xmi:type="diagram:Square" uid="_lnPq8V-yEe28-58oFDpgLw" labelSize="12" showIcon="false" labelPosition="node" width="20" height="5" color="255,255,255">
+      <ownedStyle xmi:type="diagram:Square" uid="_KR7fMf7dEe2Beojy-59L7g" labelSize="12" showIcon="false" labelPosition="node" width="20" height="5" color="255,255,255">
         <description xmi:type="style:SquareDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@nodeMappings[name='Component']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@nodeMappings[name='Component']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_oNcRIF-yEe28-58oFDpgLw" name="2: 前置放大器" outgoingEdges="_vBEhFF-yEe28-58oFDpgLw" incomingEdges="_r8fVwF-yEe28-58oFDpgLw" width="20" height="5" resizeKind="NSEW">
-      <target xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.1/@components.1"/>
-      <semanticElements xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.1/@components.1"/>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_MTo4QP7dEe2Beojy-59L7g" name="2: D1" outgoingEdges="_83NbCP7mEe2ksdXLWYTswg" incomingEdges="_WRyjcP7dEe2Beojy-59L7g" width="20" height="5" resizeKind="NSEW">
+      <target xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.1/@components.8"/>
+      <semanticElements xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.1/@components.8"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-      <ownedStyle xmi:type="diagram:Square" uid="_oNcRIV-yEe28-58oFDpgLw" labelSize="12" showIcon="false" labelPosition="node" width="20" height="5" color="255,255,255">
+      <ownedStyle xmi:type="diagram:Square" uid="_MTo4Qf7dEe2Beojy-59L7g" labelSize="12" showIcon="false" labelPosition="node" width="20" height="5" color="255,255,255">
         <description xmi:type="style:SquareDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@nodeMappings[name='Component']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@nodeMappings[name='Component']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_qH82AF-yEe28-58oFDpgLw" name="3: 双工器" outgoingEdges="_5dqbyF-yEe28-58oFDpgLw _6DK8nF-yEe28-58oFDpgLw" incomingEdges="_vBEhFF-yEe28-58oFDpgLw" width="20" height="5" resizeKind="NSEW">
-      <target xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.1/@components.2"/>
-      <semanticElements xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.1/@components.2"/>
-      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
-      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
-      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-      <ownedStyle xmi:type="diagram:Square" uid="_qH82AV-yEe28-58oFDpgLw" labelSize="12" showIcon="false" labelPosition="node" width="20" height="5" color="255,255,255">
-        <description xmi:type="style:SquareDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@nodeMappings[name='Component']/@style"/>
-      </ownedStyle>
-      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@nodeMappings[name='Component']"/>
-    </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_0CArYF-yEe28-58oFDpgLw" name="4: GPS接收机" outgoingEdges="_B0YPIF-zEe28-58oFDpgLw" incomingEdges="_5dqbyF-yEe28-58oFDpgLw" width="20" height="5" resizeKind="NSEW">
-      <target xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.1/@components.5"/>
-      <semanticElements xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.1/@components.5"/>
-      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
-      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
-      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-      <ownedStyle xmi:type="diagram:Square" uid="_0CArYV-yEe28-58oFDpgLw" labelSize="12" showIcon="false" labelPosition="node" width="20" height="5" color="255,255,255">
-        <description xmi:type="style:SquareDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@nodeMappings[name='Component']/@style"/>
-      </ownedStyle>
-      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@nodeMappings[name='Component']"/>
-    </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_3r6xUF-yEe28-58oFDpgLw" name="5: GLONASS接收机" outgoingEdges="_EbZUtF-zEe28-58oFDpgLw _SnPIXF-zEe28-58oFDpgLw _XuDRMF-zEe28-58oFDpgLw" incomingEdges="_6DK8nF-yEe28-58oFDpgLw" width="20" height="5" resizeKind="NSEW">
-      <target xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.1/@components.6"/>
-      <semanticElements xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.1/@components.6"/>
-      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
-      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
-      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-      <ownedStyle xmi:type="diagram:Square" uid="_3r7YYF-yEe28-58oFDpgLw" labelSize="12" showIcon="false" labelPosition="node" width="20" height="5" color="255,255,255">
-        <description xmi:type="style:SquareDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@nodeMappings[name='Component']/@style"/>
-      </ownedStyle>
-      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@nodeMappings[name='Component']"/>
-    </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_9myNQF-yEe28-58oFDpgLw" name="6: 信号相关器" outgoingEdges="_doRM5F-zEe28-58oFDpgLw" incomingEdges="_B0YPIF-zEe28-58oFDpgLw _XuDRMF-zEe28-58oFDpgLw" width="20" height="5" resizeKind="NSEW">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_QRf08P7dEe2Beojy-59L7g" name="4: C1" outgoingEdges="_3htsAP7dEe2Beojy-59L7g" incomingEdges="_9mJklP7mEe2ksdXLWYTswg" width="20" height="5" resizeKind="NSEW">
       <target xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.1/@components.9"/>
       <semanticElements xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.1/@components.9"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-      <ownedStyle xmi:type="diagram:Square" uid="_9myNQV-yEe28-58oFDpgLw" labelSize="12" showIcon="false" labelPosition="node" width="20" height="5" color="255,255,255">
+      <ownedStyle xmi:type="diagram:Square" uid="_QRgcAP7dEe2Beojy-59L7g" labelSize="12" showIcon="false" labelPosition="node" width="20" height="5" color="255,255,255">
         <description xmi:type="style:SquareDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@nodeMappings[name='Component']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@nodeMappings[name='Component']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_EAHG0F-zEe28-58oFDpgLw" name="7: 模数变换器" outgoingEdges="_P9NLCF-zEe28-58oFDpgLw" incomingEdges="_EbZUtF-zEe28-58oFDpgLw" width="20" height="5" resizeKind="NSEW">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_Sll-gP7dEe2Beojy-59L7g" name="5: C2" outgoingEdges="_3-9BsP7dEe2Beojy-59L7g" incomingEdges="_3htsAP7dEe2Beojy-59L7g" width="20" height="5" resizeKind="NSEW">
+      <target xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.1/@components.10"/>
+      <semanticElements xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.1/@components.10"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_Sll-gf7dEe2Beojy-59L7g" labelSize="12" showIcon="false" labelPosition="node" width="20" height="5" color="255,255,255">
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@nodeMappings[name='Component']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@nodeMappings[name='Component']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_TvipIP7dEe2Beojy-59L7g" name="6: GND1" incomingEdges="_3-9BsP7dEe2Beojy-59L7g" width="20" height="5" resizeKind="NSEW">
       <target xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.1/@components.11"/>
       <semanticElements xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.1/@components.11"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-      <ownedStyle xmi:type="diagram:Square" uid="_EAHG0V-zEe28-58oFDpgLw" labelSize="12" showIcon="false" labelPosition="node" width="20" height="5" color="255,255,255">
+      <ownedStyle xmi:type="diagram:Square" uid="_TvipIf7dEe2Beojy-59L7g" labelSize="12" showIcon="false" labelPosition="node" width="20" height="5" color="255,255,255">
         <description xmi:type="style:SquareDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@nodeMappings[name='Component']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@nodeMappings[name='Component']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_NqGf4F-zEe28-58oFDpgLw" name="8: 通道选择器" outgoingEdges="_d7VS2F-zEe28-58oFDpgLw" incomingEdges="_P9NLCF-zEe28-58oFDpgLw _SnPIXF-zEe28-58oFDpgLw" width="20" height="5" resizeKind="NSEW">
-      <target xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.1/@components.13"/>
-      <semanticElements xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.1/@components.13"/>
-      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
-      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
-      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-      <ownedStyle xmi:type="diagram:Square" uid="_NqGf4V-zEe28-58oFDpgLw" labelSize="12" showIcon="false" labelPosition="node" width="20" height="5" color="255,255,255">
-        <description xmi:type="style:SquareDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@nodeMappings[name='Component']/@style"/>
-      </ownedStyle>
-      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@nodeMappings[name='Component']"/>
-    </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_dJXqQF-zEe28-58oFDpgLw" name="9: 总线变换器" incomingEdges="_doRM5F-zEe28-58oFDpgLw _d7VS2F-zEe28-58oFDpgLw" width="20" height="5" resizeKind="NSEW">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_LaMSUP7eEe2Beojy-59L7g" name="0: L1" outgoingEdges="_bY9cIP7eEe2Beojy-59L7g" incomingEdges="_9QCxzP7mEe2ksdXLWYTswg" width="20" height="5" resizeKind="NSEW">
       <target xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.1/@components.17"/>
       <semanticElements xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.1/@components.17"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-      <ownedStyle xmi:type="diagram:Square" uid="_dJXqQV-zEe28-58oFDpgLw" labelSize="12" showIcon="false" labelPosition="node" width="20" height="5" color="255,255,255">
+      <ownedStyle xmi:type="diagram:Square" uid="_LaM5YP7eEe2Beojy-59L7g" labelSize="12" showIcon="false" labelPosition="node" width="20" height="5" color="255,255,255">
         <description xmi:type="style:SquareDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@nodeMappings[name='Component']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@nodeMappings[name='Component']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_r8fVwF-yEe28-58oFDpgLw" name="传递信号" sourceNode="_lnPq8F-yEe28-58oFDpgLw" targetNode="_oNcRIF-yEe28-58oFDpgLw">
-      <target xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.1/@components.3"/>
-      <semanticElements xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.1/@components.3"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_r8f80F-yEe28-58oFDpgLw" size="2" routingStyle="manhattan">
-        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@edgeMappings[name='Relationship']/@style"/>
-        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_r8f80V-yEe28-58oFDpgLw" labelSize="12" showIcon="false"/>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_WiljEP7eEe2Beojy-59L7g" name="0: MC1" outgoingEdges="_bv7KvP7eEe2Beojy-59L7g" incomingEdges="_bY9cIP7eEe2Beojy-59L7g" width="20" height="5" resizeKind="NSEW">
+      <target xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.1/@components.19"/>
+      <semanticElements xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.1/@components.19"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_WiljEf7eEe2Beojy-59L7g" labelSize="12" showIcon="false" labelPosition="node" width="20" height="5" color="255,255,255">
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@nodeMappings[name='Component']/@style"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@edgeMappings[name='Relationship']"/>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@nodeMappings[name='Component']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_vBEhFF-yEe28-58oFDpgLw" name="放大信号" sourceNode="_oNcRIF-yEe28-58oFDpgLw" targetNode="_qH82AF-yEe28-58oFDpgLw">
-      <target xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.1/@components.4"/>
-      <semanticElements xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.1/@components.4"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_vBEhFV-yEe28-58oFDpgLw" size="2" routingStyle="manhattan">
-        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@edgeMappings[name='Relationship']/@style"/>
-        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_vBEhFl-yEe28-58oFDpgLw" labelSize="12" showIcon="false"/>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_YX77IP7eEe2Beojy-59L7g" name="0: CS1" outgoingEdges="_ceIUkP7eEe2Beojy-59L7g" incomingEdges="_bv7KvP7eEe2Beojy-59L7g" width="20" height="5" resizeKind="NSEW">
+      <target xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.1/@components.20"/>
+      <semanticElements xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.1/@components.20"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_YX77If7eEe2Beojy-59L7g" labelSize="12" showIcon="false" labelPosition="node" width="20" height="5" color="255,255,255">
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@nodeMappings[name='Component']/@style"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@edgeMappings[name='Relationship']"/>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@nodeMappings[name='Component']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_5dqbyF-yEe28-58oFDpgLw" sourceNode="_qH82AF-yEe28-58oFDpgLw" targetNode="_0CArYF-yEe28-58oFDpgLw">
-      <target xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.1/@components.7"/>
-      <semanticElements xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.1/@components.7"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_5dqbyV-yEe28-58oFDpgLw" size="2" routingStyle="manhattan">
-        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@edgeMappings[name='Relationship']/@style"/>
-        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_5dqbyl-yEe28-58oFDpgLw" labelSize="12" showIcon="false"/>
-      </ownedStyle>
-      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@edgeMappings[name='Relationship']"/>
-    </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_6DK8nF-yEe28-58oFDpgLw" sourceNode="_qH82AF-yEe28-58oFDpgLw" targetNode="_3r6xUF-yEe28-58oFDpgLw">
-      <target xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.1/@components.8"/>
-      <semanticElements xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.1/@components.8"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_6DLjoF-yEe28-58oFDpgLw" size="2" routingStyle="manhattan">
-        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@edgeMappings[name='Relationship']/@style"/>
-        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_6DLjoV-yEe28-58oFDpgLw" labelSize="12" showIcon="false"/>
-      </ownedStyle>
-      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@edgeMappings[name='Relationship']"/>
-    </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_B0YPIF-zEe28-58oFDpgLw" name="数字信号" sourceNode="_0CArYF-yEe28-58oFDpgLw" targetNode="_9myNQF-yEe28-58oFDpgLw">
-      <target xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.1/@components.10"/>
-      <semanticElements xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.1/@components.10"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_B0YPIV-zEe28-58oFDpgLw" size="2" routingStyle="manhattan">
-        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@edgeMappings[name='Relationship']/@style"/>
-        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_B0YPIl-zEe28-58oFDpgLw" labelSize="12" showIcon="false"/>
-      </ownedStyle>
-      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@edgeMappings[name='Relationship']"/>
-    </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_EbZUtF-zEe28-58oFDpgLw" sourceNode="_3r6xUF-yEe28-58oFDpgLw" targetNode="_EAHG0F-zEe28-58oFDpgLw">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_WRyjcP7dEe2Beojy-59L7g" sourceNode="_KR7fMP7dEe2Beojy-59L7g" targetNode="_MTo4QP7dEe2Beojy-59L7g">
       <target xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.1/@components.12"/>
       <semanticElements xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.1/@components.12"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_EbZUtV-zEe28-58oFDpgLw" size="2" routingStyle="manhattan">
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_WRyjcf7dEe2Beojy-59L7g" size="2" routingStyle="manhattan">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@edgeMappings[name='Relationship']/@style"/>
-        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_EbZUtl-zEe28-58oFDpgLw" labelSize="12" showIcon="false"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_WRyjcv7dEe2Beojy-59L7g" labelSize="12" showIcon="false"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@edgeMappings[name='Relationship']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_P9NLCF-zEe28-58oFDpgLw" name="组件关系" sourceNode="_EAHG0F-zEe28-58oFDpgLw" targetNode="_NqGf4F-zEe28-58oFDpgLw">
-      <target xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.1/@components.14"/>
-      <semanticElements xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.1/@components.14"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_P9NyAF-zEe28-58oFDpgLw" size="2" routingStyle="manhattan">
-        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@edgeMappings[name='Relationship']/@style"/>
-        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_P9NyAV-zEe28-58oFDpgLw" labelSize="12" showIcon="false"/>
-      </ownedStyle>
-      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@edgeMappings[name='Relationship']"/>
-    </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_SnPIXF-zEe28-58oFDpgLw" sourceNode="_3r6xUF-yEe28-58oFDpgLw" targetNode="_NqGf4F-zEe28-58oFDpgLw">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_3htsAP7dEe2Beojy-59L7g" sourceNode="_QRf08P7dEe2Beojy-59L7g" targetNode="_Sll-gP7dEe2Beojy-59L7g">
       <target xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.1/@components.15"/>
       <semanticElements xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.1/@components.15"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_SnPvUF-zEe28-58oFDpgLw" size="2" routingStyle="manhattan">
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_3htsAf7dEe2Beojy-59L7g" size="2" routingStyle="manhattan">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@edgeMappings[name='Relationship']/@style"/>
-        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_SnPvUV-zEe28-58oFDpgLw" labelSize="12" showIcon="false"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_3htsAv7dEe2Beojy-59L7g" labelSize="12" showIcon="false"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@edgeMappings[name='Relationship']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_XuDRMF-zEe28-58oFDpgLw" sourceNode="_3r6xUF-yEe28-58oFDpgLw" targetNode="_9myNQF-yEe28-58oFDpgLw">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_3-9BsP7dEe2Beojy-59L7g" sourceNode="_Sll-gP7dEe2Beojy-59L7g" targetNode="_TvipIP7dEe2Beojy-59L7g">
       <target xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.1/@components.16"/>
       <semanticElements xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.1/@components.16"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_XuDRMV-zEe28-58oFDpgLw" size="2" routingStyle="manhattan">
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_3-9osP7dEe2Beojy-59L7g" size="2" routingStyle="manhattan">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@edgeMappings[name='Relationship']/@style"/>
-        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_XuDRMl-zEe28-58oFDpgLw" labelSize="12" showIcon="false"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_3-9osf7dEe2Beojy-59L7g" labelSize="12" showIcon="false"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@edgeMappings[name='Relationship']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_doRM5F-zEe28-58oFDpgLw" sourceNode="_9myNQF-yEe28-58oFDpgLw" targetNode="_dJXqQF-zEe28-58oFDpgLw">
-      <target xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.1/@components.18"/>
-      <semanticElements xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.1/@components.18"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_doRM5V-zEe28-58oFDpgLw" size="2" routingStyle="manhattan">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_bY9cIP7eEe2Beojy-59L7g" sourceNode="_LaMSUP7eEe2Beojy-59L7g" targetNode="_WiljEP7eEe2Beojy-59L7g">
+      <target xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.1/@components.21"/>
+      <semanticElements xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.1/@components.21"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_bY9cIf7eEe2Beojy-59L7g" size="2" routingStyle="manhattan">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@edgeMappings[name='Relationship']/@style"/>
-        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_doRM5l-zEe28-58oFDpgLw" labelSize="12" showIcon="false"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_bY9cIv7eEe2Beojy-59L7g" labelSize="12" showIcon="false"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@edgeMappings[name='Relationship']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_d7VS2F-zEe28-58oFDpgLw" sourceNode="_NqGf4F-zEe28-58oFDpgLw" targetNode="_dJXqQF-zEe28-58oFDpgLw">
-      <target xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.1/@components.19"/>
-      <semanticElements xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.1/@components.19"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_d7VS2V-zEe28-58oFDpgLw" size="2" routingStyle="manhattan">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_bv7KvP7eEe2Beojy-59L7g" sourceNode="_WiljEP7eEe2Beojy-59L7g" targetNode="_YX77IP7eEe2Beojy-59L7g">
+      <target xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.1/@components.22"/>
+      <semanticElements xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.1/@components.22"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_bv7Kvf7eEe2Beojy-59L7g" size="2" routingStyle="manhattan">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@edgeMappings[name='Relationship']/@style"/>
-        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_d7VS2l-zEe28-58oFDpgLw" labelSize="12" showIcon="false"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_bv7Kvv7eEe2Beojy-59L7g" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@edgeMappings[name='Relationship']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_ceIUkP7eEe2Beojy-59L7g" sourceNode="_YX77IP7eEe2Beojy-59L7g" targetNode="_KR7fMP7dEe2Beojy-59L7g">
+      <target xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.1/@components.23"/>
+      <semanticElements xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.1/@components.23"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_ceI7gP7eEe2Beojy-59L7g" size="2" routingStyle="manhattan">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@edgeMappings[name='Relationship']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_ceI7gf7eEe2Beojy-59L7g" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@edgeMappings[name='Relationship']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_8hV4oP7mEe2ksdXLWYTswg" name="Fork" outgoingEdges="_9QCxzP7mEe2ksdXLWYTswg _9mJklP7mEe2ksdXLWYTswg" incomingEdges="_83NbCP7mEe2ksdXLWYTswg" width="5" height="5" resizeKind="NSEW">
+      <target xmi:type="component_:Fork" href="model/example.mbsa#//@componentPackage.1/@components.27"/>
+      <semanticElements xmi:type="component_:Fork" href="model/example.mbsa#//@componentPackage.1/@components.27"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Dot" uid="_8hV4of7mEe2ksdXLWYTswg" labelSize="12" labelPosition="node" strokeSizeComputationExpression="5" backgroundColor="138,226,52">
+        <description xmi:type="style:DotDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@nodeMappings[name='Fork']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@nodeMappings[name='Fork']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_83NbCP7mEe2ksdXLWYTswg" sourceNode="_MTo4QP7dEe2Beojy-59L7g" targetNode="_8hV4oP7mEe2ksdXLWYTswg">
+      <target xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.1/@components.28"/>
+      <semanticElements xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.1/@components.28"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_83NbCf7mEe2ksdXLWYTswg" size="2" routingStyle="manhattan">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@edgeMappings[name='Relationship']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_83NbCv7mEe2ksdXLWYTswg" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@edgeMappings[name='Relationship']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_9QCxzP7mEe2ksdXLWYTswg" sourceNode="_8hV4oP7mEe2ksdXLWYTswg" targetNode="_LaMSUP7eEe2Beojy-59L7g">
+      <target xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.1/@components.29"/>
+      <semanticElements xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.1/@components.29"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_9QCxzf7mEe2ksdXLWYTswg" size="2" routingStyle="manhattan">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@edgeMappings[name='Relationship']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_9QCxzv7mEe2ksdXLWYTswg" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@edgeMappings[name='Relationship']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_9mJklP7mEe2ksdXLWYTswg" sourceNode="_8hV4oP7mEe2ksdXLWYTswg" targetNode="_QRf08P7dEe2Beojy-59L7g">
+      <target xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.1/@components.30"/>
+      <semanticElements xmi:type="component_:ComponentRelationship" href="model/example.mbsa#//@componentPackage.1/@components.30"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_9mJklf7mEe2ksdXLWYTswg" size="2" routingStyle="manhattan">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@edgeMappings[name='Relationship']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_9mJklv7mEe2ksdXLWYTswg" labelSize="12" showIcon="false"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer/@edgeMappings[name='Relationship']"/>
     </ownedDiagramElements>
@@ -4556,5 +4502,419 @@
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_c7ATkF-yEe28-58oFDpgLw"/>
     <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_package_diagram']/@defaultLayer"/>
     <target xmi:type="component_:ComponentPackage" href="model/example.mbsa#//@componentPackage.1"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_40QcgP7eEe2Beojy-59L7g">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_40Ut8P7eEe2Beojy-59L7g" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_40Ut8f7eEe2Beojy-59L7g" type="Sirius" element="_40QcgP7eEe2Beojy-59L7g" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_5Sxkov7eEe2Beojy-59L7g" type="2001" element="_5SvIQP7eEe2Beojy-59L7g">
+          <children xmi:type="notation:Node" xmi:id="_5Sxkpf7eEe2Beojy-59L7g" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_5Sxkpv7eEe2Beojy-59L7g" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_5SyLkP7eEe2Beojy-59L7g" type="3016" element="_5SvIQf7eEe2Beojy-59L7g">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_5SyLkf7eEe2Beojy-59L7g" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5SyLkv7eEe2Beojy-59L7g"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_5Sxko_7eEe2Beojy-59L7g" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5SxkpP7eEe2Beojy-59L7g" x="195" y="270" width="100" height="100"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_g0uY4P7sEe2bu5gi_Kulmw" type="2001" element="_g0qugP7sEe2bu5gi_Kulmw">
+          <children xmi:type="notation:Node" xmi:id="_g0wOEP7sEe2bu5gi_Kulmw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_g0wOEf7sEe2bu5gi_Kulmw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_g0w1IP7sEe2bu5gi_Kulmw" type="3016" element="_g0rVkP7sEe2bu5gi_Kulmw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_g0w1If7sEe2bu5gi_Kulmw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_g0w1Iv7sEe2bu5gi_Kulmw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_g0uY4f7sEe2bu5gi_Kulmw" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_g0uY4v7sEe2bu5gi_Kulmw" x="515" y="310" width="100" height="100"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_40Ut8v7eEe2Beojy-59L7g"/>
+        <edges xmi:type="notation:Edge" xmi:id="_mBlfUP7sEe2bu5gi_Kulmw" type="4001" element="_mBicAP7sEe2bu5gi_Kulmw" source="_g0uY4P7sEe2bu5gi_Kulmw" target="_5Sxkov7eEe2Beojy-59L7g">
+          <children xmi:type="notation:Node" xmi:id="_mBnUgP7sEe2bu5gi_Kulmw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mBnUgf7sEe2bu5gi_Kulmw" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mBoioP7sEe2bu5gi_Kulmw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mBoiof7sEe2bu5gi_Kulmw" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mBoiov7sEe2bu5gi_Kulmw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mBoio_7sEe2bu5gi_Kulmw" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_mBlfUf7sEe2bu5gi_Kulmw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_mBlfUv7sEe2bu5gi_Kulmw" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mBlfU_7sEe2bu5gi_Kulmw" points="[0, 0, 220, 20]$[-220, -20, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mBpwwP7sEe2bu5gi_Kulmw" id="(0.0,0.3)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mBpwwf7sEe2bu5gi_Kulmw" id="(1.0,0.5)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_40VVAP7eEe2Beojy-59L7g" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_40VVAf7eEe2Beojy-59L7g"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_5SvIQP7eEe2Beojy-59L7g" name="FailureMode1" incomingEdges="_mBicAP7sEe2bu5gi_Kulmw" width="10" height="10" resizeKind="NSEW">
+      <target xmi:type="component_:FailureMode" href="model/example.mbsa#//@componentPackage.1/@components.8/@failure_modes.0"/>
+      <semanticElements xmi:type="component_:FailureMode" href="model/example.mbsa#//@componentPackage.1/@components.8/@failure_modes.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Ellipse" uid="_5SvIQf7eEe2Beojy-59L7g" labelSize="12" showIcon="false" borderColor="156,12,12" labelPosition="node" color="255,255,255">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_diagram']/@defaultLayer/@nodeMappings[name='FailureMode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_diagram']/@defaultLayer/@nodeMappings[name='FailureMode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_g0qugP7sEe2bu5gi_Kulmw" name="Safety Mechanism" outgoingEdges="_mBicAP7sEe2bu5gi_Kulmw" width="10" height="10" resizeKind="NSEW">
+      <target xmi:type="component_:SafetyMechanism" href="model/example.mbsa#//@componentPackage.1/@components.8/@safety_mechanisms.0"/>
+      <semanticElements xmi:type="component_:SafetyMechanism" href="model/example.mbsa#//@componentPackage.1/@components.8/@safety_mechanisms.0"/>
+      <ownedStyle xmi:type="diagram:Ellipse" uid="_g0rVkP7sEe2bu5gi_Kulmw" labelSize="12" showIcon="false" borderColor="77,137,20" labelPosition="node" color="255,255,255">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_diagram']/@defaultLayer/@nodeMappings[name='SafetyMechanism']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_diagram']/@defaultLayer/@nodeMappings[name='SafetyMechanism']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_mBicAP7sEe2bu5gi_Kulmw" sourceNode="_g0qugP7sEe2bu5gi_Kulmw" targetNode="_5SvIQP7eEe2Beojy-59L7g">
+      <target xmi:type="component_:SafetyMechanism" href="model/example.mbsa#//@componentPackage.1/@components.8/@safety_mechanisms.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_mBicAf7sEe2bu5gi_Kulmw" targetArrow="OutputFillClosedArrow" size="2" strokeColor="138,226,52">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_diagram']/@defaultLayer/@edgeMappings[name='DiagnosticTarget']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_mBicAv7sEe2bu5gi_Kulmw" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_diagram']/@defaultLayer/@edgeMappings[name='DiagnosticTarget']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_40Qcgf7eEe2Beojy-59L7g"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_diagram']/@defaultLayer"/>
+    <target xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.1/@components.8"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_xKRD8P7sEe2l5epTHCDULg">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_xKVVYP7sEe2l5epTHCDULg" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_xKVVYf7sEe2l5epTHCDULg" type="Sirius" element="_xKRD8P7sEe2l5epTHCDULg" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_xjjtsP7sEe2l5epTHCDULg" type="2001" element="_xje1MP7sEe2l5epTHCDULg">
+          <children xmi:type="notation:Node" xmi:id="_xjk70P7sEe2l5epTHCDULg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_xjk70f7sEe2l5epTHCDULg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_xjk70v7sEe2l5epTHCDULg" type="3016" element="_xjfcQP7sEe2l5epTHCDULg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_xjk70_7sEe2l5epTHCDULg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xjk71P7sEe2l5epTHCDULg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_xjjtsf7sEe2l5epTHCDULg" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xjjtsv7sEe2l5epTHCDULg" x="200" y="270" width="100" height="100"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_zbpQsP7sEe2l5epTHCDULg" type="2001" element="_zbm0cP7sEe2l5epTHCDULg">
+          <children xmi:type="notation:Node" xmi:id="_zbpQs_7sEe2l5epTHCDULg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_zbpQtP7sEe2l5epTHCDULg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_zbpQtf7sEe2l5epTHCDULg" type="3016" element="_zbm0cf7sEe2l5epTHCDULg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_zbpQtv7sEe2l5epTHCDULg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zbpQt_7sEe2l5epTHCDULg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_zbpQsf7sEe2l5epTHCDULg" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zbpQsv7sEe2l5epTHCDULg" x="200" y="410" width="100" height="100"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_xKVVYv7sEe2l5epTHCDULg"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_xKV8cP7sEe2l5epTHCDULg" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_xKV8cf7sEe2l5epTHCDULg"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_xje1MP7sEe2l5epTHCDULg" name="Short" width="10" height="10" resizeKind="NSEW">
+      <target xmi:type="component_:FailureMode" href="model/example.mbsa#//@componentPackage.1/@components.17/@failure_modes.0"/>
+      <semanticElements xmi:type="component_:FailureMode" href="model/example.mbsa#//@componentPackage.1/@components.17/@failure_modes.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Ellipse" uid="_xjfcQP7sEe2l5epTHCDULg" labelSize="12" showIcon="false" borderColor="156,12,12" labelPosition="node" color="255,255,255">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_diagram']/@defaultLayer/@nodeMappings[name='FailureMode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_diagram']/@defaultLayer/@nodeMappings[name='FailureMode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_zbm0cP7sEe2l5epTHCDULg" name="Open" width="10" height="10" resizeKind="NSEW">
+      <target xmi:type="component_:FailureMode" href="model/example.mbsa#//@componentPackage.1/@components.17/@failure_modes.1"/>
+      <semanticElements xmi:type="component_:FailureMode" href="model/example.mbsa#//@componentPackage.1/@components.17/@failure_modes.1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Ellipse" uid="_zbm0cf7sEe2l5epTHCDULg" labelSize="12" showIcon="false" borderColor="156,12,12" labelPosition="node" color="255,255,255">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_diagram']/@defaultLayer/@nodeMappings[name='FailureMode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_diagram']/@defaultLayer/@nodeMappings[name='FailureMode']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_xKRD8f7sEe2l5epTHCDULg"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='component_diagram']/@defaultLayer"/>
+    <target xmi:type="component_:Component" href="model/example.mbsa#//@componentPackage.1/@components.17"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_1ElvAP7tEe2l5epTHCDULg">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_1EmWEP7tEe2l5epTHCDULg" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_1EmWEf7tEe2l5epTHCDULg" type="Sirius" element="_1ElvAP7tEe2l5epTHCDULg" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_1dxrGP7tEe2l5epTHCDULg" type="2001" element="_1duAsP7tEe2l5epTHCDULg">
+          <children xmi:type="notation:Node" xmi:id="_1dySIP7tEe2l5epTHCDULg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_1dySIf7tEe2l5epTHCDULg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_1dySIv7tEe2l5epTHCDULg" type="3003" element="_1dunwP7tEe2l5epTHCDULg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_1dySI_7tEe2l5epTHCDULg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1dySJP7tEe2l5epTHCDULg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_1dxrGf7tEe2l5epTHCDULg" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1dxrGv7tEe2l5epTHCDULg" x="220" y="240" width="226" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_BEAuZP7uEe2l5epTHCDULg" type="2001" element="_BD9rEP7uEe2l5epTHCDULg">
+          <children xmi:type="notation:Node" xmi:id="_BEAuZ_7uEe2l5epTHCDULg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_BEAuaP7uEe2l5epTHCDULg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_BEAuaf7uEe2l5epTHCDULg" type="3003" element="_BD9rEf7uEe2l5epTHCDULg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_BEAuav7uEe2l5epTHCDULg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BEAua_7uEe2l5epTHCDULg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_BEAuZf7uEe2l5epTHCDULg" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BEAuZv7uEe2l5epTHCDULg" x="115" y="384" width="200" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_B-8sxv7uEe2l5epTHCDULg" type="2001" element="_B-5pUP7uEe2l5epTHCDULg">
+          <children xmi:type="notation:Node" xmi:id="_B-9TsP7uEe2l5epTHCDULg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_B-9Tsf7uEe2l5epTHCDULg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_B-9Tsv7uEe2l5epTHCDULg" type="3003" element="_B-5pUf7uEe2l5epTHCDULg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_B-9Ts_7uEe2l5epTHCDULg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_B-9TtP7uEe2l5epTHCDULg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_B-8sx_7uEe2l5epTHCDULg" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_B-8syP7uEe2l5epTHCDULg" x="350" y="384" width="200" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_HuTcIP7uEe2l5epTHCDULg" type="2001" element="_HuQY0P7uEe2l5epTHCDULg">
+          <children xmi:type="notation:Node" xmi:id="_HuTcI_7uEe2l5epTHCDULg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_HuTcJP7uEe2l5epTHCDULg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_HuUDMP7uEe2l5epTHCDULg" type="3003" element="_HuQY0f7uEe2l5epTHCDULg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_HuUDMf7uEe2l5epTHCDULg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HuUDMv7uEe2l5epTHCDULg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_HuTcIf7uEe2l5epTHCDULg" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HuTcIv7uEe2l5epTHCDULg" x="570" y="384" width="200" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_ON25qf7uEe2l5epTHCDULg" type="2001" element="_ON0dQP7uEe2l5epTHCDULg">
+          <children xmi:type="notation:Node" xmi:id="_ON3gkP7uEe2l5epTHCDULg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_ON3gkf7uEe2l5epTHCDULg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ON3gkv7uEe2l5epTHCDULg" type="3003" element="_ON0dQf7uEe2l5epTHCDULg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_ON3gk_7uEe2l5epTHCDULg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ON3glP7uEe2l5epTHCDULg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_ON25qv7uEe2l5epTHCDULg" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ON25q_7uEe2l5epTHCDULg" x="570" y="205" width="200" height="50"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_1EmWEv7tEe2l5epTHCDULg"/>
+        <edges xmi:type="notation:Edge" xmi:id="_BhYm4P7uEe2l5epTHCDULg" type="4001" element="_BhU8gP7uEe2l5epTHCDULg" source="_1dxrGP7tEe2l5epTHCDULg" target="_BEAuZP7uEe2l5epTHCDULg">
+          <children xmi:type="notation:Node" xmi:id="_BhZN8P7uEe2l5epTHCDULg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BhZN8f7uEe2l5epTHCDULg" x="-9" y="2"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_BhZN8v7uEe2l5epTHCDULg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BhZN8_7uEe2l5epTHCDULg" x="1" y="2"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_BhZN9P7uEe2l5epTHCDULg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BhZN9f7uEe2l5epTHCDULg" x="4" y="2"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_BhYm4f7uEe2l5epTHCDULg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_BhYm4v7uEe2l5epTHCDULg" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_BhYm4_7uEe2l5epTHCDULg" points="[0, 0, 115, -94]$[-115, 94, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_BhacEP7uEe2l5epTHCDULg" id="(0.48672566371681414,1.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_BhacEf7uEe2l5epTHCDULg" id="(0.5,0.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_CSALhP7uEe2l5epTHCDULg" type="4001" element="_CR8hJP7uEe2l5epTHCDULg" source="_1dxrGP7tEe2l5epTHCDULg" target="_B-8sxv7uEe2l5epTHCDULg">
+          <children xmi:type="notation:Node" xmi:id="_CSALiP7uEe2l5epTHCDULg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CSALif7uEe2l5epTHCDULg" x="-3" y="4"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_CSALiv7uEe2l5epTHCDULg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CSALi_7uEe2l5epTHCDULg" x="-1" y="-2"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_CSALjP7uEe2l5epTHCDULg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CSALjf7uEe2l5epTHCDULg" y="-2"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_CSALhf7uEe2l5epTHCDULg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_CSALhv7uEe2l5epTHCDULg" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_CSALh_7uEe2l5epTHCDULg" points="[0, 0, 25, -94]$[-25, 94, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_CSALjv7uEe2l5epTHCDULg" id="(0.8628318584070797,1.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_CSALj_7uEe2l5epTHCDULg" id="(0.2,0.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_MrPQNP7uEe2l5epTHCDULg" type="4001" element="_MrJwqP7uEe2l5epTHCDULg" source="_1dxrGP7tEe2l5epTHCDULg" target="_HuTcIP7uEe2l5epTHCDULg">
+          <children xmi:type="notation:Node" xmi:id="_MrPQOP7uEe2l5epTHCDULg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MrPQOf7uEe2l5epTHCDULg" x="-2" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_MrPQOv7uEe2l5epTHCDULg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MrPQO_7uEe2l5epTHCDULg" x="2" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_MrPQPP7uEe2l5epTHCDULg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MrPQPf7uEe2l5epTHCDULg" y="9"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_MrPQNf7uEe2l5epTHCDULg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_MrPQNv7uEe2l5epTHCDULg" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_MrPQN_7uEe2l5epTHCDULg" points="[11, 6, -204, -113]$[215, 119, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MrPQPv7uEe2l5epTHCDULg" id="(0.9513274336283186,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MrPQP_7uEe2l5epTHCDULg" id="(0.4,0.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_P9UE8P7uEe2l5epTHCDULg" type="4001" element="_P9RBoP7uEe2l5epTHCDULg" source="_HuTcIP7uEe2l5epTHCDULg" target="_ON25qf7uEe2l5epTHCDULg">
+          <children xmi:type="notation:Node" xmi:id="_P9UE9P7uEe2l5epTHCDULg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_P9UE9f7uEe2l5epTHCDULg" x="1" y="-8"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_P9UE9v7uEe2l5epTHCDULg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_P9UE9_7uEe2l5epTHCDULg" x="1" y="7"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_P9UE-P7uEe2l5epTHCDULg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_P9UE-f7uEe2l5epTHCDULg" x="1" y="7"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_P9UE8f7uEe2l5epTHCDULg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_P9UE8v7uEe2l5epTHCDULg" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_P9UE8_7uEe2l5epTHCDULg" points="[5, 0, 4, 154]$[5, -129, 4, 25]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_P9UE-v7uEe2l5epTHCDULg" id="(0.495,0.0)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_1EmWE_7tEe2l5epTHCDULg" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_1EmWFP7tEe2l5epTHCDULg"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_1duAsP7tEe2l5epTHCDULg" name="0: Sensor power supply is off" outgoingEdges="_BhU8gP7uEe2l5epTHCDULg _CR8hJP7uEe2l5epTHCDULg _MrJwqP7uEe2l5epTHCDULg" width="20" height="5" resizeKind="NSEW">
+      <target xmi:type="hazard_:HazardousSituation" href="model/example.mbsa#//@hazardPackage.1/@hazardElement.0"/>
+      <semanticElements xmi:type="hazard_:HazardousSituation" href="model/example.mbsa#//@hazardPackage.1/@hazardElement.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_1dunwP7tEe2l5epTHCDULg" labelSize="12" showIcon="false" borderColor="156,12,12" labelPosition="node" width="20" height="5" color="255,255,255">
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='hazard_package_diagram']/@defaultLayer/@nodeMappings[name='HazardNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='hazard_package_diagram']/@defaultLayer/@nodeMappings[name='HazardNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_BD9rEP7uEe2l5epTHCDULg" name="1: D1 is open" incomingEdges="_BhU8gP7uEe2l5epTHCDULg" width="20" height="5" resizeKind="NSEW">
+      <target xmi:type="hazard_:Cause" href="model/example.mbsa#//@hazardPackage.1/@hazardElement.1"/>
+      <semanticElements xmi:type="hazard_:Cause" href="model/example.mbsa#//@hazardPackage.1/@hazardElement.1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_BD9rEf7uEe2l5epTHCDULg" labelSize="12" showIcon="false" borderColor="224,133,3" labelPosition="node" width="20" height="5" color="255,255,255">
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='hazard_package_diagram']/@defaultLayer/@nodeMappings[name='CauseNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='hazard_package_diagram']/@defaultLayer/@nodeMappings[name='CauseNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_B-5pUP7uEe2l5epTHCDULg" name="2: L1 is open" incomingEdges="_CR8hJP7uEe2l5epTHCDULg" width="20" height="5" resizeKind="NSEW">
+      <target xmi:type="hazard_:Cause" href="model/example.mbsa#//@hazardPackage.1/@hazardElement.2"/>
+      <semanticElements xmi:type="hazard_:Cause" href="model/example.mbsa#//@hazardPackage.1/@hazardElement.2"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_B-5pUf7uEe2l5epTHCDULg" labelSize="12" showIcon="false" borderColor="224,133,3" labelPosition="node" width="20" height="5" color="255,255,255">
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='hazard_package_diagram']/@defaultLayer/@nodeMappings[name='CauseNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='hazard_package_diagram']/@defaultLayer/@nodeMappings[name='CauseNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_HuQY0P7uEe2l5epTHCDULg" name="3: RAM failure in MC1" outgoingEdges="_P9RBoP7uEe2l5epTHCDULg" incomingEdges="_MrJwqP7uEe2l5epTHCDULg" width="20" height="5" resizeKind="NSEW">
+      <target xmi:type="hazard_:Cause" href="model/example.mbsa#//@hazardPackage.1/@hazardElement.3"/>
+      <semanticElements xmi:type="hazard_:Cause" href="model/example.mbsa#//@hazardPackage.1/@hazardElement.3"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_HuQY0f7uEe2l5epTHCDULg" labelSize="12" showIcon="false" borderColor="224,133,3" labelPosition="node" width="20" height="5" color="255,255,255">
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='hazard_package_diagram']/@defaultLayer/@nodeMappings[name='CauseNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='hazard_package_diagram']/@defaultLayer/@nodeMappings[name='CauseNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_BhU8gP7uEe2l5epTHCDULg" sourceNode="_1duAsP7tEe2l5epTHCDULg" targetNode="_BD9rEP7uEe2l5epTHCDULg">
+      <target xmi:type="hazard_:HazardousSituation" href="model/example.mbsa#//@hazardPackage.1/@hazardElement.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_BhU8gf7uEe2l5epTHCDULg" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='hazard_package_diagram']/@defaultLayer/@edgeMappings[name='CauseEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_BhU8gv7uEe2l5epTHCDULg" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='hazard_package_diagram']/@defaultLayer/@edgeMappings[name='CauseEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_CR8hJP7uEe2l5epTHCDULg" sourceNode="_1duAsP7tEe2l5epTHCDULg" targetNode="_B-5pUP7uEe2l5epTHCDULg">
+      <target xmi:type="hazard_:HazardousSituation" href="model/example.mbsa#//@hazardPackage.1/@hazardElement.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_CR9IMP7uEe2l5epTHCDULg" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='hazard_package_diagram']/@defaultLayer/@edgeMappings[name='CauseEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_CR9IMf7uEe2l5epTHCDULg" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='hazard_package_diagram']/@defaultLayer/@edgeMappings[name='CauseEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_MrJwqP7uEe2l5epTHCDULg" sourceNode="_1duAsP7tEe2l5epTHCDULg" targetNode="_HuQY0P7uEe2l5epTHCDULg">
+      <target xmi:type="hazard_:HazardousSituation" href="model/example.mbsa#//@hazardPackage.1/@hazardElement.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_MrJwqf7uEe2l5epTHCDULg" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='hazard_package_diagram']/@defaultLayer/@edgeMappings[name='CauseEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_MrJwqv7uEe2l5epTHCDULg" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='hazard_package_diagram']/@defaultLayer/@edgeMappings[name='CauseEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_ON0dQP7uEe2l5epTHCDULg" name="4: Control Measure" incomingEdges="_P9RBoP7uEe2l5epTHCDULg" width="20" height="5" resizeKind="NSEW">
+      <target xmi:type="hazard_:ControlMeasure" href="model/example.mbsa#//@hazardPackage.1/@hazardElement.4"/>
+      <semanticElements xmi:type="hazard_:ControlMeasure" href="model/example.mbsa#//@hazardPackage.1/@hazardElement.4"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_ON0dQf7uEe2l5epTHCDULg" labelSize="12" showIcon="false" borderColor="204,242,166" labelPosition="node" width="20" height="5" color="255,255,255">
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='hazard_package_diagram']/@defaultLayer/@nodeMappings[name='ControlMeasureNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='hazard_package_diagram']/@defaultLayer/@nodeMappings[name='ControlMeasureNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_P9RBoP7uEe2l5epTHCDULg" sourceNode="_HuQY0P7uEe2l5epTHCDULg" targetNode="_ON0dQP7uEe2l5epTHCDULg">
+      <target xmi:type="hazard_:Cause" href="model/example.mbsa#//@hazardPackage.1/@hazardElement.3"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_P9RosP7uEe2l5epTHCDULg" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='hazard_package_diagram']/@defaultLayer/@edgeMappings[name='ControlMeasureEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_P9Rosf7uEe2l5epTHCDULg" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='hazard_package_diagram']/@defaultLayer/@edgeMappings[name='ControlMeasureEdge']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='hazard_package_diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_1ElvAf7tEe2l5epTHCDULg"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='hazard_package_diagram']/@defaultLayer"/>
+    <target xmi:type="hazard_:HazardPackage" href="model/example.mbsa#//@hazardPackage.1"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_XUE3IP7uEe2l5epTHCDULg">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_XUFeMf7uEe2l5epTHCDULg" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_XUFeMv7uEe2l5epTHCDULg" type="Sirius" element="_XUE3IP7uEe2l5epTHCDULg" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_XFwR0P7vEe27V9mjsp79Rg" type="2001" element="_XFrZUP7vEe27V9mjsp79Rg">
+          <children xmi:type="notation:Node" xmi:id="_XFyHAP7vEe27V9mjsp79Rg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_XFyHAf7vEe27V9mjsp79Rg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_XFyuEP7vEe27V9mjsp79Rg" type="3003" element="_XFrZUf7vEe27V9mjsp79Rg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_XFyuEf7vEe27V9mjsp79Rg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XFyuEv7vEe27V9mjsp79Rg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_XFwR0f7vEe27V9mjsp79Rg" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XFwR0v7vEe27V9mjsp79Rg" x="1165" y="85" width="200" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_ahO6Nv7vEe27V9mjsp79Rg" type="2001" element="_ahNFAP7vEe27V9mjsp79Rg">
+          <children xmi:type="notation:Node" xmi:id="_ahPhQP7vEe27V9mjsp79Rg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_ahPhQf7vEe27V9mjsp79Rg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ahPhQv7vEe27V9mjsp79Rg" type="3003" element="_ahNsEP7vEe27V9mjsp79Rg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_ahPhQ_7vEe27V9mjsp79Rg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ahPhRP7vEe27V9mjsp79Rg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_ahO6N_7vEe27V9mjsp79Rg" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ahO6OP7vEe27V9mjsp79Rg" x="1170" y="180" width="200" height="50"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_XUFeM_7uEe2l5epTHCDULg"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_XUGFSf7uEe2l5epTHCDULg" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_XUGFSv7uEe2l5epTHCDULg"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_XFrZUP7vEe27V9mjsp79Rg" name="0: SR1" width="20" height="5" resizeKind="NSEW">
+      <target xmi:type="requirement_:Requirement" href="model/example.mbsa#//@requirementPackage.1/@requirementElement.0"/>
+      <semanticElements xmi:type="requirement_:Requirement" href="model/example.mbsa#//@requirementPackage.1/@requirementElement.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_XFrZUf7vEe27V9mjsp79Rg" labelSize="12" showIcon="false" labelPosition="node" width="20" height="5" color="204,242,166">
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='requirement_package_diagram']/@defaultLayer/@nodeMappings[name='RequirementNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='requirement_package_diagram']/@defaultLayer/@nodeMappings[name='RequirementNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_ahNFAP7vEe27V9mjsp79Rg" name="1: SR2" width="20" height="5" resizeKind="NSEW">
+      <target xmi:type="requirement_:Requirement" href="model/example.mbsa#//@requirementPackage.1/@requirementElement.1"/>
+      <semanticElements xmi:type="requirement_:Requirement" href="model/example.mbsa#//@requirementPackage.1/@requirementElement.1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_ahNsEP7vEe27V9mjsp79Rg" labelSize="12" showIcon="false" labelPosition="node" width="20" height="5" color="204,242,166">
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='requirement_package_diagram']/@defaultLayer/@nodeMappings[name='RequirementNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='requirement_package_diagram']/@defaultLayer/@nodeMappings[name='RequirementNode']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='requirement_package_diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_XUE3If7uEe2l5epTHCDULg"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/mbsa.toolchain.design/description/toolchain.odesign#//@ownedViewpoints[name='MBSAViewPoint']/@ownedRepresentations[name='requirement_package_diagram']/@defaultLayer"/>
+    <target xmi:type="requirement_:RequirementPackage" href="model/example.mbsa#//@requirementPackage.1"/>
   </diagram:DSemanticDiagram>
 </xmi:XMI>

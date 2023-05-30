@@ -38,6 +38,12 @@ class Component extends ComponentElement {
 	ref base.ArtifactElement[*] requirements;
 }
 
+class Fork extends Component {
+}
+
+class Join extends Component {
+}
+
 class ComponentRelationship extends ComponentElement {
 	attr String label;
 	ref Component source;

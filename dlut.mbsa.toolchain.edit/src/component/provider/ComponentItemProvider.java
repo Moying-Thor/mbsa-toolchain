@@ -419,6 +419,16 @@ public class ComponentItemProvider extends ComponentElementItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(Component_Package.Literals.COMPONENT__SUB_COMPONENTS,
+				 Component_Factory.eINSTANCE.createFork()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Component_Package.Literals.COMPONENT__SUB_COMPONENTS,
+				 Component_Factory.eINSTANCE.createJoin()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Component_Package.Literals.COMPONENT__SUB_COMPONENTS,
 				 Component_Factory.eINSTANCE.createComponentRelationship()));
 
 		newChildDescriptors.add

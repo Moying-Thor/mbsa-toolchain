@@ -11,7 +11,6 @@ package mbsa.toolchain.design;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.io.FilenameFilter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -45,10 +44,12 @@ import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.epsilon.common.dt.util.LogUtil;
 import org.eclipse.epsilon.common.util.StringProperties;
+import org.eclipse.epsilon.emc.csv.CsvModel;
 import org.eclipse.epsilon.emc.emf.EmfMetaModel;
 import org.eclipse.epsilon.emc.emf.EmfModel;
 import org.eclipse.epsilon.emc.emf.EmfUtil;
 import org.eclipse.epsilon.emc.emf.InMemoryEmfModel;
+import org.eclipse.epsilon.emc.spreadsheets.excel.ExcelModel;
 import org.eclipse.epsilon.emf.dt.EmfRegistryManager;
 import org.eclipse.epsilon.eol.EolModule;
 import org.eclipse.epsilon.eol.exceptions.EolRuntimeException;
@@ -158,8 +159,84 @@ public class UtilityMethods {
 			metamodelsString = metamodelsString + mm.toString() + ", ";
 		}
 		metamodelsString = metamodelsString.substring(0, metamodelsString.length() - 2);
-		System.out.println(metamodelsString);
+		System.err.println(metamodelsString);
+		
+		
 		EmfModel theReferencedEMFModel = createAndLoadAnEmfModel(metamodelsString, doc_absolute_path, "M", "true",
+				"false");
+		String result = runStringEOLQueryOnOneModel(theReferencedEMFModel, query).toString();
+		System.out.println("Result: " + result);
+		return result;
+	}
+	
+	public static String executeQueryOnExcel(String doc_path, String metadata_path, String query) throws Exception {
+
+		// getting the absolute path
+		String projectlocation = null;
+		IWorkbenchWindow window = PlatformUI.getWorkbench().getActiveWorkbenchWindow();
+
+		if (window == null) {
+			IWorkbenchWindow[] windows = PlatformUI.getWorkbench().getWorkbenchWindows();
+			if (windows.length > 0) {
+				window = windows[0];
+			}
+		}
+		IWorkbenchPage activePage = window.getActivePage();
+
+		IEditorPart activeEditor = activePage.getActiveEditor();
+
+		if (activeEditor != null) {
+			IEditorInput input = activeEditor.getEditorInput();
+
+			IProject project = input.getAdapter(IProject.class);
+			if (project == null) {
+				IResource resource = input.getAdapter(IResource.class);
+				if (resource != null) {
+					project = resource.getProject();
+					projectlocation = project.getLocation().toOSString();
+				}
+			}
+		}
+		String doc_absolute_path = projectlocation + doc_path;
+
+		ExcelModel theReferencedEMFModel = createAndLoadAnExcelModel(doc_absolute_path, "M", "true",
+				"false");
+		String result = runStringEOLQueryOnOneModel(theReferencedEMFModel, query).toString();
+		System.out.println("Result: " + result);
+		return result;
+	}
+	
+	public static String executeQueryOnCsv(String doc_path, String metadata_path, String query) throws Exception {
+
+		// getting the absolute path
+		String projectlocation = null;
+		IWorkbenchWindow window = PlatformUI.getWorkbench().getActiveWorkbenchWindow();
+
+		if (window == null) {
+			IWorkbenchWindow[] windows = PlatformUI.getWorkbench().getWorkbenchWindows();
+			if (windows.length > 0) {
+				window = windows[0];
+			}
+		}
+		IWorkbenchPage activePage = window.getActivePage();
+
+		IEditorPart activeEditor = activePage.getActiveEditor();
+
+		if (activeEditor != null) {
+			IEditorInput input = activeEditor.getEditorInput();
+
+			IProject project = input.getAdapter(IProject.class);
+			if (project == null) {
+				IResource resource = input.getAdapter(IResource.class);
+				if (resource != null) {
+					project = resource.getProject();
+					projectlocation = project.getLocation().toOSString();
+				}
+			}
+		}
+		String doc_absolute_path = projectlocation + doc_path;
+
+		CsvModel theReferencedEMFModel = createAndLoadAnCsvModel(doc_absolute_path, "M", "true",
 				"false");
 		String result = runStringEOLQueryOnOneModel(theReferencedEMFModel, query).toString();
 		System.out.println("Result: " + result);
@@ -207,6 +284,35 @@ public class UtilityMethods {
 		properties.put(EmfModel.PROPERTY_STOREONDISPOSAL, storeOnDisposal);
 		theModel.load(properties, (IRelativePathResolver) null);
 		return theModel;
+	}
+	
+	private static ExcelModel createAndLoadAnExcelModel(String modelFile, String modelName,
+			String readOnLoad, String storeOnDisposal) throws EolModelLoadingException {
+		ExcelModel theModel = new ExcelModel();
+		StringProperties properties = new StringProperties();
+		properties.put(ExcelModel.SPREADSHEET_FILE, modelFile);
+		properties.put(ExcelModel.PROPERTY_NAME, modelName);
+		properties.put(ExcelModel.PROPERTY_READONLOAD, readOnLoad);
+		properties.put(ExcelModel.PROPERTY_STOREONDISPOSAL, storeOnDisposal);
+		theModel.load(properties);
+		return theModel;
+	}
+	
+	private static CsvModel createAndLoadAnCsvModel(String modelFile, String modelName,
+			String readOnLoad, String storeOnDisposal) throws EolModelLoadingException {
+		CsvModel model = new CsvModel();
+		char separator = ',';
+		StringProperties properties = new StringProperties();
+		properties.put(CsvModel.PROPERTY_FILE, modelFile);
+		properties.put(CsvModel.PROPERTY_FIELD_SEPARATOR, separator);
+		properties.put(CsvModel.PROPERTY_HAS_KNOWN_HEADERS, true);
+		properties.put(CsvModel.PROPERTY_HAS_VARARGS_HEADERS, false);
+		properties.put(CsvModel.PROPERTY_NAME, modelName);
+		properties.put(CsvModel.PROPERTY_READONLOAD, readOnLoad);
+		properties.put(CsvModel.PROPERTY_STOREONDISPOSAL, storeOnDisposal);
+		model.load(properties);
+		//model.load(properties, (IRelativePathResolver) null);
+		return model;
 	}
 	
 	private static EmfModel loadInMemoryEMFModel(String modelName, String readOnLoad, String storeOnDisposal,
@@ -261,8 +367,9 @@ public class UtilityMethods {
 			throw new IllegalStateException(String.format("The query <%s> could not be evaluated.", query), e);
 		}
 		System.out.println("Result: " + result);
-		eolModule.getContext().getModelRepository().dispose();
 		if (result != null) {
+			result = result.toString();
+			eolModule.getContext().getModelRepository().dispose();
 			return result.toString();
 		}
 		else {

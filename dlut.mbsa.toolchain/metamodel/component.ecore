@@ -40,6 +40,8 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="requirements" upperBound="-1"
         eType="ecore:EClass http://dlut.mbsa/base#//ArtifactElement"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Fork" eSuperTypes="#//Component"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Join" eSuperTypes="#//Component"/>
   <eClassifiers xsi:type="ecore:EClass" name="ComponentRelationship" eSuperTypes="#//ComponentElement">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="label" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="source" eType="#//Component"/>

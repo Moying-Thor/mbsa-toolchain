@@ -13,7 +13,7 @@
     <components xsi:type="component_:ComponentRelationship" label="反馈信号"/>
     <components xsi:type="component_:ComponentRelationship" label=""/>
     <components xsi:type="component_:ComponentRelationship" label=""/>
-    <components xsi:type="component_:Component" identity="10" component_name="Antenna" fit="1.0" sil="1" requirements="//@requirementPackage.0/@requirementElement.0">
+    <components xsi:type="component_:Component" identity="10" component_name="Antenna" fit="1.0" sil="1">
       <name content="Name"/>
       <implementationConstraint>
         <content>
@@ -229,244 +229,293 @@
     <components xsi:type="component_:ComponentRelationship" label="drive signal" source="//@componentPackage.0/@components.17" target="//@componentPackage.0/@components.18"/>
   </componentPackage>
   <componentPackage>
-    <name content="新组件包"/>
-    <components xsi:type="component_:Component" identity="1" component_name="天线">
+    <name content="ComponentPackage1"/>
+    <components xsi:type="component_:ComponentRelationship" label=""/>
+    <components xsi:type="component_:ComponentRelationship" label="数字信号"/>
+    <components xsi:type="component_:ComponentRelationship" label=""/>
+    <components xsi:type="component_:ComponentRelationship" label="组件关系"/>
+    <components xsi:type="component_:ComponentRelationship" label=""/>
+    <components xsi:type="component_:ComponentRelationship" label=""/>
+    <components xsi:type="component_:ComponentRelationship" label=""/>
+    <components xsi:type="component_:Component" identity="1" component_name="DC1">
       <name content="Name"/>
       <implementationConstraint>
         <content>
-          <value content="外部文件"/>
+          <value content="File"/>
         </content>
       </implementationConstraint>
       <implementationConstraint>
         <content>
-          <value content="超数据"/>
+          <value content="Metadata"/>
         </content>
       </implementationConstraint>
       <implementationConstraint>
         <content>
-          <value content="验证规则"/>
+          <value content="Validation Rule"/>
         </content>
       </implementationConstraint>
       <implementationConstraint>
         <content>
-          <value content="验证结果"/>
+          <value content="Validation Result"/>
         </content>
       </implementationConstraint>
     </components>
-    <components xsi:type="component_:Component" identity="2" component_name="前置放大器">
+    <components xsi:type="component_:Component" identity="2" component_name="D1" fit="10.0" requirements="//@requirementPackage.1/@requirementElement.0">
       <name content="Name"/>
       <implementationConstraint>
         <content>
-          <value content="外部文件"/>
+          <value content="\sys_design\system_components.xlsx"/>
         </content>
       </implementationConstraint>
       <implementationConstraint>
         <content>
-          <value content="超数据"/>
+          <value content="Metadata"/>
         </content>
       </implementationConstraint>
       <implementationConstraint>
         <content>
-          <value content="验证规则"/>
+          <value content="var sheet = Sheet1.all;&#xD;&#xA;var entry = sheet.select(s|s.identity = &quot;D1&quot;);&#xD;&#xA;return entry;&#xD;&#xA;"/>
         </content>
       </implementationConstraint>
       <implementationConstraint>
         <content>
-          <value content="验证结果"/>
+          <value content="EolSequence [Sheet1 [identity='D1', component_type='Diode', failure_mode='open', distribution='0.3', fit='10.0'], Sheet1 [identity='D1', component_type='Diode', failure_mode='short', distribution='0.7', fit='10.0']]"/>
         </content>
       </implementationConstraint>
+      <failure_modes citedElement="//@componentPackage.1/@components.9" mode="FailureMode1"/>
+      <safety_mechanisms handle="//@componentPackage.1/@components.8/@failure_modes.0" mechanism="Safety Mechanism">
+        <name content="Name"/>
+        <implementationConstraint>
+          <content>
+            <value content="File"/>
+          </content>
+        </implementationConstraint>
+        <implementationConstraint>
+          <content>
+            <value content="Metadata"/>
+          </content>
+        </implementationConstraint>
+        <implementationConstraint>
+          <content>
+            <value content="Validation Rule"/>
+          </content>
+        </implementationConstraint>
+        <implementationConstraint>
+          <content>
+            <value content="Validation Result"/>
+          </content>
+        </implementationConstraint>
+      </safety_mechanisms>
     </components>
-    <components xsi:type="component_:Component" identity="3" component_name="双工器">
+    <components xsi:type="component_:Component" identity="4" component_name="C1" fit="2.0">
       <name content="Name"/>
       <implementationConstraint>
         <content>
-          <value content="外部文件"/>
+          <value content="File"/>
         </content>
       </implementationConstraint>
       <implementationConstraint>
         <content>
-          <value content="超数据"/>
+          <value content="Metadata"/>
         </content>
       </implementationConstraint>
       <implementationConstraint>
         <content>
-          <value content="验证规则"/>
+          <value content="Validation Rule"/>
         </content>
       </implementationConstraint>
       <implementationConstraint>
         <content>
-          <value content="验证结果"/>
+          <value content="Validation Result"/>
         </content>
       </implementationConstraint>
     </components>
-    <components xsi:type="component_:ComponentRelationship" label="传递信号" source="//@componentPackage.1/@components.0" target="//@componentPackage.1/@components.1"/>
-    <components xsi:type="component_:ComponentRelationship" label="放大信号" source="//@componentPackage.1/@components.1" target="//@componentPackage.1/@components.2"/>
-    <components xsi:type="component_:Component" identity="4" component_name="GPS接收机">
+    <components xsi:type="component_:Component" identity="5" component_name="C2" fit="2.0">
       <name content="Name"/>
       <implementationConstraint>
         <content>
-          <value content="外部文件"/>
+          <value content="File"/>
         </content>
       </implementationConstraint>
       <implementationConstraint>
         <content>
-          <value content="超数据"/>
+          <value content="Metadata"/>
         </content>
       </implementationConstraint>
       <implementationConstraint>
         <content>
-          <value content="验证规则"/>
+          <value content="Validation Rule"/>
         </content>
       </implementationConstraint>
       <implementationConstraint>
         <content>
-          <value content="验证结果"/>
+          <value content="Validation Result"/>
         </content>
       </implementationConstraint>
     </components>
-    <components xsi:type="component_:Component" identity="5" component_name="GLONASS接收机">
+    <components xsi:type="component_:Component" identity="6" component_name="GND1">
       <name content="Name"/>
       <implementationConstraint>
         <content>
-          <value content="外部文件"/>
+          <value content="File"/>
         </content>
       </implementationConstraint>
       <implementationConstraint>
         <content>
-          <value content="超数据"/>
+          <value content="Metadata"/>
         </content>
       </implementationConstraint>
       <implementationConstraint>
         <content>
-          <value content="验证规则"/>
+          <value content="Validation Rule"/>
         </content>
       </implementationConstraint>
       <implementationConstraint>
         <content>
-          <value content="验证结果"/>
+          <value content="Validation Result"/>
         </content>
       </implementationConstraint>
     </components>
-    <components xsi:type="component_:ComponentRelationship" label="" source="//@componentPackage.1/@components.2" target="//@componentPackage.1/@components.5"/>
-    <components xsi:type="component_:ComponentRelationship" label="" source="//@componentPackage.1/@components.2" target="//@componentPackage.1/@components.6"/>
-    <components xsi:type="component_:Component" identity="6" component_name="信号相关器">
+    <components xsi:type="component_:ComponentRelationship" label="" source="//@componentPackage.1/@components.7" target="//@componentPackage.1/@components.8"/>
+    <components xsi:type="component_:ComponentRelationship" label="" source="//@componentPackage.1/@components.8"/>
+    <components xsi:type="component_:ComponentRelationship" label="" target="//@componentPackage.1/@components.9"/>
+    <components xsi:type="component_:ComponentRelationship" label="" source="//@componentPackage.1/@components.9" target="//@componentPackage.1/@components.10"/>
+    <components xsi:type="component_:ComponentRelationship" label="" source="//@componentPackage.1/@components.10" target="//@componentPackage.1/@components.11"/>
+    <components xsi:type="component_:Component" component_name="L1" fit="15.0">
       <name content="Name"/>
       <implementationConstraint>
         <content>
-          <value content="外部文件"/>
+          <value content="File"/>
         </content>
       </implementationConstraint>
       <implementationConstraint>
         <content>
-          <value content="超数据"/>
+          <value content="Metadata"/>
         </content>
       </implementationConstraint>
       <implementationConstraint>
         <content>
-          <value content="验证规则"/>
+          <value content="Validation Rule"/>
         </content>
       </implementationConstraint>
       <implementationConstraint>
         <content>
-          <value content="验证结果"/>
+          <value content="Validation Result"/>
         </content>
       </implementationConstraint>
+      <failure_modes mode="Short"/>
+      <failure_modes mode="Open"/>
     </components>
-    <components xsi:type="component_:ComponentRelationship" label="数字信号" source="//@componentPackage.1/@components.5" target="//@componentPackage.1/@components.9"/>
-    <components xsi:type="component_:Component" identity="7" component_name="模数变换器">
+    <components xsi:type="component_:ComponentRelationship" label="" target="//@componentPackage.1/@components.17"/>
+    <components xsi:type="component_:Component" component_name="MC1" fit="300.0">
       <name content="Name"/>
       <implementationConstraint>
         <content>
-          <value content="外部文件"/>
+          <value content="File"/>
         </content>
       </implementationConstraint>
       <implementationConstraint>
         <content>
-          <value content="超数据"/>
+          <value content="Metadata"/>
         </content>
       </implementationConstraint>
       <implementationConstraint>
         <content>
-          <value content="验证规则"/>
+          <value content="Validation Rule"/>
         </content>
       </implementationConstraint>
       <implementationConstraint>
         <content>
-          <value content="验证结果"/>
+          <value content="Validation Result"/>
         </content>
       </implementationConstraint>
     </components>
-    <components xsi:type="component_:ComponentRelationship" label="" source="//@componentPackage.1/@components.6" target="//@componentPackage.1/@components.11"/>
-    <components xsi:type="component_:Component" identity="8" component_name="通道选择器">
+    <components xsi:type="component_:Component" component_name="CS1">
       <name content="Name"/>
       <implementationConstraint>
         <content>
-          <value content="外部文件"/>
+          <value content="File"/>
         </content>
       </implementationConstraint>
       <implementationConstraint>
         <content>
-          <value content="超数据"/>
+          <value content="Metadata"/>
         </content>
       </implementationConstraint>
       <implementationConstraint>
         <content>
-          <value content="验证规则"/>
+          <value content="Validation Rule"/>
         </content>
       </implementationConstraint>
       <implementationConstraint>
         <content>
-          <value content="验证结果"/>
+          <value content="Validation Result"/>
         </content>
       </implementationConstraint>
     </components>
-    <components xsi:type="component_:ComponentRelationship" label="组件关系" source="//@componentPackage.1/@components.11" target="//@componentPackage.1/@components.13"/>
-    <components xsi:type="component_:ComponentRelationship" label="" source="//@componentPackage.1/@components.6" target="//@componentPackage.1/@components.13"/>
-    <components xsi:type="component_:ComponentRelationship" label="" source="//@componentPackage.1/@components.6" target="//@componentPackage.1/@components.9"/>
-    <components xsi:type="component_:Component" identity="9" component_name="总线变换器">
-      <name content="Name"/>
-      <implementationConstraint>
-        <content>
-          <value content="外部文件"/>
-        </content>
-      </implementationConstraint>
-      <implementationConstraint>
-        <content>
-          <value content="超数据"/>
-        </content>
-      </implementationConstraint>
-      <implementationConstraint>
-        <content>
-          <value content="验证规则"/>
-        </content>
-      </implementationConstraint>
-      <implementationConstraint>
-        <content>
-          <value content="验证结果"/>
-        </content>
-      </implementationConstraint>
-    </components>
-    <components xsi:type="component_:ComponentRelationship" label="" source="//@componentPackage.1/@components.9" target="//@componentPackage.1/@components.17"/>
-    <components xsi:type="component_:ComponentRelationship" label="" source="//@componentPackage.1/@components.13" target="//@componentPackage.1/@components.17"/>
+    <components xsi:type="component_:ComponentRelationship" label="" source="//@componentPackage.1/@components.17" target="//@componentPackage.1/@components.19"/>
+    <components xsi:type="component_:ComponentRelationship" label="" source="//@componentPackage.1/@components.19" target="//@componentPackage.1/@components.20"/>
+    <components xsi:type="component_:ComponentRelationship" label="" source="//@componentPackage.1/@components.20" target="//@componentPackage.1/@components.7"/>
+    <components xsi:type="component_:ComponentRelationship" label="" source="//@componentPackage.1/@components.8"/>
+    <components xsi:type="component_:ComponentRelationship" label="" target="//@componentPackage.1/@components.17"/>
+    <components xsi:type="component_:ComponentRelationship" label="Component Relationship" target="//@componentPackage.1/@components.9"/>
+    <components xsi:type="component_:Fork"/>
+    <components xsi:type="component_:ComponentRelationship" label="" source="//@componentPackage.1/@components.8" target="//@componentPackage.1/@components.27"/>
+    <components xsi:type="component_:ComponentRelationship" label="" source="//@componentPackage.1/@components.27" target="//@componentPackage.1/@components.17"/>
+    <components xsi:type="component_:ComponentRelationship" label="" source="//@componentPackage.1/@components.27" target="//@componentPackage.1/@components.9"/>
   </componentPackage>
   <requirementPackage>
     <name content="通讯系统安全要求包"/>
-    <requirementElement xsi:type="requirement_:Requirement" identity="1" desc="通讯系统中天线的安全完整性等级至少为2" script="self.sil >= 2;">
-      <name content="天线组件的需求"/>
-    </requirementElement>
-    <requirementElement xsi:type="requirement_:Requirement" identity="2" desc="通讯系统中RF放大器的安全完整性等级至少为2" script="self.sil >= 2;">
-      <name content="RF放大器需求"/>
-    </requirementElement>
-    <requirementElement xsi:type="requirement_:Requirement" identity="1" desc="XX部件的安全完整性等级需要为SIL2" script="">
-      <name content="安全性要求1"/>
-    </requirementElement>
-    <requirementElement xsi:type="requirement_:Requirement" identity="2">
-      <name content="安全性要求2"/>
-    </requirementElement>
-    <requirementElement xsi:type="requirement_:RequirementRelationship" label="支持" source="//@requirementPackage.0/@requirementElement.2" target="//@requirementPackage.0/@requirementElement.3"/>
+    <requirementElement xsi:type="requirement_:RequirementRelationship" label="支持"/>
   </requirementPackage>
   <requirementPackage>
-    <name content="新需求包"/>
+    <name content="ReqPackage1"/>
+    <requirementElement xsi:type="requirement_:Requirement" desc="Sensor power supply should be acceptably safe">
+      <name content="SR1"/>
+      <implementationConstraint>
+        <content>
+          <value content="\requirements\req.xlsx"/>
+        </content>
+      </implementationConstraint>
+      <implementationConstraint>
+        <content>
+          <value content="Metadata"/>
+        </content>
+      </implementationConstraint>
+      <implementationConstraint>
+        <content>
+          <value content="var sheet = Sheet1.all;&#xD;&#xA;var single_entry = sheet.select(s|s.identity = &quot;13149&quot;).first();&#xD;&#xA;return single_entry.description;&#xD;&#xA;"/>
+        </content>
+      </implementationConstraint>
+      <implementationConstraint>
+        <content>
+          <value content="Sensor supply should be acceptably safe"/>
+        </content>
+      </implementationConstraint>
+    </requirementElement>
+    <requirementElement xsi:type="requirement_:Requirement" identity="1" desc="Sensor power supply should be acceptably accurate">
+      <name content="SR2"/>
+      <implementationConstraint>
+        <content>
+          <value content="\requirements\req.xlsx"/>
+        </content>
+      </implementationConstraint>
+      <implementationConstraint>
+        <content>
+          <value content="Metadata"/>
+        </content>
+      </implementationConstraint>
+      <implementationConstraint>
+        <content>
+          <value content="var sheet = Sheet1.all;&#xD;&#xA;var single_entry = sheet.select(s|s.identity = &quot;13150&quot;).first();&#xD;&#xA;return single_entry.description;"/>
+        </content>
+      </implementationConstraint>
+      <implementationConstraint>
+        <content>
+          <value content="Sensor power supply should be acceptably accurate"/>
+        </content>
+      </implementationConstraint>
+    </requirementElement>
   </requirementPackage>
   <hazardPackage>
     <name content="通讯系统危险分析包"/>
@@ -499,6 +548,21 @@
     </hazardElement>
   </hazardPackage>
   <hazardPackage>
-    <name content="新危险分析包"/>
+    <name content="HazardPackage1"/>
+    <hazardElement xsi:type="hazard_:HazardousSituation" causes="//@hazardPackage.1/@hazardElement.1 //@hazardPackage.1/@hazardElement.2 //@hazardPackage.1/@hazardElement.3">
+      <name content="Sensor power supply is off"/>
+    </hazardElement>
+    <hazardElement xsi:type="hazard_:Cause" identity="1">
+      <name content="D1 is open"/>
+    </hazardElement>
+    <hazardElement xsi:type="hazard_:Cause" identity="2">
+      <name content="L1 is open"/>
+    </hazardElement>
+    <hazardElement xsi:type="hazard_:Cause" identity="3" controlMeasure="//@hazardPackage.1/@hazardElement.4">
+      <name content="RAM failure in MC1"/>
+    </hazardElement>
+    <hazardElement xsi:type="hazard_:ControlMeasure" identity="4">
+      <name content="Control Measure"/>
+    </hazardElement>
   </hazardPackage>
 </mbsa_:MBSAPackage>

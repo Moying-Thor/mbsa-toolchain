@@ -3,6 +3,7 @@
 package base.provider;
 
 
+import component.provider.ComponentEditPlugin;
 import java.util.Collection;
 import java.util.List;
 
@@ -103,7 +104,7 @@ public class ElementItemProvider
 	 */
 	@Override
 	public ResourceLocator getResourceLocator() {
-		return BaseEditPlugin.INSTANCE;
+		return ComponentEditPlugin.INSTANCE;
 	}
 
 }

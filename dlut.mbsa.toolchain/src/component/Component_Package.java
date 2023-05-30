@@ -775,6 +775,494 @@ public interface Component_Package extends EPackage {
 	int COMPONENT_FEATURE_COUNT = COMPONENT_ELEMENT_FEATURE_COUNT + 15;
 
 	/**
+	 * The meta object id for the '{@link component.impl.ForkImpl <em>Fork</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see component.impl.ForkImpl
+	 * @see component.impl.Component_PackageImpl#getFork()
+	 * @generated
+	 */
+	int FORK = 5;
+
+	/**
+	 * The feature id for the '<em><b>Gid</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FORK__GID = COMPONENT__GID;
+
+	/**
+	 * The feature id for the '<em><b>Is Citation</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FORK__IS_CITATION = COMPONENT__IS_CITATION;
+
+	/**
+	 * The feature id for the '<em><b>Is Abstract</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FORK__IS_ABSTRACT = COMPONENT__IS_ABSTRACT;
+
+	/**
+	 * The feature id for the '<em><b>Cited Element</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FORK__CITED_ELEMENT = COMPONENT__CITED_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Abstract Form</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FORK__ABSTRACT_FORM = COMPONENT__ABSTRACT_FORM;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FORK__NAME = COMPONENT__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Description</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FORK__DESCRIPTION = COMPONENT__DESCRIPTION;
+
+	/**
+	 * The feature id for the '<em><b>Implementation Constraint</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FORK__IMPLEMENTATION_CONSTRAINT = COMPONENT__IMPLEMENTATION_CONSTRAINT;
+
+	/**
+	 * The feature id for the '<em><b>Note</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FORK__NOTE = COMPONENT__NOTE;
+
+	/**
+	 * The feature id for the '<em><b>Tagged Value</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FORK__TAGGED_VALUE = COMPONENT__TAGGED_VALUE;
+
+	/**
+	 * The feature id for the '<em><b>Identity</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FORK__IDENTITY = COMPONENT__IDENTITY;
+
+	/**
+	 * The feature id for the '<em><b>Component name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FORK__COMPONENT_NAME = COMPONENT__COMPONENT_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Reuse</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FORK__REUSE = COMPONENT__REUSE;
+
+	/**
+	 * The feature id for the '<em><b>Cots</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FORK__COTS = COMPONENT__COTS;
+
+	/**
+	 * The feature id for the '<em><b>Fit</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FORK__FIT = COMPONENT__FIT;
+
+	/**
+	 * The feature id for the '<em><b>Safety related</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FORK__SAFETY_RELATED = COMPONENT__SAFETY_RELATED;
+
+	/**
+	 * The feature id for the '<em><b>Sil</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FORK__SIL = COMPONENT__SIL;
+
+	/**
+	 * The feature id for the '<em><b>Function</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FORK__FUNCTION = COMPONENT__FUNCTION;
+
+	/**
+	 * The feature id for the '<em><b>Component Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FORK__COMPONENT_TYPE = COMPONENT__COMPONENT_TYPE;
+
+	/**
+	 * The feature id for the '<em><b>Inputs</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FORK__INPUTS = COMPONENT__INPUTS;
+
+	/**
+	 * The feature id for the '<em><b>Outputs</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FORK__OUTPUTS = COMPONENT__OUTPUTS;
+
+	/**
+	 * The feature id for the '<em><b>Sub components</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FORK__SUB_COMPONENTS = COMPONENT__SUB_COMPONENTS;
+
+	/**
+	 * The feature id for the '<em><b>Failure modes</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FORK__FAILURE_MODES = COMPONENT__FAILURE_MODES;
+
+	/**
+	 * The feature id for the '<em><b>Safety mechanisms</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FORK__SAFETY_MECHANISMS = COMPONENT__SAFETY_MECHANISMS;
+
+	/**
+	 * The feature id for the '<em><b>Requirements</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FORK__REQUIREMENTS = COMPONENT__REQUIREMENTS;
+
+	/**
+	 * The number of structural features of the '<em>Fork</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FORK_FEATURE_COUNT = COMPONENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link component.impl.JoinImpl <em>Join</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see component.impl.JoinImpl
+	 * @see component.impl.Component_PackageImpl#getJoin()
+	 * @generated
+	 */
+	int JOIN = 6;
+
+	/**
+	 * The feature id for the '<em><b>Gid</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JOIN__GID = COMPONENT__GID;
+
+	/**
+	 * The feature id for the '<em><b>Is Citation</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JOIN__IS_CITATION = COMPONENT__IS_CITATION;
+
+	/**
+	 * The feature id for the '<em><b>Is Abstract</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JOIN__IS_ABSTRACT = COMPONENT__IS_ABSTRACT;
+
+	/**
+	 * The feature id for the '<em><b>Cited Element</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JOIN__CITED_ELEMENT = COMPONENT__CITED_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Abstract Form</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JOIN__ABSTRACT_FORM = COMPONENT__ABSTRACT_FORM;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JOIN__NAME = COMPONENT__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Description</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JOIN__DESCRIPTION = COMPONENT__DESCRIPTION;
+
+	/**
+	 * The feature id for the '<em><b>Implementation Constraint</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JOIN__IMPLEMENTATION_CONSTRAINT = COMPONENT__IMPLEMENTATION_CONSTRAINT;
+
+	/**
+	 * The feature id for the '<em><b>Note</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JOIN__NOTE = COMPONENT__NOTE;
+
+	/**
+	 * The feature id for the '<em><b>Tagged Value</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JOIN__TAGGED_VALUE = COMPONENT__TAGGED_VALUE;
+
+	/**
+	 * The feature id for the '<em><b>Identity</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JOIN__IDENTITY = COMPONENT__IDENTITY;
+
+	/**
+	 * The feature id for the '<em><b>Component name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JOIN__COMPONENT_NAME = COMPONENT__COMPONENT_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Reuse</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JOIN__REUSE = COMPONENT__REUSE;
+
+	/**
+	 * The feature id for the '<em><b>Cots</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JOIN__COTS = COMPONENT__COTS;
+
+	/**
+	 * The feature id for the '<em><b>Fit</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JOIN__FIT = COMPONENT__FIT;
+
+	/**
+	 * The feature id for the '<em><b>Safety related</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JOIN__SAFETY_RELATED = COMPONENT__SAFETY_RELATED;
+
+	/**
+	 * The feature id for the '<em><b>Sil</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JOIN__SIL = COMPONENT__SIL;
+
+	/**
+	 * The feature id for the '<em><b>Function</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JOIN__FUNCTION = COMPONENT__FUNCTION;
+
+	/**
+	 * The feature id for the '<em><b>Component Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JOIN__COMPONENT_TYPE = COMPONENT__COMPONENT_TYPE;
+
+	/**
+	 * The feature id for the '<em><b>Inputs</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JOIN__INPUTS = COMPONENT__INPUTS;
+
+	/**
+	 * The feature id for the '<em><b>Outputs</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JOIN__OUTPUTS = COMPONENT__OUTPUTS;
+
+	/**
+	 * The feature id for the '<em><b>Sub components</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JOIN__SUB_COMPONENTS = COMPONENT__SUB_COMPONENTS;
+
+	/**
+	 * The feature id for the '<em><b>Failure modes</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JOIN__FAILURE_MODES = COMPONENT__FAILURE_MODES;
+
+	/**
+	 * The feature id for the '<em><b>Safety mechanisms</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JOIN__SAFETY_MECHANISMS = COMPONENT__SAFETY_MECHANISMS;
+
+	/**
+	 * The feature id for the '<em><b>Requirements</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JOIN__REQUIREMENTS = COMPONENT__REQUIREMENTS;
+
+	/**
+	 * The number of structural features of the '<em>Join</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JOIN_FEATURE_COUNT = COMPONENT_FEATURE_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link component.impl.ComponentRelationshipImpl <em>Component Relationship</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -782,7 +1270,7 @@ public interface Component_Package extends EPackage {
 	 * @see component.impl.Component_PackageImpl#getComponentRelationship()
 	 * @generated
 	 */
-	int COMPONENT_RELATIONSHIP = 5;
+	int COMPONENT_RELATIONSHIP = 7;
 
 	/**
 	 * The feature id for the '<em><b>Gid</b></em>' attribute.
@@ -918,7 +1406,7 @@ public interface Component_Package extends EPackage {
 	 * @see component.impl.Component_PackageImpl#getComponentAsset()
 	 * @generated
 	 */
-	int COMPONENT_ASSET = 6;
+	int COMPONENT_ASSET = 8;
 
 	/**
 	 * The feature id for the '<em><b>Gid</b></em>' attribute.
@@ -1027,7 +1515,7 @@ public interface Component_Package extends EPackage {
 	 * @see component.impl.Component_PackageImpl#getFunction()
 	 * @generated
 	 */
-	int FUNCTION = 7;
+	int FUNCTION = 9;
 
 	/**
 	 * The feature id for the '<em><b>Gid</b></em>' attribute.
@@ -1145,7 +1633,7 @@ public interface Component_Package extends EPackage {
 	 * @see component.impl.Component_PackageImpl#getInput()
 	 * @generated
 	 */
-	int INPUT = 8;
+	int INPUT = 10;
 
 	/**
 	 * The feature id for the '<em><b>Gid</b></em>' attribute.
@@ -1272,7 +1760,7 @@ public interface Component_Package extends EPackage {
 	 * @see component.impl.Component_PackageImpl#getOutput()
 	 * @generated
 	 */
-	int OUTPUT = 9;
+	int OUTPUT = 11;
 
 	/**
 	 * The feature id for the '<em><b>Gid</b></em>' attribute.
@@ -1399,7 +1887,7 @@ public interface Component_Package extends EPackage {
 	 * @see component.impl.Component_PackageImpl#getComponentSafetyElement()
 	 * @generated
 	 */
-	int COMPONENT_SAFETY_ELEMENT = 10;
+	int COMPONENT_SAFETY_ELEMENT = 12;
 
 	/**
 	 * The feature id for the '<em><b>Gid</b></em>' attribute.
@@ -1517,7 +2005,7 @@ public interface Component_Package extends EPackage {
 	 * @see component.impl.Component_PackageImpl#getFailureMode()
 	 * @generated
 	 */
-	int FAILURE_MODE = 11;
+	int FAILURE_MODE = 13;
 
 	/**
 	 * The feature id for the '<em><b>Gid</b></em>' attribute.
@@ -1707,7 +2195,7 @@ public interface Component_Package extends EPackage {
 	 * @see component.impl.Component_PackageImpl#getSafetyMechanism()
 	 * @generated
 	 */
-	int SAFETY_MECHANISM = 12;
+	int SAFETY_MECHANISM = 14;
 
 	/**
 	 * The feature id for the '<em><b>Gid</b></em>' attribute.
@@ -1852,7 +2340,7 @@ public interface Component_Package extends EPackage {
 	 * @see component.impl.Component_PackageImpl#getFailureEffect()
 	 * @generated
 	 */
-	int FAILURE_EFFECT = 13;
+	int FAILURE_EFFECT = 15;
 
 	/**
 	 * The feature id for the '<em><b>Gid</b></em>' attribute.
@@ -1988,7 +2476,7 @@ public interface Component_Package extends EPackage {
 	 * @see component.impl.Component_PackageImpl#getRegionalEffect()
 	 * @generated
 	 */
-	int REGIONAL_EFFECT = 14;
+	int REGIONAL_EFFECT = 16;
 
 	/**
 	 * The feature id for the '<em><b>Gid</b></em>' attribute.
@@ -2124,7 +2612,7 @@ public interface Component_Package extends EPackage {
 	 * @see component.impl.Component_PackageImpl#getHigherLevelEffect()
 	 * @generated
 	 */
-	int HIGHER_LEVEL_EFFECT = 15;
+	int HIGHER_LEVEL_EFFECT = 17;
 
 	/**
 	 * The feature id for the '<em><b>Gid</b></em>' attribute.
@@ -2260,7 +2748,7 @@ public interface Component_Package extends EPackage {
 	 * @see component.impl.Component_PackageImpl#getFinalEffect()
 	 * @generated
 	 */
-	int FINAL_EFFECT = 16;
+	int FINAL_EFFECT = 18;
 
 	/**
 	 * The feature id for the '<em><b>Gid</b></em>' attribute.
@@ -2396,7 +2884,7 @@ public interface Component_Package extends EPackage {
 	 * @see component.impl.Component_PackageImpl#getFailureSeverity()
 	 * @generated
 	 */
-	int FAILURE_SEVERITY = 17;
+	int FAILURE_SEVERITY = 19;
 
 
 	/**
@@ -2407,7 +2895,7 @@ public interface Component_Package extends EPackage {
 	 * @see component.impl.Component_PackageImpl#getComponentType()
 	 * @generated
 	 */
-	int COMPONENT_TYPE = 18;
+	int COMPONENT_TYPE = 20;
 
 
 	/**
@@ -2418,7 +2906,7 @@ public interface Component_Package extends EPackage {
 	 * @see component.impl.Component_PackageImpl#getToleranceType()
 	 * @generated
 	 */
-	int TOLERANCE_TYPE = 19;
+	int TOLERANCE_TYPE = 21;
 
 
 	/**
@@ -2679,6 +3167,26 @@ public interface Component_Package extends EPackage {
 	 * @generated
 	 */
 	EReference getComponent_Requirements();
+
+	/**
+	 * Returns the meta object for class '{@link component.Fork <em>Fork</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Fork</em>'.
+	 * @see component.Fork
+	 * @generated
+	 */
+	EClass getFork();
+
+	/**
+	 * Returns the meta object for class '{@link component.Join <em>Join</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Join</em>'.
+	 * @see component.Join
+	 * @generated
+	 */
+	EClass getJoin();
 
 	/**
 	 * Returns the meta object for class '{@link component.ComponentRelationship <em>Component Relationship</em>}'.
@@ -3295,6 +3803,26 @@ public interface Component_Package extends EPackage {
 		 * @generated
 		 */
 		EReference COMPONENT__REQUIREMENTS = eINSTANCE.getComponent_Requirements();
+
+		/**
+		 * The meta object literal for the '{@link component.impl.ForkImpl <em>Fork</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see component.impl.ForkImpl
+		 * @see component.impl.Component_PackageImpl#getFork()
+		 * @generated
+		 */
+		EClass FORK = eINSTANCE.getFork();
+
+		/**
+		 * The meta object literal for the '{@link component.impl.JoinImpl <em>Join</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see component.impl.JoinImpl
+		 * @see component.impl.Component_PackageImpl#getJoin()
+		 * @generated
+		 */
+		EClass JOIN = eINSTANCE.getJoin();
 
 		/**
 		 * The meta object literal for the '{@link component.impl.ComponentRelationshipImpl <em>Component Relationship</em>}' class.

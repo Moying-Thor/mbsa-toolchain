@@ -17,7 +17,7 @@ import org.eclipse.ui.IWorkbenchPage;
 import org.eclipse.ui.IWorkbenchWindow;
 import org.eclipse.ui.PlatformUI;
 
-import component.Component;
+import base.ModelElement;
 
 public class BrowseFileAction implements IExternalJavaAction {
 
@@ -32,7 +32,7 @@ public class BrowseFileAction implements IExternalJavaAction {
 		for(EObject eobj: selections) {
 			focus = eobj;
 		}
-		Component cp = (Component) focus;
+		ModelElement cp = (ModelElement) focus;
 		
 		Shell shell = PlatformUI.getWorkbench().getDisplay().getActiveShell();
 		FileDialog fileDialog = new FileDialog(shell);

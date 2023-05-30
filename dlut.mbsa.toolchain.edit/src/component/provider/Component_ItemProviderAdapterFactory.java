@@ -164,6 +164,52 @@ public class Component_ItemProviderAdapterFactory extends Component_AdapterFacto
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link component.Fork} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ForkItemProvider forkItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link component.Fork}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createForkAdapter() {
+		if (forkItemProvider == null) {
+			forkItemProvider = new ForkItemProvider(this);
+		}
+
+		return forkItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link component.Join} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected JoinItemProvider joinItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link component.Join}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createJoinAdapter() {
+		if (joinItemProvider == null) {
+			joinItemProvider = new JoinItemProvider(this);
+		}
+
+		return joinItemProvider;
+	}
+
+	/**
 	 * This keeps track of the one adapter used for all {@link component.ComponentRelationship} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -479,6 +525,8 @@ public class Component_ItemProviderAdapterFactory extends Component_AdapterFacto
 		if (componentPackageInterfaceItemProvider != null) componentPackageInterfaceItemProvider.dispose();
 		if (componentPackageBindingItemProvider != null) componentPackageBindingItemProvider.dispose();
 		if (componentItemProvider != null) componentItemProvider.dispose();
+		if (forkItemProvider != null) forkItemProvider.dispose();
+		if (joinItemProvider != null) joinItemProvider.dispose();
 		if (componentRelationshipItemProvider != null) componentRelationshipItemProvider.dispose();
 		if (functionItemProvider != null) functionItemProvider.dispose();
 		if (inputItemProvider != null) inputItemProvider.dispose();

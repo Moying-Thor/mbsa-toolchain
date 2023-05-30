@@ -4,8 +4,7 @@
     modelName="Component" importerID="org.eclipse.emf.importer.ecore" complianceLevel="6.0"
     copyrightFields="false">
   <foreignModel>component.ecore</foreignModel>
-  <genPackages prefix="Component_" disposableProviderFactory="true" fileExtensions="component"
-      ecorePackage="component.ecore#/">
+  <genPackages prefix="Component_" disposableProviderFactory="true" ecorePackage="component.ecore#/">
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="component.ecore#//FailureSeverity">
       <genEnumLiterals ecoreEnumLiteral="component.ecore#//FailureSeverity/catastrophic"/>
       <genEnumLiterals ecoreEnumLiteral="component.ecore#//FailureSeverity/fatal"/>
@@ -51,6 +50,8 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference component.ecore#//Component/safety_mechanisms"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference component.ecore#//Component/requirements"/>
     </genClasses>
+    <genClasses ecoreClass="component.ecore#//Fork"/>
+    <genClasses ecoreClass="component.ecore#//Join"/>
     <genClasses ecoreClass="component.ecore#//ComponentRelationship">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute component.ecore#//ComponentRelationship/label"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference component.ecore#//ComponentRelationship/source"/>
@@ -94,7 +95,7 @@
     <genClasses ecoreClass="component.ecore#//HigherLevelEffect"/>
     <genClasses ecoreClass="component.ecore#//FinalEffect"/>
   </genPackages>
-  <genPackages prefix="Base_" fileExtensions="base" ecorePackage="http://dlut.mbsa/base#/">
+  <genPackages prefix="Base_" ecorePackage="http://dlut.mbsa/base#/">
     <genClasses image="false" ecoreClass="http://dlut.mbsa/base#//Element"/>
     <genClasses image="false" ecoreClass="http://dlut.mbsa/base#//BaseElement">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute http://dlut.mbsa/base#//BaseElement/gid"/>

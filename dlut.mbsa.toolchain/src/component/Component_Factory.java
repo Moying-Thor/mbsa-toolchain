@@ -58,6 +58,24 @@ public interface Component_Factory extends EFactory {
 	Component createComponent();
 
 	/**
+	 * Returns a new object of class '<em>Fork</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Fork</em>'.
+	 * @generated
+	 */
+	Fork createFork();
+
+	/**
+	 * Returns a new object of class '<em>Join</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Join</em>'.
+	 * @generated
+	 */
+	Join createJoin();
+
+	/**
 	 * Returns a new object of class '<em>Component Relationship</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
